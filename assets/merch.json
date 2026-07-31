@@ -1,0 +1,48 @@
+{
+  "categories": [
+    {
+      "id": "signature-cakes",
+      "name": "Signature Cakes",
+      "description": "Handcrafted daily using fresh organic bananas."
+    },
+    {
+      "id": "drinks",
+      "name": "Drinks & Smoothies",
+      "description": "Espresso drinks, banana shakes, and refreshers."
+    }
+  ],
+  "products": [
+    {
+      "id": "cake-01",
+      "name": "Original Banana Cake",
+      "description": "Classic banana cake topped with smooth cream cheese frosting.",
+      "categoryId": "signature-cakes",
+      "price": 7.90,
+      "image": "/assets/images/menu/banana-cake.jpg",
+      "isBestseller": true,
+      "isAvailable": true,
+      "tags": ["Vegetarian"]
+    },
+    {
+      "id": "drink-01",
+      "name": "Iced Banana Latte",
+      "description": "Double shot espresso poured over creamy banana-infused milk.",
+      "categoryId": "drinks",
+      "price": 6.50,
+      "image": "/assets/images/menu/banana-latte.jpg",
+      "isBestseller": true,
+      "isAvailable": true,
+      "tags": [],
+      "options": [
+        {
+          "name": "Milk Choice",
+          "choices": ["Whole Milk", "Oat Milk (+1.00)", "Almond Milk (+1.00)"]
+        },
+        {
+          "name": "Sweetness",
+          "choices": ["100%", "50%", "Less Sweet (25%)"]
+        }
+      ]
+    }
+  ]
+}
