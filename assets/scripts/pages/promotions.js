@@ -286,57 +286,62 @@ export default function PromotionsPage() {
 
         <div class="grid sm:grid-cols-2 gap-5 md:gap-6">
 
-          <div class="rounded-2xl p-6 bg-amber-400 flex items-center gap-4">
+          <div class="rounded-2xl p-6 flex items-center gap-4"
+          style="background-color: #C2A47F;">
             <div class="w-12 h-12 shrink-0 rounded-full bg-amber-100 flex items-center justify-center">
               <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#4A2F08" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 10v6M2 10l10-5 10 5-10 5z"/><path d="M6 12v5c0 1.66 2.69 3 6 3s6-1.34 6-3v-5"/></svg>
             </div>
             <div>
-              <p class="text-xs font-semibold uppercase tracking-wide" style="color:#4A2F08;">Student Special</p>
-              <p class="text-lg font-bold" style="color:#4A2F08;">20% OFF Selected Smoothies, Weekdays Only</p>
+              <p class="text-xs font-semibold uppercase tracking-wide" style="color:#FFFFFF;">Student Special</p>
+              <p class="text-lg font-bold" style="color:#FFFFFF;">20% OFF Selected Smoothies, Weekdays Only</p>
             </div>
           </div>
 
-          <div class="rounded-2xl p-6" style="background-color:#A9752E;">
+          <div class="rounded-2xl p-6 flex items-center gap-4"
+          style="background-color: #C2A47F;">
             <div class="flex items-center gap-4">
               <div class="w-12 h-12 shrink-0 rounded-full flex items-center justify-center" style="background-color:#C99855;">
                 <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#FFFFFF" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2l2.9 6.26L21 9.27l-4.5 4.39L17.8 21 12 17.77 6.2 21l1.3-7.34L3 9.27l6.1-1.01L12 2z"/></svg>
               </div>
               <div>
-                <p class="text-xs font-semibold uppercase tracking-wide" style="color:#FFEFD1;">Member Exclusive</p>
+                <p class="text-xs font-semibold uppercase tracking-wide" style="color:#FFFFFF;">Member Exclusive</p>
                 <p class="text-lg font-bold" style="color:#FFFFFF;">Double Reward Points This Weekend!</p>
               </div>
             </div>
           </div>
 
-          <div class="rounded-2xl p-6 bg-amber-400 flex items-center gap-4">
+          <div class="rounded-2xl p-6 flex items-center gap-4"
+          style="background-color: #C2A47F;">
             <div class="w-12 h-12 shrink-0 rounded-full bg-amber-100 flex items-center justify-center">
               <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#4A2F08" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="7" width="18" height="13" rx="2"/><path d="M8 7V5a2 2 0 0 1 2-2h4a2 2 0 0 1 2 2v2"/></svg>
             </div>
             <div>
-              <p class="text-xs font-semibold uppercase tracking-wide" style="color:#4A2F08;">Bundle & Save</p>
-              <p class="text-lg font-bold" style="color:#4A2F08;">Coffee + Signature Cake Only S$10.90</p>
+              <p class="text-xs font-semibold uppercase tracking-wide" style="color:#FFFFFF;">Bundle & Save</p>
+              <p class="text-lg font-bold" style="color:#FFFFFF;">Coffee + Signature Cake Only S$10.90</p>
             </div>
           </div>
 
-          <div class="rounded-2xl p-6" style="background-color:#A9752E;">
+          <div class="rounded-2xl p-6 flex items-center gap-4"
+            style="background-color: #C2A47F;">
             <div class="flex items-center gap-4">
               <div class="w-12 h-12 shrink-0 rounded-full flex items-center justify-center" style="background-color:#C99855;">
                 <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#FFFFFF" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/></svg>
               </div>
               <div>
-                <p class="text-xs font-semibold uppercase tracking-wide" style="color:#FFEFD1;">Limited-Time Offer</p>
+                <p class="text-xs font-semibold uppercase tracking-wide" style="color:#FFFFFF;">Limited-Time Offer</p>
                 <p class="text-lg font-bold" style="color:#FFFFFF;">Buy 2 Slices, Get the 3rd at 50% OFF</p>
               </div>
             </div>
           </div>
 
-          <div class="rounded-2xl p-6 bg-amber-400 flex items-center gap-4 sm:col-span-2">
+         <div class="rounded-2xl p-6 flex items-center gap-4 sm:col-span-2 justify-self-center w-full sm:w-1/2"
+          style="background-color: #C2A47F;">
             <div class="w-12 h-12 shrink-0 rounded-full bg-amber-100 flex items-center justify-center">
               <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#4A2F08" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M6 2 3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4z"/><path d="M3 6h18"/><path d="M16 10a4 4 0 0 1-8 0"/></svg>
             </div>
             <div>
-              <p class="text-xs font-semibold uppercase tracking-wide" style="color:#4A2F08;">Merchandise Deal</p>
-              <p class="text-lg font-bold" style="color:#4A2F08;">Spend S$40 and Enjoy 10% OFF All Merchandise</p>
+              <p class="text-xs font-semibold uppercase tracking-wide" style="color:#FFFFFF;">Merchandise Deal</p>
+              <p class="text-lg font-bold" style="color:#FFFFFF;">Spend S$40 and Enjoy 10% OFF All Merchandise</p>
             </div>
           </div>
 
@@ -345,13 +350,14 @@ export default function PromotionsPage() {
 
       <!-- CTA -->
       <section class="flex flex-wrap gap-4 justify-center pb-6">
-        <a href="#/menu" class="inline-flex items-center justify-center rounded-full font-semibold px-8 py-3 bg-amber-400 text-amber-950 shadow-md hover:-translate-y-0.5 transition">
-          Explore Menu
-        </a>
-        <a href="#/membership" class="inline-flex items-center justify-center rounded-full font-semibold px-8 py-3 bg-white text-amber-900 border-2 border-amber-200 hover:-translate-y-0.5 transition">
-          Join Rewards
-        </a>
-      </section>
+
+      <a href="#/menu"
+       class="inline-flex items-center justify-center rounded-full font-semibold px-8 py-3 text-[#4A2F08] shadow-md hover:-translate-y-0.5 transition"
+       style="background-color: #FAF0BE;">
+       Explore Menu
+     </a>
+
+    </section>
 
       <footer class="pt-4 pb-10 border-t border-amber-200 text-center">
         <p class="font-semibold text-lg text-[#59571B]">Made fresh, one banana at a time.</p>
