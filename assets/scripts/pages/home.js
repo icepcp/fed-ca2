@@ -12,7 +12,7 @@ export default function HomePage() {
             and warm café moments made just for you.
           </p>
 
-          <div class="hero-buttons">
+          <div class="hero-buttons flex gap-4">
               <a href="#/menu" class="hero-btn button">
                   Explore Menu
               </a>
@@ -52,9 +52,9 @@ export default function HomePage() {
            </p>
 
            <a href="#/menu"
-            class="inline-block bg-yellow-600 text-white px-6 py-3 rounded-full font-semibold hover:bg-yellow-600 transition">
+            class="inline-block mt-6 bg-yellow-600 text-white px-6 py-3 rounded-full font-semibold hover:bg-yellow-700 transition">
             View Menu
-           </a>
+          </a>
            
        </div>
       </div>
@@ -64,15 +64,15 @@ export default function HomePage() {
         <div class="category-card">
           <div>
             <h3>Drinks</h3>
-            <p>Fresh smoothies, rich vanilla ice cream blended with bananas and 
+            <p>Fresh smoothies,rich vanilla ice cream blended with bananas and 
             topped with whipped cream coffee and refreshing beverages.</p>
-            <a href="#/menu"
-            class="inline-block bg-yellow-600 text-white px-6 py-3 rounded-full font-semibold hover:bg-yellow-600 transition">
+           <a href="#/menu"
+            class="inline-block mt-6 bg-yellow-600 text-white px-6 py-3 rounded-full font-semibold hover:bg-yellow-700 transition">
             View Menu
-           </a>
+          </a>
 
           </div>
-          <img src="/assets/images/menu/drinks/milkshake.jpeg" alt="Drinks">
+          <img src="/assets/images/menu/drinks/milkshakes/banana.jpeg" alt="Drinks">
         </div>
 
         <div class="category-card">
@@ -80,9 +80,13 @@ export default function HomePage() {
           <div>
             <h3>Promotions</h3>
             <p>Enjoy exciting seasonal offers and exclusive deals.</p>
+            <a href="#/menu"
+            class="inline-block mt-6 bg-yellow-600 text-white px-6 py-3 rounded-full font-semibold hover:bg-yellow-700 transition">
+            View Menu
+          </a>
           </div>
         </div>
-      
+      </section>
 
       <!-- Featured Products -->
       <section class="featured-products">
