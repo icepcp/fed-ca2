@@ -145,7 +145,7 @@ export default function Menu() {
           "Freshly baked banana cupcake with crunchy walnut pieces",
         categoryId: "fresh-baked",
         price: 3.8,
-        image: "/assets/images/menu/cakes/cupcake.jpg",
+        image: "/assets/images/menu/cakes/cupcake.jpeg",
         tags: ["Bestseller"]
       },
       {
@@ -183,7 +183,7 @@ export default function Menu() {
           "Limited-time tropical smoothie made with fresh bananas and juicy mangoes",
         categoryId: "seasonal",
         price: 7.9,
-        image: "/assets/images/menu/desserts/pudding.jpeg",
+        image: "/assets/images/menu/seasonal/drink.jpeg",
         tags: ["Bestseller"]
       },
       {
@@ -193,7 +193,7 @@ export default function Menu() {
           "Freshly baked banana cake layered with creamy Biscoff spread and topped with crunchy Lotus Biscoff biscuit crumbs",
         categoryId: "seasonal",
         price: 7.9,
-        image: "/assets/images/menu/desserts/pudding.jpeg",
+        image: "/assets/images/menu/seasonal/cake.jpeg",
         tags: ["Bestseller"]
       }
     ],

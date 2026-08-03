@@ -90,19 +90,19 @@ export default function HomePage() {
 
         <div class="product-grid">
           <div class="product-card">
-            <img src="images/cake1.jpg" alt="Original Banana Cake">
+            <img src="/assets/images/menu/cakes/naked-banana.jpeg" alt="Naked Banana Cake">
             <h3>Original Banana Cake</h3>
             <p>Our original favourite made fresh daily.</p>
           </div>
 
           <div class="product-card">
-            <img src="images/cake2.jpg" alt="Chocolate Banana Cake">
+            <img src="/assets/images/menu/cakes/chocolate.jpeg" alt="Chocolate Banana Cake">
             <h3>Chocolate Banana Cake</h3>
             <p>Rich chocolate paired with sweet bananas.</p>
           </div>
 
           <div class="product-card">
-            <img src="images/smoothie.jpg" alt="Banana Smoothie">
+            <img src="/assets/images/menu/drinks/smoothies/banana.jpeg" alt="Banana Smoothie">
             <h3>Banana Smoothie</h3>
             <p>Creamy, refreshing and naturally sweet.</p>
           </div>

@@ -30,7 +30,7 @@ export default function Merch() {
           "Minimalist ceramic mug perfect for coffee, tea or hot chocolate.",
         categoryId: "cafe-merch",
         price: 15.9,
-        image: "/assets/images/menu/merch/tote.jpeg",  
+        image: "/assets/images/menu/merch/mug.jpeg",  
       },
       {
         id: "merch-03",
@@ -39,7 +39,7 @@ export default function Merch() {
           "Stainless steel tumbler that keeps drinks hot or cold for hours.",
         categoryId: "cafe-merch",
         price: 28.9,
-        image: "/assets/images/menu/merch/tote.jpeg",  
+        image: "/assets/images/menu/merch/bottle.jpeg",  
       },
       {
         id: "merch-04",
@@ -48,7 +48,7 @@ export default function Merch() {
           "Stainless steel tumbler that keeps drinks hot or cold for hours.",
         categoryId: "cafe-merch",
         price: 28.9,
-        image: "/assets/images/menu/merch/tote.jpeg",  
+        image: "/assets/images/menu/merch/plate.jpeg",  
       },
       {
         id: "ingredients-01",
@@ -57,7 +57,7 @@ export default function Merch() {
           "Premium roasted coffee beans that pair perfectly with our desserts.",
         categoryId: "bliss-ingredients",
         price: 28.9,
-        image: "/assets/images/menu/merch/tote.jpeg",
+        image: "/assets/images/menu/merch/beans.jpeg",
       },
       {
         id: "ingredients-02",
@@ -65,7 +65,7 @@ export default function Merch() {
         description: "Homemade banana jam with a hint of cinnamon.",
         categoryId: "bliss-ingredients",
         price: 28.9,
-        image: "/assets/images/menu/merch/tote.jpeg",
+        image: "/assets/images/menu/merch/jam.jpeg",
       },
       {
         id: "ingredients-03",
@@ -73,7 +73,7 @@ export default function Merch() {
         description: "Bake Banana Bliss banana bread easily at home.",
         categoryId: "bliss-ingredients",
         price: 28.9,
-        image: "/assets/images/menu/merch/tote.jpeg",
+        image: "/assets/images/menu/merch/bakingmix.jpeg",
       },
       {
         id: "ingredients-04",
@@ -81,7 +81,7 @@ export default function Merch() {
         description: "Includes Signature Banana Jam, House Blend Coffee Beans, Ceramic Mug Mini Banana Cookie Pack",
         categoryId: "bliss-ingredients",
         price: 28.9,
-        image: "/assets/images/menu/merch/tote.jpeg",
+        image: "/assets/images/menu/merch/giftbox.jpeg",
         tags: ["Bestseller", "250g"]
       },
     ],
