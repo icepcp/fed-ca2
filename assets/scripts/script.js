@@ -7,6 +7,9 @@ import SustainabilityPage from "./pages/sustainability.js";
 import PromotionsPage from "./pages/promotions.js";
 import ReviewsPage from "./pages/reviews.js";
 import LocationsPage, { initLocationsPage } from "./pages/locations.js";
+import EventsPage from "./pages/events.js";
+import FaqPage from "./pages/faq.js";
+import ContactUsPage from "./pages/contactUs.js";
 
 // 1. Navigation Component (Renders structural HTML)
 function Navigation() {
@@ -63,16 +66,30 @@ function updateActiveNav(currentPath) {
 // 3. Footer Component
 function Footer() {
   return `
-    <footer class="px-10 text-sm">
-      <hr>
-      <div class="py-10 max-w-xs flex flex-col gap-y-3">
-        <p class="text-4xl! font-bold">Banana Bliss Café</p>
-        <p class="text-sm!">A cosy banana dessert brand dedicated to craft, comfort, and premium quality banana-themed food & drinks.</p>
-        <p class="text-sm! font-bold">Class: DCS/FT/1A/06</p>
+    <footer class="bg-[#e4d5b4] text-stone-800 px-10 py-8">
+      <div class="max-w-2xl mx-auto text-center space-y-4">
+        <h3 class="text-3xl font-semibold text-stone-900">
+          Banana Bliss Café
+        </h3>
+
+       <p class="text-stone-700 whitespace-nowrap">
+          A cosy banana dessert café serving freshly baked treats and handcrafted drinks.
+        </p>
+
+        <p class="text-stone-600 whitespace-nowrap">
+          Singapore | +65 6123 4567 | hello@bananabliss.com
+        </p>
+
+        <p class="font-medium text-stone-700">
+          Class: DCS/FT/1A/06
+        </p>
       </div>
     </footer>
   `;
 }
+
+
+export default Footer;
 
 // 4. Map hash routes to page functions
 const routes = {
@@ -121,6 +138,21 @@ const routes = {
   "/sustainability": {
     component: SustainabilityPage,
     name: "Sustainability",
+    icon: "/assets/icons/reviews.svg",
+  },
+  "/events": {
+    component: EventsPage,
+    name: "Events",
+    icon: "/assets/icons/reviews.svg",
+  },
+  "/faq": {
+    component: FaqPage,
+    name: "Faq",
+    icon: "/assets/icons/reviews.svg",
+  },
+  "/contactus": {
+    component: ContactUsPage,
+    name: "Contact Us",
     icon: "/assets/icons/reviews.svg",
   },
 };

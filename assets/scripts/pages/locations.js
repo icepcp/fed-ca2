@@ -67,6 +67,9 @@ export default function LocationsPage() {
                   <li>Workshops & events</li>
                 </ul>
               </div>
+              <p class="text-gray-700 leading-6">
+                181 Orchard Road<br>#03-15 Orchard Central<br>Singapore 238896
+              </p>
             </div>
 
             <!-- Jewel -->
@@ -92,6 +95,11 @@ export default function LocationsPage() {
                   <li>Seasonal desserts</li>
                 </ul>
               </div>
+              <p class="text-gray-700 leading-7">
+                Mon – Thu: 10:00 AM – 9:30 PM<br>
+                Fri – Sat: 10:00 AM – 10:00 PM<br>
+                Sun & PH: 10:00 AM – 9:30 PM
+              </p>
             </div>
 
             <!-- VivoCity -->
@@ -117,6 +125,9 @@ export default function LocationsPage() {
                   <li>Signature cakes & beverages</li>
                 </ul>
               </div>
+              <p class="text-gray-700 leading-6">
+                78 Airport Boulevard<br>#02-218 Jewel Changi Airport<br>Singapore 819666
+              </p>
             </div>
 
             <!-- Bugis -->
@@ -142,8 +153,17 @@ export default function LocationsPage() {
                   <li>Quick takeaway service</li>
                 </ul>
               </div>
+              <p class="text-gray-700 leading-7">
+                Daily: 9:00 AM – 10:00 PM
+              </p>
             </div>
 
+            <p class="text-sm font-semibold text-amber-900 mb-1">Highlights</p>
+            <ul class="text-gray-700 leading-7 space-y-1">
+              <li>• Perfect for travellers</li>
+              <li>• Seasonal drinks and desserts</li>
+              <li>• Gift boxes available</li>
+            </ul>
           </div>
         </section>
 
