@@ -63,11 +63,12 @@ function updateActiveNav(currentPath) {
 // 3. Footer Component
 function Footer() {
   return `
-    <footer class="p-4 bg-amber-900 text-yellow-100 text-center text-sm">
-      <p>&copy; Banana Bliss Café</p>
-      <div class="mt-1">
-        <a href="#/" class="hover:underline">Home</a> | 
-        <a href="#/about" class="hover:underline">About Us</a>
+    <footer class="px-10 text-sm">
+      <hr>
+      <div class="py-10 max-w-xs flex flex-col gap-y-3">
+        <p class="text-4xl! font-bold">Banana Bliss Café</p>
+        <p class="text-sm!">A cosy banana dessert brand dedicated to craft, comfort, and premium quality banana-themed food & drinks.</p>
+        <p class="text-sm! font-bold">Class: DCS/FT/1A/06</p>
       </div>
     </footer>
   `;
@@ -132,7 +133,7 @@ function initLayout() {
   app.innerHTML = `
     <aside id="nav-container" class="shrink-0"></aside>
     
-    <div class="flex-1 flex flex-col justify-between min-h-screen">
+    <div class="flex-1 min-w-0 flex flex-col justify-between min-h-screen">
       <div id="page-content" class="flex-1 p-10"></div>
       <div id="footer-container"></div>
     </div>
