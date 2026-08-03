@@ -3,10 +3,6 @@ export default function PromotionsPage() {
     <main class="bg-amber-50 min-h-screen flex flex-col gap-y-5">
 
       <header>
-        <span class="inline-flex items-center gap-1.5 text-xs font-semibold bg-yellow-100 text-amber-700 border border-amber-200 rounded-full px-3 py-1 mb-4">
-          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M20.59 13.41L11 3.83A2 2 0 0 0 9.59 3.24L4 3a1 1 0 0 0-1 1l.24 5.59a2 2 0 0 0 .59 1.41l9.58 9.58a2 2 0 0 0 2.83 0l4.35-4.35a2 2 0 0 0 0-2.82z"/><circle cx="7.5" cy="7.5" r="1.5"/></svg>
-          Current Promotions
-        </span>
         <h1 class="text-4xl sm:text-5xl md:text-6xl font-bold text-amber-900 leading-tight mt-4">
           Sweet Deals, Bigger Smiles
         </h1>
@@ -23,9 +19,6 @@ export default function PromotionsPage() {
 
       <!-- Student Specials -->
       <section>
-        <span class="inline-block text-xs font-semibold bg-yellow-100 text-amber-700 border border-amber-200 rounded-full px-3 py-1 mb-4">
-          Student Specials
-        </span>
         <h2 class="text-3xl md:text-5xl font-bold text-amber-900 mt-4 mb-6">For Students</h2>
 
         <div class="grid sm:grid-cols-2 gap-5 md:gap-6">
@@ -67,9 +60,6 @@ export default function PromotionsPage() {
 
       <!-- Bundle Offers -->
       <section>
-        <span class="inline-block text-xs font-semibold bg-yellow-100 text-amber-700 border border-amber-200 rounded-full px-3 py-1 mb-4">
-          Bundle Offers
-        </span>
         <h2 class="text-3xl md:text-5xl font-bold text-amber-900 mt-4 mb-6">Bundle & Save</h2>
 
         <div class="grid md:grid-cols-3 gap-5 md:gap-6">
@@ -128,9 +118,6 @@ export default function PromotionsPage() {
 
       <!-- Year-Round Promotions -->
       <section>
-        <span class="inline-block text-xs font-semibold bg-yellow-100 text-amber-700 border border-amber-200 rounded-full px-3 py-1 mb-4">
-          Year-Round
-        </span>
         <h2 class="text-3xl md:text-5xl font-bold text-amber-900 mt-4 mb-6">Year-Round Promotions</h2>
 
         <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-5 md:gap-6">
@@ -180,9 +167,6 @@ export default function PromotionsPage() {
 
       <!-- Seasonal Specials -->
       <section>
-        <span class="inline-block text-xs font-semibold bg-yellow-100 text-amber-700 border border-amber-200 rounded-full px-3 py-1 mb-4">
-          Seasonal Specials
-        </span>
         <h2 class="text-3xl md:text-5xl font-bold text-amber-900 mt-4 mb-6">Limited-Time Only</h2>
 
         <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-5 md:gap-6">
@@ -237,9 +221,6 @@ export default function PromotionsPage() {
 
       <!-- Banana Bliss Rewards -->
       <section class="bg-white rounded-2xl shadow-md p-8 md:p-12">
-        <span class="inline-block text-xs font-semibold bg-yellow-100 text-amber-700 border border-amber-200 rounded-full px-3 py-1 mb-4">
-          Member Rewards
-        </span>
         <h2 class="text-3xl md:text-5xl font-bold text-amber-900 mt-4 mb-2 text-center">Banana Bliss Rewards</h2>
         <p class="text-gray-600 text-center max-w-2xl mx-auto mb-8">
           Members enjoy exclusive benefits throughout the year.
@@ -279,9 +260,6 @@ export default function PromotionsPage() {
 
       <!-- Promo Banners -->
       <section>
-        <span class="inline-block text-xs font-semibold bg-yellow-100 text-amber-700 border border-amber-200 rounded-full px-3 py-1 mb-4">
-          Highlights
-        </span>
         <h2 class="text-3xl md:text-5xl font-bold text-amber-900 mt-4 mb-6">At a Glance</h2>
 
         <div class="grid sm:grid-cols-2 gap-5 md:gap-6">
