@@ -7,6 +7,9 @@ import SustainabilityPage from "./pages/sustainability.js";
 import PromotionsPage from "./pages/promotions.js";
 import ReviewsPage from "./pages/reviews.js";
 import LocationsPage from "./pages/locations.js";
+import EventsPage from "./pages/events.js";
+import FaqPage from "./pages/faq.js";
+import ContactUsPage from "./pages/contactUs.js";
 
 // 1. Navigation Component (Renders structural HTML)
 function Navigation() {
@@ -120,6 +123,21 @@ const routes = {
   "/sustainability": {
     component: SustainabilityPage,
     name: "Sustainability",
+    icon: "/assets/icons/reviews.svg",
+  },
+  "/events": {
+    component: EventsPage,
+    name: "Events",
+    icon: "/assets/icons/reviews.svg",
+  },
+  "/faq": {
+    component: FaqPage,
+    name: "Faq",
+    icon: "/assets/icons/reviews.svg",
+  },
+  "/contactus": {
+    component: ContactUsPage,
+    name: "Contact Us",
     icon: "/assets/icons/reviews.svg",
   },
 };
