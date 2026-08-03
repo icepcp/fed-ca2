@@ -88,7 +88,6 @@ function Footer() {
   `;
 }
 
-
 export default Footer;
 
 // 4. Map hash routes to page functions

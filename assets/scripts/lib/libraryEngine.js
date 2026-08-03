@@ -5,6 +5,7 @@ let currentMenuData = { categories: [], products: [] };
 
 // 1. Helper to render individual product cards
 function renderProductCard(product) {
+  const isLocation = Boolean(product.lat && product.lng);
   const tagsHtml =
     Array.isArray(product.tags) && product.tags.length > 0
       ? `<div class="flex flex-wrap gap-1 mt-3">
@@ -14,11 +15,42 @@ function renderProductCard(product) {
                 <span class="inline-block text-[10px] bg-amber-200 text-amber-900 px-2 py-0.5 rounded-full font-bold">
                   ${tag}
                 </span>
-              `
+              `,
             )
             .join("")}
         </div>`
       : "";
+
+  if (isLocation) {
+    return `
+      <div 
+        class="branch-card product-card bg-white p-5 rounded-3xl border border-black/15 flex flex-col justify-between hover:shadow-xl hover:border-amber-400 transition-all cursor-pointer"
+        data-lat="${product.lat}"
+        data-lng="${product.lng}"
+        data-name="${product.name}"
+      >
+        <div>
+          <img 
+            src="${product.image || "/assets/images/placeholder.jpg"}" 
+            alt="${product.name}" 
+            class="w-full h-48 object-cover rounded-xl"
+          >
+          
+          <div class="mt-4">
+            <h3 class="font-bold text-amber-950 text-xl/7">${product.name}</h3>
+            <p class="text-sm! text-gray-600 mt-2 leading-relaxed">${product.description}</p>
+          </div>
+
+          <p class="text-sm! text-gray-600 mt-1">${product.address ? `📍 Location: ${product.address}` : ""}</p>
+        </div>
+
+        <div>
+          ${tagsHtml}
+        </div>
+      </div>
+    `;
+  }
+
   return `
     <div class="product-card bg-white p-4 rounded-3xl border border-black/15 flex flex-col justify-between hover:shadow-md transition-shadow">
       <div>
@@ -30,7 +62,7 @@ function renderProductCard(product) {
         
         <div class="flex justify-between items-start mt-3">
           <h3 class="font-bold text-amber-950 text-xl/8">${product.name}</h3>
-          <span class="text-amber-700 font-semibold">$${Number(product.price).toFixed(2)}</span>
+          ${product.price ? `<span class="text-amber-700 font-semibold">${Number(product.price).toFixed(2)}</span>` : ""}
         </div>
 
         <p class="text-xs text-gray-600 mt-1">${product.description ? product.description : ""}</p>
@@ -46,6 +78,7 @@ function renderProductCard(product) {
 // 2. Helper to filter products & render category sections
 function renderMenuResults() {
   const { categories = [], products = [] } = currentMenuData;
+  const isLocation = products.some((p) => p.lat && p.lng);
 
   // Filter products by category AND search query
   const filteredProducts = products.filter((product) => {
@@ -76,7 +109,7 @@ function renderMenuResults() {
   return categories
     .map((category) => {
       const categoryProducts = filteredProducts.filter(
-        (p) => p.categoryId === category.id
+        (p) => p.categoryId === category.id,
       );
 
       // Hide category if no products inside match the search/filter
@@ -86,7 +119,7 @@ function renderMenuResults() {
         <section class="mb-10">
           <h2 class="text-2xl font-bold text-amber-900">${category.name}</h2>
           <p class="text-sm text-gray-500 mb-4">${category.description}</p>
-          <div class="grid grid-cols-1 md:grid-cols-3 gap-4">
+          <div class="${isLocation ? "grid grid-cols-1 md:grid-cols-2 gap-4" : "grid grid-cols-1 md:grid-cols-3 gap-4"}">
             ${categoryProducts.map(renderProductCard).join("")}
           </div>
         </section>
