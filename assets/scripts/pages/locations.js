@@ -1,43 +1,35 @@
+import Library, { initLibraryEvents } from "../lib/libraryEngine.js";
+import Location from "../lib/location.js";
+
 export default function LocationsPage() {
+  const locationsData = Location();
+
   return `
-    <main class="bg-amber-50 min-h-screen">
+    <main class="bg-amber-50 min-h-screen pb-16">
+     <div class="relative rounded-2xl overflow-hidden shadow-lg border border-amber-200 h-[420px]">
+        <div class="absolute inset-0 z-0">
+          <div id="locations-map" style="width:100%; height:100%;"></div>
+        </div>
 
-      <!-- Hero -->
-      <section class="bg-yellow-100 py-16 text-center">
-        <h1 class="text-5xl font-bold text-amber-900 mb-4">
-          Our Locations
-        </h1>
+        <div class="absolute inset-0 bg-gradient-to-b from-transparent via-black/20 to-black/60 z-10 pointer-events-none"></div>
 
-        <p class="text-lg text-amber-800 max-w-3xl mx-auto">
-          Find your nearest Banana Bliss Café and enjoy freshly baked banana
-          desserts, handcrafted beverages and our warm café atmosphere.
-        </p>
-      </section>
+        <header class="relative z-20 p-8 pointer-events-none flex flex-col h-full justify-end">
+          <h1 class="text-5xl font-bold text-white!">
+            Our Locations
+          </h1>
+          <p class="text-lg text-white/90! -mt-3 text-xl/6">
+            Find your nearest Banana Bliss Café and enjoy freshly baked banana
+            desserts, handcrafted beverages and our warm café atmosphere.
+          </p>
+        </header>
 
-      <div class="max-w-7xl mx-auto px-6 py-12 space-y-16">
+      </div>
 
-        <!-- Intro -->
-        <section>
-          <h2 class="text-3xl font-bold text-amber-900 mb-6">
-            📍 Find Your Nearest Banana Bliss Café
-          </h2>
+      ${Library(locationsData)}
 
-          <div class="bg-white rounded-xl shadow-md p-8">
-            <p class="text-gray-700 leading-8">
-              No matter where you are in Singapore, there's always a Banana
-              Bliss nearby. Visit us for freshly baked banana cakes,
-              handcrafted beverages and a warm café experience.
-            </p>
+      <div class="max-w-7xl mx-auto px-6 py-12 space-y-12">
 
-            <br>
-
-            <p class="text-gray-700 leading-8">
-              We look forward to serving you!
-            </p>
-          </div>
-        </section>
-
-        <!-- Locations -->
+        <!-- Branches Grid -->
         <section>
           <h2 class="text-3xl font-bold text-amber-900 mb-8">
             🍌 Our Branches
@@ -46,191 +38,202 @@ export default function LocationsPage() {
           <div class="grid lg:grid-cols-2 gap-8">
 
             <!-- Orchard -->
-            <div class="bg-white rounded-xl shadow-lg overflow-hidden">
+            <div 
+              class="branch-card bg-white rounded-xl shadow-lg overflow-hidden cursor-pointer hover:ring-2 hover:ring-amber-500 transition-all"
+              data-lat="1.3008"
+              data-lng="103.8389"
+              data-name="Orchard Central (Flagship)"
+            >
               <img src="images/orchard.jpg" class="h-64 w-full object-cover">
-
               <div class="p-6">
-                <h3 class="text-2xl font-bold text-amber-900">
-                  Orchard Central (Flagship)
-                </h3>
+                <div class="flex justify-between items-start">
+                  <h3 class="text-2xl font-bold text-amber-900">Orchard Central (Flagship)</h3>
+                  <span class="text-xs bg-amber-100 text-amber-900 px-2 py-1 rounded font-bold">Flagship</span>
+                </div>
 
                 <p class="mt-4 text-gray-700">
                   <strong>📍 Address</strong><br>
-                  181 Orchard Road<br>
-                  #03-15 Orchard Central<br>
-                  Singapore 238896
+                  181 Orchard Road #03-15 Orchard Central, Singapore 238896
                 </p>
 
                 <p class="mt-4 text-gray-700">
                   <strong>🕒 Opening Hours</strong><br>
-                  Mon–Thu: 10am – 9.30pm<br>
-                  Fri–Sat: 10am – 10pm<br>
-                  Sun & PH: 10am – 9.30pm
+                  Mon–Thu: 10am – 9.30pm | Fri–Sat: 10am – 10pm | Sun & PH: 10am – 9.30pm
                 </p>
 
                 <ul class="mt-4 list-disc list-inside text-gray-700">
                   <li>Largest outlet</li>
                   <li>Full menu available</li>
                   <li>Workshops & events</li>
-                  <li>Merchandise corner</li>
                 </ul>
-
               </div>
             </div>
 
             <!-- Jewel -->
-            <div class="bg-white rounded-xl shadow-lg overflow-hidden">
+            <div 
+              class="branch-card bg-white rounded-xl shadow-lg overflow-hidden cursor-pointer hover:ring-2 hover:ring-amber-500 transition-all"
+              data-lat="1.3602"
+              data-lng="103.9898"
+              data-name="Jewel Changi Airport"
+            >
               <img src="images/jewel.jpg" class="h-64 w-full object-cover">
-
               <div class="p-6">
-                <h3 class="text-2xl font-bold text-amber-900">
-                  Jewel Changi Airport
-                </h3>
-
+                <h3 class="text-2xl font-bold text-amber-900">Jewel Changi Airport</h3>
                 <p class="mt-4 text-gray-700">
                   <strong>📍 Address</strong><br>
-                  78 Airport Boulevard<br>
-                  #02-218 Jewel Changi Airport<br>
-                  Singapore 819666
+                  78 Airport Boulevard #02-218 Jewel Changi Airport, Singapore 819666
                 </p>
-
                 <p class="mt-4 text-gray-700">
                   <strong>🕒 Opening Hours</strong><br>
                   Daily: 9am – 10pm
                 </p>
-
                 <ul class="mt-4 list-disc list-inside text-gray-700">
                   <li>Perfect for travellers</li>
                   <li>Seasonal desserts</li>
-                  <li>Gift boxes available</li>
                 </ul>
-
               </div>
             </div>
 
-            <!-- Vivo -->
-            <div class="bg-white rounded-xl shadow-lg overflow-hidden">
+            <!-- VivoCity -->
+            <div 
+              class="branch-card bg-white rounded-xl shadow-lg overflow-hidden cursor-pointer hover:ring-2 hover:ring-amber-500 transition-all"
+              data-lat="1.2644"
+              data-lng="103.8223"
+              data-name="VivoCity"
+            >
               <img src="images/vivocity.jpg" class="h-64 w-full object-cover">
-
               <div class="p-6">
-                <h3 class="text-2xl font-bold text-amber-900">
-                  VivoCity
-                </h3>
-
+                <h3 class="text-2xl font-bold text-amber-900">VivoCity</h3>
                 <p class="mt-4 text-gray-700">
                   <strong>📍 Address</strong><br>
-                  1 HarbourFront Walk<br>
-                  #02-105 VivoCity<br>
-                  Singapore 098585
+                  1 HarbourFront Walk #02-105 VivoCity, Singapore 098585
                 </p>
-
                 <p class="mt-4 text-gray-700">
                   <strong>🕒 Opening Hours</strong><br>
                   Daily: 10am – 10pm
                 </p>
-
                 <ul class="mt-4 list-disc list-inside text-gray-700">
                   <li>Family-friendly seating</li>
-                  <li>Weekend brunch favourite</li>
                   <li>Signature cakes & beverages</li>
                 </ul>
-
               </div>
             </div>
 
             <!-- Bugis -->
-            <div class="bg-white rounded-xl shadow-lg overflow-hidden">
+            <div 
+              class="branch-card bg-white rounded-xl shadow-lg overflow-hidden cursor-pointer hover:ring-2 hover:ring-amber-500 transition-all"
+              data-lat="1.2995"
+              data-lng="103.8550"
+              data-name="Bugis Junction"
+            >
               <img src="images/bugis.jpg" class="h-64 w-full object-cover">
-
               <div class="p-6">
-                <h3 class="text-2xl font-bold text-amber-900">
-                  Bugis Junction
-                </h3>
-
+                <h3 class="text-2xl font-bold text-amber-900">Bugis Junction</h3>
                 <p class="mt-4 text-gray-700">
                   <strong>📍 Address</strong><br>
-                  200 Victoria Street<br>
-                  #01-48 Bugis Junction<br>
-                  Singapore 188021
+                  200 Victoria Street #01-48 Bugis Junction, Singapore 188021
                 </p>
-
                 <p class="mt-4 text-gray-700">
                   <strong>🕒 Opening Hours</strong><br>
-                  Mon–Thu: 10am – 9.30pm<br>
-                  Fri–Sun: 10am – 10pm
+                  Mon–Thu: 10am – 9.30pm | Fri–Sun: 10am – 10pm
                 </p>
-
                 <ul class="mt-4 list-disc list-inside text-gray-700">
                   <li>Student-friendly promotions</li>
                   <li>Quick takeaway service</li>
-                  <li>Fresh pastries daily</li>
                 </ul>
-
               </div>
             </div>
 
           </div>
         </section>
 
-        <!-- Why Visit -->
-        <section class="bg-yellow-100 rounded-2xl p-10">
-
-          <h2 class="text-3xl font-bold text-amber-900 text-center mb-8">
-            💛 Why Visit Banana Bliss?
-          </h2>
-
-          <div class="grid md:grid-cols-2 lg:grid-cols-5 gap-6 text-center">
-
-            <div class="bg-white rounded-xl shadow p-6">
-              🍌<br>
-              Freshly Baked Cakes
-            </div>
-
-            <div class="bg-white rounded-xl shadow p-6">
-              ☕<br>
-              Premium Coffee
-            </div>
-
-            <div class="bg-white rounded-xl shadow p-6">
-              🏡<br>
-              Cozy Atmosphere
-            </div>
-
-            <div class="bg-white rounded-xl shadow p-6">
-              🎁<br>
-              Seasonal Promotions
-            </div>
-
-            <div class="bg-white rounded-xl shadow p-6">
-              🎉<br>
-              Workshops & Events
-            </div>
-
-          </div>
-
-        </section>
-
-        <!-- Footer Message -->
-        <section class="text-center">
-
-          <h2 class="text-3xl font-bold text-amber-900 mb-4">
-            ☕ Visit Us Today!
-          </h2>
-
-          <p class="text-gray-700 max-w-3xl mx-auto leading-8">
-            Whether you're meeting friends, taking a coffee break or
-            celebrating a special occasion, Banana Bliss is the perfect
-            place to relax and enjoy freshly made banana-inspired treats.
-          </p>
-
-          <p class="mt-6 text-xl font-semibold text-yellow-700">
-            We can't wait to welcome you to one of our cafés!
-          </p>
-
-        </section>
-
       </div>
-
     </main>
   `;
+}
+
+// Map Initialization Hook
+export function initLocationsPage() {
+  const mapElement = document.getElementById("locations-map");
+  if (!mapElement || typeof L === "undefined") return;
+
+  // Outlet Coordinates & Metadata
+  const outlets = [
+    {
+      name: "Orchard Central (Flagship)",
+      lat: 1.3008,
+      lng: 103.8389,
+      address: "181 Orchard Rd #03-15",
+    },
+    {
+      name: "Jewel Changi Airport",
+      lat: 1.3602,
+      lng: 103.9898,
+      address: "78 Airport Blvd #02-218",
+    },
+    {
+      name: "VivoCity",
+      lat: 1.2644,
+      lng: 103.8223,
+      address: "1 HarbourFront Walk #02-105",
+    },
+    {
+      name: "Bugis Junction",
+      lat: 1.2995,
+      lng: 103.855,
+      address: "200 Victoria St #01-48",
+    },
+  ];
+
+  // Initialize Map centered on Central Singapore
+  const map = L.map("locations-map").setView([1.315, 103.86], 11);
+
+  // Add OpenStreetMap Tile Layer
+  L.tileLayer("https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png", {
+    maxZoom: 19,
+    attribution:
+      '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors',
+  }).addTo(map);
+
+  // Store marker references for interactive focus
+  const markers = {};
+
+  // Add pin markers with styled popups
+  outlets.forEach((outlet) => {
+    const marker = L.marker([outlet.lat, outlet.lng]).addTo(map);
+
+    marker.bindPopup(`
+      <div class="p-1 text-center">
+        <strong style="color: #78350f; font-size: 14px;">🍌 Banana Bliss</strong><br>
+        <span style="font-weight: bold; font-size: 13px;">${outlet.name}</span><br>
+        <small style="color: #4b5563;">${outlet.address}</small>
+      </div>
+    `);
+
+    markers[outlet.name] = marker;
+  });
+
+  // Fix Leaflet tile rendering glitch in SPAs
+  setTimeout(() => map.invalidateSize(), 100);
+
+  // Add click handlers on branch cards to fly to map locations
+  const cards = document.querySelectorAll(".branch-card");
+  cards.forEach((card) => {
+    card.addEventListener("click", () => {
+      const lat = parseFloat(card.dataset.lat);
+      const lng = parseFloat(card.dataset.lng);
+      const name = card.dataset.name;
+
+      if (lat && lng) {
+        // Pan smoothly to location and open popup
+        map.flyTo([lat, lng], 15, { duration: 1.2 });
+        if (markers[name]) {
+          markers[name].openPopup();
+        }
+
+        // Scroll map into view smoothly
+        mapElement.scrollIntoView({ behavior: "smooth", block: "center" });
+      }
+    });
+  });
 }
