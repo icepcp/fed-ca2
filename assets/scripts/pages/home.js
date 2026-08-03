@@ -64,7 +64,7 @@ export default function HomePage() {
         <div class="category-card">
           <div>
             <h3>Drinks</h3>
-            <p>Fresh smoothies,Rich vanilla ice cream blended with bananas and 
+            <p>Fresh smoothies, rich vanilla ice cream blended with bananas and 
             topped with whipped cream coffee and refreshing beverages.</p>
             <a href="#/menu"
             class="inline-block bg-yellow-600 text-white px-6 py-3 rounded-full font-semibold hover:bg-yellow-600 transition">
@@ -82,7 +82,7 @@ export default function HomePage() {
             <p>Enjoy exciting seasonal offers and exclusive deals.</p>
           </div>
         </div>
-      </section>
+      
 
       <!-- Featured Products -->
       <section class="featured-products">
