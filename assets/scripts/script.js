@@ -6,7 +6,7 @@ import MembershipPage from "./pages/membership.js";
 import SustainabilityPage from "./pages/sustainability.js";
 import PromotionsPage from "./pages/promotions.js";
 import ReviewsPage from "./pages/reviews.js";
-import LocationsPage from "./pages/locations.js";
+import LocationsPage, { initLocationsPage } from "./pages/locations.js";
 import EventsPage from "./pages/events.js";
 import FaqPage from "./pages/faq.js";
 import ContactUsPage from "./pages/contactUs.js";
@@ -123,6 +123,7 @@ const routes = {
     component: LocationsPage,
     name: "Locations",
     icon: "/assets/icons/globe-location.svg",
+    init: initLocationsPage
   },
   "/reviews": {
     component: ReviewsPage,
