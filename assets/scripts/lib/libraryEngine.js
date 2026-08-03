@@ -131,7 +131,7 @@ function renderMenuResults() {
 // 3. Main Exported Component
 export default function Library(menuData) {
   currentMenuData = menuData || { categories: [], products: [] };
-
+  currentCategory = menuData.initialCategory || "all";
   // Category Tag Buttons
   const categoryTags = [
     { id: "all", name: "All Items" },

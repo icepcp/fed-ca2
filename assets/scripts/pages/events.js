@@ -11,9 +11,9 @@ export default function EventsPage() {
       <!-- Intro -->
       <section>
         <p class="text-base md:text-lg text-amber-800 leading-8 max-w-3xl mt-4">
-          At Banana Bliss, we believe that great food brings people together. Throughout the year, we
-          organise fun workshops, seasonal celebrations and community events where customers can learn new
-          skills, meet fellow dessert lovers and enjoy memorable experiences in our café.
+          Create unforgettable moments with Banana Bliss.
+          Join our baking workshops, seasonal celebrations,
+          and community events designed for dessert lovers.
         </p>
         <p class="text-base md:text-lg text-gray-700 leading-8 max-w-3xl mt-4">
           Whether you're decorating your first banana cake or celebrating a festive occasion with family and
@@ -22,12 +22,12 @@ export default function EventsPage() {
       </section>
 
       <!-- Featured Event Banner -->
-      <section class="rounded-2xl p-8 md:p-10" style="background-color:#A9752E;">
-        <h2 class="text-2xl md:text-4xl font-bold mb-2" style="color:#FFFFFF;">Banana Cake Decorating Workshop</h2>
+      <section class="rounded-2xl p-8 md:p-10" style="background-color:#604630;">
+        <h2 class="text-2xl md:text-4xl font-bold mb-2" style="color:#FFFFFB;">Banana Cake Decorating Workshop</h2>
         <p class="text-lg font-semibold mb-4" style="color:#FFEFD1;">Learn • Create • Take Home Your Masterpiece</p>
         <div class="flex flex-wrap gap-x-6 gap-y-2 text-sm md:text-base" style="color:#FFEFD1;">
-          <span>📅 16 August 2026</span>
-          <span>🕙 10:00 AM – 12:00 PM</span>
+          <span> 16 August 2026   </span><span>|</span>
+          <span> 10:00 AM – 12:00 PM   </span><span>|</span>
           <span>Limited to 20 participants</span>
         </div>
         <p class="text-sm font-semibold mt-4" style="color:#FFFFFF;">Register in-store today!</p>
@@ -37,9 +37,9 @@ export default function EventsPage() {
       <section>
         <h2 class="text-3xl md:text-5xl font-bold text-amber-900 mt-4 mb-6">Workshops</h2>
 
-        <div class="grid md:grid-cols-2 gap-5 md:gap-6">
+        <div class="grid md:grid-cols-2 gap-5 md:gap-6 ">
 
-          <div class="bg-white rounded-2xl shadow-md p-6 md:p-7">
+          <div class="bg-[#FFFFFB] rounded-2xl shadow-md p-6 md:p-7 hover:-translate-y-2 hover:shadow-xl transition duration-300"">
             <div class="w-11 h-11 rounded-full flex items-center justify-center mb-4 bg-amber-400">
               <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#4A2F08" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6L9 17l-5-5"/></svg>
             </div>
@@ -57,7 +57,7 @@ export default function EventsPage() {
             </ul>
           </div>
 
-          <div class="bg-white rounded-2xl shadow-md p-6 md:p-7">
+          <div class="bg-[#FFFFFB] rounded-2xl shadow-md p-6 md:p-7 hover:-translate-y-2 hover:shadow-xl transition duration-300"">
             <div class="w-11 h-11 rounded-full flex items-center justify-center mb-4" style="background-color:#59571B;">
               <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#FDF6DC" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 10v6M2 10l10-5 10 5-10 5z"/><path d="M6 12v5c0 1.66 2.69 3 6 3s6-1.34 6-3v-5"/></svg>
             </div>
@@ -84,7 +84,7 @@ export default function EventsPage() {
 
         <div class="grid md:grid-cols-3 gap-5 md:gap-6">
 
-          <div class="bg-white rounded-2xl shadow-md p-6 md:p-7">
+          <div class="bg-[#FFFFFB] rounded-2xl shadow-md p-6 md:p-7">
             <span class="inline-block text-xs font-semibold bg-amber-400 text-amber-950 rounded-full px-3 py-1 mb-3">
               1 Jun – 31 Jul
             </span>
@@ -95,7 +95,7 @@ export default function EventsPage() {
             </p>
           </div>
 
-          <div class="bg-white rounded-2xl shadow-md p-6 md:p-7">
+          <div class="bg-[#FFFFFB] rounded-2xl shadow-md p-6 md:p-7">
             <span class="inline-block text-xs font-semibold bg-amber-400 text-amber-950 rounded-full px-3 py-1 mb-3">
               24 – 31 Oct
             </span>
@@ -106,7 +106,7 @@ export default function EventsPage() {
             </p>
           </div>
 
-          <div class="bg-white rounded-2xl shadow-md p-6 md:p-7">
+          <div class="bg-[#FFFFFB] rounded-2xl shadow-md p-6 md:p-7">
             <span class="inline-block text-xs font-semibold bg-amber-400 text-amber-950 rounded-full px-3 py-1 mb-3">
               1 – 31 Dec
             </span>
@@ -126,7 +126,7 @@ export default function EventsPage() {
 
         <div class="grid md:grid-cols-3 gap-5 md:gap-6">
 
-          <div class="bg-white rounded-2xl shadow-md p-6 md:p-7">
+          <div class="bg-[#FFFFFB] rounded-2xl shadow-md p-6 md:p-7">
             <div class="w-11 h-11 rounded-full flex items-center justify-center mb-4 bg-amber-400">
               <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#4A2F08" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 8h1a4 4 0 0 1 0 8h-1"/><path d="M2 8h16v9a4 4 0 0 1-4 4H6a4 4 0 0 1-4-4z"/><path d="M6 1v3M10 1v3M14 1v3"/></svg>
             </div>
@@ -137,7 +137,7 @@ export default function EventsPage() {
             </p>
           </div>
 
-          <div class="bg-white rounded-2xl shadow-md p-6 md:p-7">
+          <div class="bg-[#FFFFFB] rounded-2xl shadow-md p-6 md:p-7">
             <div class="w-11 h-11 rounded-full flex items-center justify-center mb-4" style="background-color:#59571B;">
               <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#FDF6DC" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/></svg>
             </div>
@@ -149,7 +149,7 @@ export default function EventsPage() {
             </p>
           </div>
 
-          <div class="bg-white rounded-2xl shadow-md p-6 md:p-7">
+          <div class="bg-[#FFFFFB] rounded-2xl shadow-md p-6 md:p-7">
             <div class="w-11 h-11 rounded-full flex items-center justify-center mb-4 bg-amber-400">
               <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#4A2F08" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 1 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/></svg>
             </div>
@@ -178,7 +178,7 @@ export default function EventsPage() {
       </section>
 
       <!-- Registration Information -->
-      <section class="bg-white rounded-2xl shadow-md p-8 md:p-12">
+      <section class="bg-[#FFFFFB] rounded-2xl shadow-md p-8 md:p-12">
         <h2 class="text-3xl md:text-5xl font-bold text-amber-900 mt-4 mb-6">Registration Information</h2>
         <ul class="text-gray-700 leading-8 space-y-1 max-w-2xl">
           <li>• Registration can be completed at any Banana Bliss outlet.</li>
@@ -190,7 +190,7 @@ export default function EventsPage() {
 
       <!-- CTA -->
       <section class="flex flex-wrap gap-4 justify-center pb-6">
-        <a href="#/locations" class="inline-flex items-center justify-center rounded-full font-semibold px-8 py-3 bg-white text-amber-900 border-2 border-amber-200 hover:-translate-y-0.5 transition">
+        <a href="#/locations" class="inline-flex items-center justify-center rounded-full font-semibold px-8 py-3 bg-[#FFFFFB] text-amber-900 border-2 border-amber-200 hover:-translate-y-0.5 transition">
           View Locations
         </a>
       </section>

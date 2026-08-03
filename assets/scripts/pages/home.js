@@ -51,7 +51,7 @@ export default function HomePage() {
             smooth whipped cream, and fresh banana slices, creating a light and refreshing dessert perfect for any occasion.
            </p>
 
-           <a href="#/menu"
+           <a href="#/menu?category=cakes"
             class="inline-block mt-6 bg-yellow-600 text-white px-6 py-3 rounded-full font-semibold hover:bg-yellow-700 transition">
             View Menu
           </a>
@@ -66,7 +66,7 @@ export default function HomePage() {
             <h3>Drinks</h3>
             <p>Fresh smoothies,rich vanilla ice cream blended with bananas and 
             topped with whipped cream coffee and refreshing beverages.</p>
-           <a href="#/menu"
+           <a href="#/menu?category=drinks"
             class="inline-block mt-6 bg-yellow-600 text-white px-6 py-3 rounded-full font-semibold hover:bg-yellow-700 transition">
             View Menu
           </a>
@@ -80,7 +80,7 @@ export default function HomePage() {
           <div>
             <h3>Promotions</h3>
             <p>Enjoy exciting seasonal offers and exclusive deals.</p>
-            <a href="#/menu"
+            <a href="#/promotions"
             class="inline-block mt-6 bg-yellow-600 text-white px-6 py-3 rounded-full font-semibold hover:bg-yellow-700 transition">
             View Menu
           </a>

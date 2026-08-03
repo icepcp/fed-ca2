@@ -175,7 +175,8 @@ function initLayout() {
 
 // 6. Router function (Swaps page content and updates state smoothly)
 function router() {
-  const path = window.location.hash.replace("#", "") || "/";
+  const hash = window.location.hash.slice(1) || "/";
+  const path = hash.split("?")[0];
 
   const route = routes[path];
   const pageFunction = route
