@@ -65,7 +65,7 @@ export default function EventsPage() {
           </div>
 
           <div class="bg-[#F9EFBD] rounded-2xl shadow-md p-6 md:p-7 hover:-translate-y-2 hover:shadow-xl transition duration-300"">
-            <div class="w-11 h-11 rounded-full flex items-center justify-center mb-4" style="background-color:#EAB749;">
+            <div class="w-11 h-11 rounded-full flex items-center justify-center mb-4" style="background-color:#59571B;">
               <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#FDF6DC" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 10v6M2 10l10-5 10 5-10 5z"/><path d="M6 12v5c0 1.66 2.69 3 6 3s6-1.34 6-3v-5"/></svg>
             </div>
             <h3 class="text-xl font-bold text-amber-900 mb-2">Banana Baking for Beginners</h3>
@@ -154,7 +154,7 @@ export default function EventsPage() {
           </div>
 
           <div class="bg-[#F9EFBD] rounded-2xl shadow-md p-6 md:p-7">
-            <div class="w-11 h-11 rounded-full flex items-center justify-center mb-4" style="background-color:#EAB749;">
+            <div class="w-11 h-11 rounded-full flex items-center justify-center mb-4" style="background-color:#59571B;">
               <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#FDF6DC" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/></svg>
             </div>
             <h3 class="text-lg font-bold text-amber-900 mb-1">Kids' Mini Cake Decorating Day</h3>
@@ -187,7 +187,7 @@ export default function EventsPage() {
         </div>
 
       <!-- Why Join Our Events -->
-      <section class="rounded-2xl p-8 md:p-12" style="background-color:#EAB749;">
+      <section class="rounded-2xl p-8 md:p-12" style="background-color:#59571B;">
         <h2 class="text-3xl md:text-5xl font-bold mb-6" style="color:#FFFFFB;">Why Join Our Events?</h2>
 
         <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-4">

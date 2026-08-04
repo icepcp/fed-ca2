@@ -314,11 +314,11 @@ export default function ContactUsPage() {
 
       <!-- CTA -->
       <section class="flex flex-wrap gap-4 justify-center pb-6">
-        <a href="#/locationx" class="inline-flex items-center justify-center rounded-full font-semibold px-8 py-3 bg-amber-400 text-amber-950 shadow-md hover:-translate-y-0.5 transition">
-          View Locations
-        </a>
-        <a href="#/menu" class="inline-flex items-center justify-center rounded-full font-semibold px-8 py-3 bg-white text-amber-900 border-2 border-amber-200 hover:-translate-y-0.5 transition">
+        <a href="#/menu" class="inline-flex items-center justify-center rounded-full font-semibold px-8 py-3 bg-amber-400 text-amber-900 border-2 border-amber-200 hover:-translate-y-0.5 transition">
           Explore Menu
+        </a>
+        <a href="#/locationx" class="inline-flex items-center justify-center rounded-full font-semibold px-8 py-3 bg-[#F0DC92] text-amber-950 shadow-md hover:-translate-y-0.5 transition">
+          View Locations
         </a>
       </section>
 
