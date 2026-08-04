@@ -1,30 +1,35 @@
-export default function Menu() {
-  return {
+export default function Menu(category) {
+  const data = {
     categories: [
       {
         id: "signature-cakes",
+        category: "cakes",
         name: "Signature Cakes",
         description: "Handcrafted daily using fresh organic bananas.",
       },
       {
         id: "drinks",
+        category: "drinks",
         name: "Drinks & Smoothies",
         description: "Espresso drinks, banana shakes, and refreshers.",
       },
       {
         id: "fresh-baked",
+        category: "pastries",
         name: "Freshly Baked Pastries",
         description: "Freshly baked pastries made daily using quality ingredients for a warm and delicious treat.",
       },
       {
         id: "desserts",
+        category: "desserts",
         name: "Sweet Desserts",
-        description: "indulgent desserts crafted with fresh bananas and premium ingredients for every sweet craving.",
+        description: "Indulgent desserts crafted with fresh bananas and premium ingredients.",
       },
       {
         id: "seasonal",
+        category: "seasonal",
         name: "Seasonal Specials",
-        description: "Limited-time banana-inspired creations made with seasonal ingredients, bringing fresh flavours to every visit.",
+        description: "Limited-time banana-inspired creations.",
       },
     ],
     products: [
@@ -197,5 +202,20 @@ export default function Menu() {
         tags: ["Bestseller"]
       }
     ],
+  };
+  if (!category) {
+    return {
+      ...data,
+      initialCategory: "all",
+    };
+  }
+
+  const selectedCategory = data.categories.find(
+    c => c.category === category
+  );
+
+  return {
+    ...data,
+    initialCategory: selectedCategory ? selectedCategory.id : "all",
   };
 }

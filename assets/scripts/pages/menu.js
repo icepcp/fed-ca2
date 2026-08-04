@@ -2,8 +2,13 @@ import Library, { initLibraryEvents } from "../lib/libraryEngine.js";
 import Menu from "../lib/menu.js";
 
 export default function MenuPage() {
-  const menuData = Menu();
+  const params = new URLSearchParams(
+    window.location.hash.split("?")[1]
+  );
 
+  const category = params.get("category");
+
+  const menuData = Menu(category);
   return `
     <main class="bg-amber-50 min-h-screen flex flex-col gap-y-5">
 

@@ -265,7 +265,7 @@ export default function PromotionsPage() {
         <div class="grid sm:grid-cols-2 gap-5 md:gap-6">
 
           <div class="rounded-2xl p-6 flex items-center gap-4"
-          style="background-color: #C2A47F;">
+          style="background-color: #604630;">
             <div class="w-12 h-12 shrink-0 rounded-full bg-amber-100 flex items-center justify-center">
               <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#4A2F08" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 10v6M2 10l10-5 10 5-10 5z"/><path d="M6 12v5c0 1.66 2.69 3 6 3s6-1.34 6-3v-5"/></svg>
             </div>
@@ -276,7 +276,7 @@ export default function PromotionsPage() {
           </div>
 
           <div class="rounded-2xl p-6 flex items-center gap-4"
-          style="background-color: #C2A47F;">
+          style="background-color: #604630;">
             <div class="flex items-center gap-4">
               <div class="w-12 h-12 shrink-0 rounded-full flex items-center justify-center" style="background-color:#C99855;">
                 <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#FFFFFF" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2l2.9 6.26L21 9.27l-4.5 4.39L17.8 21 12 17.77 6.2 21l1.3-7.34L3 9.27l6.1-1.01L12 2z"/></svg>
@@ -289,7 +289,7 @@ export default function PromotionsPage() {
           </div>
 
           <div class="rounded-2xl p-6 flex items-center gap-4"
-          style="background-color: #C2A47F;">
+          style="background-color: #604630;">
             <div class="w-12 h-12 shrink-0 rounded-full bg-amber-100 flex items-center justify-center">
               <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#4A2F08" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="7" width="18" height="13" rx="2"/><path d="M8 7V5a2 2 0 0 1 2-2h4a2 2 0 0 1 2 2v2"/></svg>
             </div>
@@ -300,7 +300,7 @@ export default function PromotionsPage() {
           </div>
 
           <div class="rounded-2xl p-6 flex items-center gap-4"
-            style="background-color: #C2A47F;">
+            style="background-color: #604630;">
             <div class="flex items-center gap-4">
               <div class="w-12 h-12 shrink-0 rounded-full flex items-center justify-center" style="background-color:#C99855;">
                 <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#FFFFFF" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/></svg>
@@ -313,7 +313,7 @@ export default function PromotionsPage() {
           </div>
 
          <div class="rounded-2xl p-6 flex items-center gap-4 sm:col-span-2 justify-self-center w-full sm:w-1/2"
-          style="background-color: #C2A47F;">
+          style="background-color: #604630;">
             <div class="w-12 h-12 shrink-0 rounded-full bg-amber-100 flex items-center justify-center">
               <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#4A2F08" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M6 2 3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4z"/><path d="M3 6h18"/><path d="M16 10a4 4 0 0 1-8 0"/></svg>
             </div>

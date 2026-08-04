@@ -50,7 +50,7 @@ export default function HomePage() {
             Discover our signature banana cakes, freshly baked with ripe bananas and carefully selected ingredients. From timeless favourites to indulgent creations, every slice is made to bring out the naturally sweet and comforting flavour of banana.
            </p>
 
-           <a href="#/menu"
+           <a href="#/menu?category=cakes"
             class="inline-block mt-6 bg-yellow-600 text-white px-6 py-3 rounded-full font-semibold hover:bg-yellow-700 transition">
             View Menu
           </a>
