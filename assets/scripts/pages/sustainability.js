@@ -36,7 +36,7 @@ export default function SustainabilityPage() {
           are committed to responsible sourcing and environmentally friendly practices that help us care
           for both our customers and the planet.
         </p>
-      </section>
+      </header>
 
       <!-- Responsibly Sourced Bananas with Carousel Inside Card -->
       <section>

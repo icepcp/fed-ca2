@@ -37,7 +37,7 @@ export default function HomePage() {
       </section>
 
       <!-- Quick Categories -->
-      <section class="">
+      <section>
         <div class="category-card">
           <img src="/assets/images/menu/cakes/naked-banana.jpeg" alt="Banana Cakes">
           <div>
@@ -47,7 +47,7 @@ export default function HomePage() {
             </p>
             <a 
               href="#/menu?category=cakes"
-              class="inline-block mt-6 bg-yellow-600 text-white px-6 py-3 rounded-full font-semibold hover:bg-yellow-700 transition"
+              class="hero-btn button mt-3 transition"
             >
               View Menu
             </a>
@@ -61,8 +61,8 @@ export default function HomePage() {
               Refresh yourself with our signature banana drinks, blended with creamy, delicious ingredients for the perfect treat. From fruity favourites to rich and indulgent blends, there's a drink for every banana lover.
             </p>
             <a 
-              href="#/menu"
-              class="inline-block mt-6 bg-yellow-600 text-white px-6 py-3 rounded-full font-semibold hover:bg-yellow-700 transition"
+              href="#/menu?category=drinks"
+              class="hero-btn button mt-3 transition"
             >
               View Menu
             </a>
@@ -79,7 +79,7 @@ export default function HomePage() {
             </p>
             <a 
               href="#/promotions"
-              class="inline-block mt-6 bg-yellow-600 text-white px-6 py-3 rounded-full font-semibold hover:bg-yellow-700 transition"
+              class="hero-btn button mt-3 transition"
             >
               View Promos
             </a>

@@ -60,9 +60,9 @@ function renderProductCard(product) {
           class="w-full h-60 object-cover rounded-xl"
         >
         
-        <div class="flex justify-between items-start mt-3">
+        <div class="flex justify-between items-start mt-3 gap-x-3">
           <h3 class="font-bold text-amber-950 text-xl/8">${product.name}</h3>
-          ${product.price ? `<span class="text-amber-700 font-semibold">${Number(product.price).toFixed(2)}</span>` : ""}
+          ${product.price ? `<span class="text-amber-700 font-semibold text-lg">$${Number(product.price).toFixed(2)}</span>` : ""}
         </div>
 
         <p class="text-xs text-gray-600 mt-1">${product.description ? product.description : ""}</p>
@@ -171,7 +171,7 @@ export default function Library(menuData) {
             id="menu-search-input" 
             type="text" 
             value="${currentSearch}"
-            placeholder="Search cakes, drinks..." 
+            placeholder="Search..." 
             class="w-full pl-9 pr-4 py-2 text-sm rounded-full bg-white border border-black/15 focus:outline-none focus:ring-2 focus:ring-amber-400"
           />
           <img src="/assets/icons/search.svg" class="w-4 h-4 absolute left-3 top-3 text-amber-900/50 fill-current">

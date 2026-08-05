@@ -31,9 +31,49 @@ function Navigation() {
     .join("");
 
   return `
-    <nav aria-label="Main Navigation" class="nav-bg flex flex-col pt-4 px-4 shrink-0 min-h-screen bg-white outline outline-black/15 sticky top-0">
+    <nav class="sm:hidden p-5 flex justify-between items-center">
+      <div class="flex items-center gap-x-2 shrink-0">
+        <img src="assets/images/logo.jpg" alt="Banana Bliss Logo" class="w-10 h-10 rounded-full object-cover">
+        <div class="flex flex-col">
+            <span class="text-2xl font-bold">Banana Bliss Café </span>
+        </div>
+      </div>
+
+      <button id="mobile-menu-toggle" aria-label="Toggle menu" aria-expanded="false">
+        <img src="/assets/icons/navMenu.svg" alt="Banana Bliss Logo" class="w-10 h-10 rounded-full object-cover">
+      </button>
+    </nav>
+
+    <div 
+      id="mobile-menu" 
+      class="sm:hidden fixed inset-0 z-50 bg-black/50 hidden"
+      aria-hidden="true"
+    >
+      <div class="bg-white transform transition-transform duration-300 -translate-x-full" id="mobile-menu-content">
+        <nav class="sm:hidden p-5 flex justify-between items-center">
+          <div class="flex items-center gap-x-2 shrink-0">
+            <img src="assets/images/logo.jpg" alt="Banana Bliss Logo" class="w-10 h-10 rounded-full object-cover">
+            <div class="flex flex-col">
+                <span class="text-2xl font-bold">Menu</span>
+            </div>
+          </div>
+
+           <button id="mobile-menu-close" aria-label="Close menu">
+            <svg class="w-10 h-10" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"/>
+            </svg>
+          </button>
+        </nav>
+        
+        <ul class="p-4">
+          ${navItems}
+        </ul>
+      </div>
+    </div>
+    
+    <nav aria-label="Main Navigation" class="nav-bg hidden sm:flex flex-col pt-4 px-4 shrink-0 min-h-screen bg-white outline outline-black/15 sticky top-0">
       <div class="flex items-center gap-x-2 shrink-0 pr-10 mb-4">
-        <img src="assets/images/logo.jpg" alt="Banana Bliss Logo" class="w-20 h-20 rounded-full object-cover">
+        <img src="/assets/images/logo.jpg" alt="Banana Bliss Logo" class="w-20 h-20 rounded-full object-cover">
         <div class="flex flex-col">
             <span class="text-2xl font-bold">Banana Bliss</span>
             <span class="text-sm text-gray-500">Café & Dessert Bar</span>
@@ -45,6 +85,45 @@ function Navigation() {
       </ul>
     </nav>
   `;
+}
+
+function initMobileMenu() {
+  const menuToggle = document.getElementById("mobile-menu-toggle");
+  const menuClose = document.getElementById("mobile-menu-close");
+  const mobileMenu = document.getElementById("mobile-menu");
+  const mobileMenuContent = document.getElementById("mobile-menu-content");
+
+  function openMenu() {
+    mobileMenu.classList.remove("hidden");
+    setTimeout(() => {
+      mobileMenuContent.classList.remove("-translate-x-full");
+    }, 10);
+    menuToggle.setAttribute("aria-expanded", "true");
+    mobileMenu.setAttribute("aria-hidden", "false");
+  }
+
+  function closeMenu() {
+    mobileMenuContent.classList.add("-translate-x-full");
+    setTimeout(() => {
+      mobileMenu.classList.add("hidden");
+    }, 300); // Match transition duration
+    menuToggle.setAttribute("aria-expanded", "false");
+    mobileMenu.setAttribute("aria-hidden", "true");
+  }
+
+  menuToggle?.addEventListener("click", openMenu);
+  menuClose?.addEventListener("click", closeMenu);
+  
+  // Close when clicking overlay
+  mobileMenu?.addEventListener("click", (e) => {
+    if (e.target === mobileMenu) closeMenu();
+  });
+
+  // Close menu when clicking nav link
+  const mobileNavLinks = mobileMenu?.querySelectorAll("a");
+  mobileNavLinks?.forEach(link => {
+    link.addEventListener("click", closeMenu);
+  });
 }
 
 // 2. Helper to efficiently update Active Nav state without re-rendering DOM
@@ -72,11 +151,11 @@ function Footer() {
           Banana Bliss Café
         </h3>
 
-       <p class="text-stone-700 whitespace-nowrap">
+       <p class="text-stone-700">
           A cosy banana dessert café serving freshly baked treats and handcrafted drinks.
         </p>
 
-        <p class="text-stone-600 whitespace-nowrap">
+        <p class="text-stone-600">
           Singapore | +65 6123 4567 | hello@bananabliss.com
         </p>
 
@@ -157,7 +236,7 @@ const routes = {
 // 5. Build the persistent Layout Shell once
 function initLayout() {
   const app = document.getElementById("app");
-  app.className = "flex min-h-screen bg-amber-50";
+  app.className = "flex flex-col sm:flex-row min-h-screen bg-amber-50";
 
   // Build layout shell structure
   app.innerHTML = `
@@ -172,6 +251,8 @@ function initLayout() {
   // Render static shells once
   document.getElementById("nav-container").innerHTML = Navigation();
   document.getElementById("footer-container").innerHTML = Footer();
+
+  initMobileMenu();
 }
 
 // 6. Router function (Swaps page content and updates state smoothly)

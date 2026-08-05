@@ -1,25 +1,19 @@
 export default function MembershipPage() {
   return `
     <main class="bg-amber-50 min-h-screen flex flex-col gap-y-5">
-
       <header>
-        <h1 class="text-4xl sm:text-5xl md:text-6xl font-bold text-amber-900 leading-tight mt-4">
+        <h1 class="text-5xl font-bold text-amber-900">
           Join the Banana Bliss Family
         </h1>
-      </header>
-
-      <!-- Intro -->
-      <section>
-        <p class="text-base md:text-lg text-amber-800 leading-8 max-w-3xl mt-4">
+        <p class="text-lg text-amber-800 -mt-3 text-xl/6">
           Become a Banana Bliss member and enjoy exclusive rewards every time you visit. Our membership
           programme is designed to thank loyal customers with special discounts, birthday treats and exciting
           member-only benefits throughout the year.
-        </p>
-        <p class="text-base md:text-lg text-gray-700 leading-8 mt-4 max-w-3xl">
+          <br><br>
           Whether you're stopping by for your favourite banana cake or trying our latest seasonal drinks,
           being a member means every visit is even more rewarding.
         </p>
-      </section>
+      </header>
 
       <!-- Member Benefits -->
       <section>
