@@ -3,9 +3,29 @@ export default function SustainabilityPage() {
     <main class="bg-amber-50 min-h-screen flex flex-col gap-y-5">
 
       <header>
-        <h1 class="text-4xl sm:text-5xl md:text-6xl font-bold text-amber-900 leading-tight mt-4">
-          Fresh Ingredients. Better Choices.
-        </h1>
+        <div class="grid md:grid-cols-2 gap-8 md:gap-12 items-center">
+          <div>
+            <h1 class="text-4xl sm:text-5xl md:text-6xl font-bold text-amber-900 leading-tight mt-4">
+              Fresh Ingredients. Better Choices.
+            </h1>
+            <p class="text-base md:text-lg text-amber-800 leading-8 max-w-3xl mt-6">
+              At Banana Bliss, we believe that great desserts begin with great ingredients. Every cake, pastry
+              and drink is made using carefully selected produce to ensure freshness, flavour and quality. We
+              are committed to responsible sourcing and environmentally friendly practices that help us care
+              for both our customers and the planet.
+            </p>
+          </div>
+          <video
+            src="/assets/videos/sustainability.mov"
+            class="w-full shadow-md pointer-events-none"
+            autoplay
+            muted
+            loop
+            playsinline
+            disablepictureinpicture
+            disableremoteplayback
+          ></video>
+        </div>
       </header>
 
       <!-- Intro -->
@@ -38,6 +58,24 @@ export default function SustainabilityPage() {
         </div>
       </section>
 
+      <!-- Behind the Scenes -->
+      <section>
+        <h2 class="text-3xl md:text-5xl font-bold text-amber-900 mt-4 mb-4">From Farm to Café</h2>
+        <p class="text-base md:text-lg text-gray-700 leading-8 max-w-3xl mb-6">
+          A look at the sourcing, packaging and everyday choices behind every Banana Bliss dessert.
+        </p>
+
+        <div class="flex justify-center" style="perspective: 1400px;">
+          <div id="sustainabilityCarousel" class="relative cursor-grab active:cursor-grabbing" style="width: 340px; height: 240px; transform-style: preserve-3d;">
+            <img src="/assets/images/sustainability/sustainability.png" alt="Fresh bananas on the plant" class="carousel-slide absolute inset-0 w-full h-full object-cover shadow-md" draggable="false" />
+            <img src="/assets/images/sustainability/bananachopping.jpeg" alt="Banana chopping" class="carousel-slide absolute inset-0 w-full h-full object-cover shadow-md" draggable="false" />
+            <img src="/assets/images/sustainability/bananatree.png" alt="Fresh ingredients on display" class="carousel-slide absolute inset-0 w-full h-full object-cover shadow-md" draggable="false" />
+            <img src="/assets/images/sustainability/baking.jpg" alt="Baking" class="carousel-slide absolute inset-0 w-full h-full object-cover shadow-md" draggable="false" />
+          </div>
+        </div>
+
+        <p class="text-center text-sm text-gray-500 mt-4">Drag left or right to rotate</p>
+      </section>
       <!-- Quality Ingredients -->
       <section>
         <h2 class="text-3xl md:text-5xl font-bold text-amber-900 mt-4 mb-4">Quality Ingredients</h2>
@@ -212,4 +250,73 @@ export default function SustainabilityPage() {
 
     </main>
   `;
+}
+
+export function initSustainabilityPage() {
+  var track = document.getElementById("sustainabilityCarousel");
+  if (!track) return;
+
+  var slides = Array.prototype.slice.call(track.querySelectorAll(".carousel-slide"));
+  var count = slides.length;
+  var anglePerSlide = 360 / count;
+
+  var width = track.offsetWidth;
+  var radius = Math.round(width / (2 * Math.tan(Math.PI / count)));
+
+  slides.forEach(function (slide, i) {
+    slide.style.transform = "rotateY(" + (i * anglePerSlide) + "deg) translateZ(" + radius + "px)";
+    slide.style.backfaceVisibility = "hidden";
+  });
+
+  var currentRotation = 0;
+  var isDragging = false;
+  var startX = 0;
+  var startRotation = 0;
+
+  function applyRotation(rotation) {
+    track.style.transform = "rotateY(" + rotation + "deg)";
+
+    slides.forEach(function (slide, i) {
+      var effectiveAngle = ((i * anglePerSlide + rotation) % 360 + 360) % 360;
+      if (effectiveAngle > 180) effectiveAngle -= 360;
+      var closeness = 1 - Math.min(Math.abs(effectiveAngle) / (anglePerSlide / 2), 1);
+      var opacity = 0.35 + closeness * 0.65;
+      slide.style.opacity = opacity.toFixed(2);
+    });
+  }
+
+  function pointerDown(e) {
+    isDragging = true;
+    startX = e.clientX;
+    startRotation = currentRotation;
+    track.setPointerCapture && track.setPointerCapture(e.pointerId);
+  }
+
+  function pointerMove(e) {
+    if (!isDragging) return;
+    var deltaX = e.clientX - startX;
+    var deltaRotation = deltaX * 0.4;
+    currentRotation = startRotation + deltaRotation;
+    applyRotation(currentRotation);
+  }
+
+  function pointerUp() {
+    if (!isDragging) return;
+    isDragging = false;
+
+    var nearestSlideRotation = Math.round(currentRotation / anglePerSlide) * anglePerSlide;
+    currentRotation = nearestSlideRotation;
+    track.style.transition = "transform 0.4s ease";
+    applyRotation(currentRotation);
+
+    setTimeout(function () {
+      track.style.transition = "";
+    }, 400);
+  }
+
+  track.addEventListener("pointerdown", pointerDown);
+  window.addEventListener("pointermove", pointerMove);
+  window.addEventListener("pointerup", pointerUp);
+
+  applyRotation(0);
 }

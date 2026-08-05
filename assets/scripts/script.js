@@ -3,7 +3,7 @@ import AboutPage from "./pages/about.js";
 import MenuPage, { initMenuPage } from "./pages/menu.js";
 import MerchandisePage from "./pages/merchandise.js";
 import MembershipPage from "./pages/membership.js";
-import SustainabilityPage from "./pages/sustainability.js";
+import SustainabilityPage, { initSustainabilityPage } from "./pages/sustainability.js";
 import PromotionsPage from "./pages/promotions.js";
 import ReviewsPage from "./pages/reviews.js";
 import LocationsPage, { initLocationsPage } from "./pages/locations.js";
@@ -135,6 +135,7 @@ const routes = {
     component: SustainabilityPage,
     name: "Sustainability",
     icon: "/assets/icons/reviews.svg",
+    init: initSustainabilityPage,
   },
   "/events": {
     component: EventsPage,
