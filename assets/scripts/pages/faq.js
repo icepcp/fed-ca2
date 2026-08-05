@@ -255,7 +255,7 @@ export default function FaqPage() {
 </section>
 
      <!-- Still Have Questions -->
-      <section class="bg-white rounded-2xl shadow-md p-8 md:p-12 text-center">
+      <section class="bg-white rounded-2xl shadow-md p-8 md:p-12 text-center mt-6">
         <h2 class="text-3xl md:text-5xl font-bold text-amber-900 mt-4 mb-4">We're Happy to Help</h2>
         <p class="text-base md:text-lg text-gray-700 leading-8 max-w-2xl mx-auto mb-8">
           If you can't find the answer you're looking for, feel free to visit any Banana Bliss outlet or
