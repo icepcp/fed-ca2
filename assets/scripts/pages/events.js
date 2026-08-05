@@ -11,9 +11,9 @@ export default function EventsPage() {
       <!-- Intro -->
       <section>
         <p class="text-base md:text-lg text-amber-800 leading-8 max-w-3xl mt-4">
-          At Banana Bliss, we believe that great food brings people together. Throughout the year, we
-          organise fun workshops, seasonal celebrations and community events where customers can learn new
-          skills, meet fellow dessert lovers and enjoy memorable experiences in our café.
+          Create unforgettable moments with Banana Bliss.
+          Join our baking workshops, seasonal celebrations,
+          and community events designed for dessert lovers.
         </p>
         <p class="text-base md:text-lg text-gray-700 leading-8 max-w-3xl mt-4">
           Whether you're decorating your first banana cake or celebrating a festive occasion with family and
@@ -21,13 +21,20 @@ export default function EventsPage() {
         </p>
       </section>
 
+         <!-- Decorative Divider -->
+        <div class="flex items-center gap-4 my-8">
+        <div class="flex-1 border-t border-[#CBB799]"></div>
+        <span class="text-[#CBB799] text-2xl">❦</span>
+        <div class="flex-1 border-t border-[#CBB799]"></div>
+        </div>
+
       <!-- Featured Event Banner -->
-      <section class="rounded-2xl p-8 md:p-10" style="background-color:#A9752E;">
-        <h2 class="text-2xl md:text-4xl font-bold mb-2" style="color:#FFFFFF;">Banana Cake Decorating Workshop</h2>
+      <section class="rounded-2xl p-8 md:p-10" style="background-color:#604630;">
+        <h2 class="text-2xl md:text-4xl font-bold mb-2" style="color:#F9EFBD;">Banana Cake Decorating Workshop</h2>
         <p class="text-lg font-semibold mb-4" style="color:#FFEFD1;">Learn • Create • Take Home Your Masterpiece</p>
         <div class="flex flex-wrap gap-x-6 gap-y-2 text-sm md:text-base" style="color:#FFEFD1;">
-          <span>📅 16 August 2026</span>
-          <span>🕙 10:00 AM – 12:00 PM</span>
+          <span> 16 August 2026   </span><span>|</span>
+          <span> 10:00 AM – 12:00 PM   </span><span>|</span>
           <span>Limited to 20 participants</span>
         </div>
         <p class="text-sm font-semibold mt-4" style="color:#FFFFFF;">Register in-store today!</p>
@@ -37,10 +44,10 @@ export default function EventsPage() {
       <section>
         <h2 class="text-3xl md:text-5xl font-bold text-amber-900 mt-4 mb-6">Workshops</h2>
 
-        <div class="grid md:grid-cols-2 gap-5 md:gap-6">
+        <div class="grid md:grid-cols-2 gap-5 md:gap-6 ">
 
-          <div class="bg-white rounded-2xl shadow-md p-6 md:p-7">
-            <div class="w-11 h-11 rounded-full flex items-center justify-center mb-4 bg-amber-400">
+          <div class="bg-[#F9EFBD] rounded-2xl shadow-md p-6 md:p-7 hover:-translate-y-2 hover:shadow-xl transition duration-300"">
+            <div class="w-11 h-11 rounded-full flex items-center justify-center mb-4 bg-[#D2A941]">
               <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#4A2F08" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6L9 17l-5-5"/></svg>
             </div>
             <h3 class="text-xl font-bold text-amber-900 mb-2">Banana Cake Decorating Workshop</h3>
@@ -57,7 +64,7 @@ export default function EventsPage() {
             </ul>
           </div>
 
-          <div class="bg-white rounded-2xl shadow-md p-6 md:p-7">
+          <div class="bg-[#F9EFBD] rounded-2xl shadow-md p-6 md:p-7 hover:-translate-y-2 hover:shadow-xl transition duration-300"">
             <div class="w-11 h-11 rounded-full flex items-center justify-center mb-4" style="background-color:#59571B;">
               <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#FDF6DC" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 10v6M2 10l10-5 10 5-10 5z"/><path d="M6 12v5c0 1.66 2.69 3 6 3s6-1.34 6-3v-5"/></svg>
             </div>
@@ -78,14 +85,21 @@ export default function EventsPage() {
         </div>
       </section>
 
+      <!-- Decorative Divider -->
+        <div class="flex items-center gap-4 my-8">
+        <div class="flex-1 border-t border-[#CBB799]"></div>
+        <span class="text-[#CBB799] text-2xl">❦</span>
+        <div class="flex-1 border-t border-[#CBB799]"></div>
+        </div>
+
       <!-- Seasonal Café Events -->
       <section>
         <h2 class="text-3xl md:text-5xl font-bold text-amber-900 mt-4 mb-6">Seasonal Café Events</h2>
 
         <div class="grid md:grid-cols-3 gap-5 md:gap-6">
 
-          <div class="bg-white rounded-2xl shadow-md p-6 md:p-7">
-            <span class="inline-block text-xs font-semibold bg-amber-400 text-amber-950 rounded-full px-3 py-1 mb-3">
+          <div class="bg-[#F9EFBD] rounded-2xl shadow-md p-6 md:p-7">
+            <span class="inline-block text-xs font-semibold bg-[#D2A941] text-amber-950 rounded-full px-3 py-1 mb-3">
               1 Jun – 31 Jul
             </span>
             <h3 class="text-xl font-bold text-amber-900 mb-2">Summer Tropical Dessert Festival</h3>
@@ -95,8 +109,8 @@ export default function EventsPage() {
             </p>
           </div>
 
-          <div class="bg-white rounded-2xl shadow-md p-6 md:p-7">
-            <span class="inline-block text-xs font-semibold bg-amber-400 text-amber-950 rounded-full px-3 py-1 mb-3">
+          <div class="bg-[#F9EFBD] rounded-2xl shadow-md p-6 md:p-7">
+            <span class="inline-block text-xs font-semibold bg-[#D2A941] text-amber-950 rounded-full px-3 py-1 mb-3">
               24 – 31 Oct
             </span>
             <h3 class="text-xl font-bold text-amber-900 mb-2">Halloween Dessert Week</h3>
@@ -106,8 +120,8 @@ export default function EventsPage() {
             </p>
           </div>
 
-          <div class="bg-white rounded-2xl shadow-md p-6 md:p-7">
-            <span class="inline-block text-xs font-semibold bg-amber-400 text-amber-950 rounded-full px-3 py-1 mb-3">
+          <div class="bg-[#F9EFBD] rounded-2xl shadow-md p-6 md:p-7">
+            <span class="inline-block text-xs font-semibold bg-[#D2A941] text-amber-950 rounded-full px-3 py-1 mb-3">
               1 – 31 Dec
             </span>
             <h3 class="text-xl font-bold text-amber-900 mb-2">Christmas Banana Wonderland</h3>
@@ -120,14 +134,16 @@ export default function EventsPage() {
         </div>
       </section>
 
+      
+
       <!-- Community Activities -->
       <section>
         <h2 class="text-3xl md:text-5xl font-bold text-amber-900 mt-4 mb-6">Community Activities</h2>
 
         <div class="grid md:grid-cols-3 gap-5 md:gap-6">
 
-          <div class="bg-white rounded-2xl shadow-md p-6 md:p-7">
-            <div class="w-11 h-11 rounded-full flex items-center justify-center mb-4 bg-amber-400">
+          <div class="bg-[#F9EFBD] rounded-2xl shadow-md p-6 md:p-7">
+            <div class="w-11 h-11 rounded-full flex items-center justify-center mb-4 bg-[#D2A941]">
               <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#4A2F08" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 8h1a4 4 0 0 1 0 8h-1"/><path d="M2 8h16v9a4 4 0 0 1-4 4H6a4 4 0 0 1-4-4z"/><path d="M6 1v3M10 1v3M14 1v3"/></svg>
             </div>
             <h3 class="text-lg font-bold text-amber-900 mb-2">Coffee & Cake Meet-Up</h3>
@@ -137,7 +153,7 @@ export default function EventsPage() {
             </p>
           </div>
 
-          <div class="bg-white rounded-2xl shadow-md p-6 md:p-7">
+          <div class="bg-[#F9EFBD] rounded-2xl shadow-md p-6 md:p-7">
             <div class="w-11 h-11 rounded-full flex items-center justify-center mb-4" style="background-color:#59571B;">
               <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#FDF6DC" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/></svg>
             </div>
@@ -149,8 +165,8 @@ export default function EventsPage() {
             </p>
           </div>
 
-          <div class="bg-white rounded-2xl shadow-md p-6 md:p-7">
-            <div class="w-11 h-11 rounded-full flex items-center justify-center mb-4 bg-amber-400">
+          <div class="bg-[#F9EFBD] rounded-2xl shadow-md p-6 md:p-7">
+            <div class="w-11 h-11 rounded-full flex items-center justify-center mb-4 bg-[#D2A941]">
               <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#4A2F08" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 1 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/></svg>
             </div>
             <h3 class="text-lg font-bold text-amber-900 mb-2">Charity Bake Sale</h3>
@@ -163,24 +179,31 @@ export default function EventsPage() {
         </div>
       </section>
 
+      <!-- Decorative Divider -->
+        <div class="flex items-center gap-4 my-8">
+        <div class="flex-1 border-t border-[#CBB799]"></div>
+        <span class="text-[#CBB799] text-2xl">❦</span>
+        <div class="flex-1 border-t border-[#CBB799]"></div>
+        </div>
+
       <!-- Why Join Our Events -->
       <section class="rounded-2xl p-8 md:p-12" style="background-color:#59571B;">
-        <h2 class="text-3xl md:text-5xl font-bold mb-6" style="color:#FDF6DC;">Why Join Our Events?</h2>
+        <h2 class="text-3xl md:text-5xl font-bold mb-6" style="color:#FFFFFB;">Why Join Our Events?</h2>
 
         <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-4">
-          <p class="leading-7 font-medium" style="color:#E7E4CC;">• Learn new baking and decorating skills</p>
-          <p class="leading-7 font-medium" style="color:#E7E4CC;">• Meet our experienced pastry chefs</p>
-          <p class="leading-7 font-medium" style="color:#E7E4CC;">• Take home your handmade creations</p>
-          <p class="leading-7 font-medium" style="color:#E7E4CC;">• Enjoy quality time with family and friends</p>
-          <p class="leading-7 font-medium" style="color:#E7E4CC;">• Be part of the Banana Bliss community</p>
-          <p class="leading-7 font-medium" style="color:#E7E4CC;">• Capture fun memories in our cosy café</p>
+          <p class="leading-7 font-medium" style="color:#FBF7E7;">• Learn new baking and decorating skills</p>
+          <p class="leading-7 font-medium" style="color:#FBF7E7;">• Meet our experienced pastry chefs</p>
+          <p class="leading-7 font-medium" style="color:#FBF7E7;">• Take home your handmade creations</p>
+          <p class="leading-7 font-medium" style="color:#FBF7E7;">• Enjoy quality time with family and friends</p>
+          <p class="leading-7 font-medium" style="color:#FBF7E7;">• Be part of the Banana Bliss community</p>
+          <p class="leading-7 font-medium" style="color:#FBF7E7;">• Capture fun memories in our cosy café</p>
         </div>
       </section>
 
       <!-- Registration Information -->
-      <section class="bg-white rounded-2xl shadow-md p-8 md:p-12">
+      <section class="bg-[#F9EFBD] rounded-2xl shadow-md p-8 md:p-12">
         <h2 class="text-3xl md:text-5xl font-bold text-amber-900 mt-4 mb-6">Registration Information</h2>
-        <ul class="text-gray-700 leading-8 space-y-1 max-w-2xl">
+        <ul class="text-lg text-gray-600 leading-9 space-y-2 max-w-4xl">
           <li>• Registration can be completed at any Banana Bliss outlet.</li>
           <li>• Workshop spaces are limited and available on a first-come, first-served basis.</li>
           <li>• Payment is required to confirm your booking.</li>
@@ -190,13 +213,13 @@ export default function EventsPage() {
 
       <!-- CTA -->
       <section class="flex flex-wrap gap-4 justify-center pb-6">
-        <a href="#/locations" class="inline-flex items-center justify-center rounded-full font-semibold px-8 py-3 bg-white text-amber-900 border-2 border-amber-200 hover:-translate-y-0.5 transition">
+        <a href="#/locations" class="inline-flex items-center justify-center rounded-full font-semibold px-8 py-3 bg-[#F0DC92] text-amber-900 border-2 border-amber-200 hover:-translate-y-0.5 transition">
           View Locations
         </a>
       </section>
 
       <footer class="pt-4 pb-10 border-t border-amber-200 text-center">
-        <p class="font-semibold text-lg text-[#59571B]">Made fresh, one banana at a time.</p>
+        <p class="font-semibold text-lg text-[#EAB749]">Made fresh, one banana at a time.</p>
       </footer>
 
     </main>

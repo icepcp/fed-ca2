@@ -278,7 +278,8 @@ export default function CustomerReviews() {
         </p>
 
         <form
-          onsubmit="event.preventDefault(); window.handleReviewSubmit && window.handleReviewSubmit(event);"
+          id="reviewForm"
+          onsubmit="event.preventDefault(); window.handleReviewSubmit && window.handleReviewSubmit(event); this.reset();"
           class="max-w-2xl mx-auto space-y-6"
         >
 
@@ -301,15 +302,55 @@ export default function CustomerReviews() {
               <label for="reviewFavourite" class="block text-sm font-semibold text-amber-900 mb-1">
                 Favourite Item
               </label>
-              <input
-                type="text"
+              <select
                 id="reviewFavourite"
                 name="reviewFavourite"
-                placeholder="e.g. Original Banana Cake"
-                class="w-full rounded-lg border border-amber-200 px-4 py-2.5 text-gray-700 placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-amber-400 focus:border-amber-400"
-              />
+                class="w-full rounded-lg border border-amber-200 px-4 py-2.5 text-gray-700 bg-white focus:outline-none focus:ring-2 focus:ring-amber-400 focus:border-amber-400"
+              >
+                <option value="">Select an item</option>
+
+                <optgroup label="Signature Cakes">
+                  <option value="naked-banana-cake">Naked Banana Cake</option>
+                  <option value="chocolate-banana-cake">Chocolate Banana Cake</option>
+                  <option value="caramel-banana-cake">Caramel Banana Cake</option>
+                  <option value="walnut-banana-loaf">Walnut Banana Loaf</option>
+                </optgroup>
+
+                <optgroup label="Coffee & Lattes">
+                  <option value="iced-banana-latte">Iced Banana Latte</option>
+                  <option value="signature-latte">Signature Latte</option>
+                  <option value="cappuccino">Cappuccino</option>
+                </optgroup>
+
+                <optgroup label="Smoothies">
+                  <option value="classic-banana-smoothie">Classic Banana Smoothie</option>
+                  <option value="strawberry-banana-smoothie">Strawberry Banana Smoothie</option>
+                  <option value="tropical-banana-smoothie">Tropical Banana Smoothie</option>
+                </optgroup>
+
+                <optgroup label="Milkshakes">
+                  <option value="banana-milkshake">Banana Milkshake</option>
+                  <option value="chocolate-banana-milkshake">Chocolate Banana Milkshake</option>
+                </optgroup>
+
+                <optgroup label="Freshly Baked Pastries">
+                  <option value="banana-cupcake">Banana Cupcake</option>
+                  <option value="sweet-bliss-cookies">Sweet Bliss Cookies</option>
+                </optgroup>
+
+                <optgroup label="Sweet Desserts">
+                  <option value="banana-waffles">Banana Waffles</option>
+                  <option value="banana-pudding">Banana Pudding</option>
+                </optgroup>
+
+                <optgroup label="Seasonal Specials">
+                  <option value="banana-biscoff-cake">Banana Biscoff Cake</option>
+                  <option value="summer-banana-mango-smoothie">Summer Banana Mango Smoothie</option>
+                </optgroup>
+
+                <option value="other">Other</option>
+              </select>
             </div>
-          </div>
 
           <div>
             <span class="block text-sm font-semibold text-amber-900 mb-2">
@@ -322,22 +363,22 @@ export default function CustomerReviews() {
               </label>
 
               <input type="radio" id="star4" name="rating" value="4" class="peer/star4 hidden" />
-              <label for="star4" class="cursor-pointer text-gray-300 peer-checked/star4:text-amber-500 hover:text-amber-400">
+              <label for="star4" class="cursor-pointer text-gray-300 peer-checked/star5:text-amber-500 peer-checked/star4:text-amber-500 hover:text-amber-400">
                 <svg width="28" height="28" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l2.9 6.26L21 9.27l-4.5 4.39L17.8 21 12 17.77 6.2 21l1.3-7.34L3 9.27l6.1-1.01L12 2z"/></svg>
               </label>
 
               <input type="radio" id="star3" name="rating" value="3" class="peer/star3 hidden" />
-              <label for="star3" class="cursor-pointer text-gray-300 peer-checked/star3:text-amber-500 hover:text-amber-400">
+              <label for="star3" class="cursor-pointer text-gray-300 peer-checked/star5:text-amber-500 peer-checked/star4:text-amber-500 peer-checked/star3:text-amber-500 hover:text-amber-400">
                 <svg width="28" height="28" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l2.9 6.26L21 9.27l-4.5 4.39L17.8 21 12 17.77 6.2 21l1.3-7.34L3 9.27l6.1-1.01L12 2z"/></svg>
               </label>
 
               <input type="radio" id="star2" name="rating" value="2" class="peer/star2 hidden" />
-              <label for="star2" class="cursor-pointer text-gray-300 peer-checked/star2:text-amber-500 hover:text-amber-400">
+              <label for="star2" class="cursor-pointer text-gray-300 peer-checked/star5:text-amber-500 peer-checked/star4:text-amber-500 peer-checked/star3:text-amber-500 peer-checked/star2:text-amber-500 hover:text-amber-400">
                 <svg width="28" height="28" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l2.9 6.26L21 9.27l-4.5 4.39L17.8 21 12 17.77 6.2 21l1.3-7.34L3 9.27l6.1-1.01L12 2z"/></svg>
               </label>
 
               <input type="radio" id="star1" name="rating" value="1" class="peer/star1 hidden" />
-              <label for="star1" class="cursor-pointer text-gray-300 peer-checked/star1:text-amber-500 hover:text-amber-400">
+              <label for="star1" class="cursor-pointer text-gray-300 peer-checked/star5:text-amber-500 peer-checked/star4:text-amber-500 peer-checked/star3:text-amber-500 peer-checked/star2:text-amber-500 peer-checked/star1:text-amber-500 hover:text-amber-400">
                 <svg width="28" height="28" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l2.9 6.26L21 9.27l-4.5 4.39L17.8 21 12 17.77 6.2 21l1.3-7.34L3 9.27l6.1-1.01L12 2z"/></svg>
               </label>
             </fieldset>

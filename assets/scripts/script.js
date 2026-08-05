@@ -9,7 +9,7 @@ import ReviewsPage from "./pages/reviews.js";
 import LocationsPage, { initLocationsPage } from "./pages/locations.js";
 import EventsPage from "./pages/events.js";
 import FaqPage from "./pages/faq.js";
-import ContactUsPage from "./pages/contactUs.js";
+import ContactUsPage from "./pages/contactus.js";
 
 // 1. Navigation Component (Renders structural HTML)
 function Navigation() {
@@ -80,9 +80,6 @@ function Footer() {
           Singapore | +65 6123 4567 | hello@bananabliss.com
         </p>
 
-        <p class="font-medium text-stone-700">
-          Class: DCS/FT/1A/06
-        </p>
       </div>
     </footer>
   `;
@@ -178,7 +175,8 @@ function initLayout() {
 
 // 6. Router function (Swaps page content and updates state smoothly)
 function router() {
-  const path = window.location.hash.replace("#", "") || "/";
+  const hash = window.location.hash.slice(1) || "/";
+  const path = hash.split("?")[0];
 
   const route = routes[path];
   const pageFunction = route
