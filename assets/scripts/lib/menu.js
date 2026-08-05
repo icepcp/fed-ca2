@@ -55,6 +55,7 @@ export default function Menu() {
         categoryId: "signature-cakes",
         price: 8.9,
         image: "/assets/images/menu/cakes/caramel.jpeg",
+        tags: ["Chef Recommended"]
       },
       {
         id: "cake-04",
@@ -73,7 +74,7 @@ export default function Menu() {
         categoryId: "drinks",
         price: 6.5,
         image: "/assets/images/menu/drinks/banana-latte.jpeg",
-        tags: ["Bestseller"]
+        tags: ["Bestseller", "Chef Recommended"]
       },
       {
         id: "drink-02",
@@ -174,7 +175,7 @@ export default function Menu() {
         categoryId: "desserts",
         price: 3.8,
         image: "/assets/images/menu/desserts/pudding.jpeg",
-        tags: ["Bestseller"]
+        tags: ["Bestseller", "Chef Recommended"]
       },
       {
         id: "seasonal-01",
