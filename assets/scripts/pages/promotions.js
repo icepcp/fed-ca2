@@ -1,22 +1,17 @@
 export default function PromotionsPage() {
   return `
     <main class="bg-amber-50 min-h-screen flex flex-col gap-y-5">
-
       <header>
-        <h1 class="text-4xl sm:text-5xl md:text-6xl font-bold text-amber-900 leading-tight mt-4">
+        <h1 class="text-5xl font-bold text-amber-900">
           Sweet Deals, Bigger Smiles
         </h1>
-      </header>
-
-      <!-- Intro -->
-      <section>
-        <p class="text-base md:text-lg text-amber-800 leading-8 max-w-3xl mt-4">
+        <p class="text-lg text-amber-800 -mt-3 text-xl/6">
           Treat yourself to delicious savings with our latest promotions! Whether you're a student looking for
           an affordable café break, sharing desserts with friends, or enjoying exclusive member rewards, there's
           always a reason to visit Banana Bliss.
         </p>
-      </section>
-
+      </header>
+      
       <!-- Student Specials -->
       <section>
         <h2 class="text-3xl md:text-5xl font-bold text-amber-900 mt-4 mb-6">For Students</h2>

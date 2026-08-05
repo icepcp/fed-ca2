@@ -3,14 +3,14 @@ export default function AboutPage() {
     <main class="bg-amber-50 min-h-screen flex flex-col gap-y-5">
 
       <header>
-        <h1 class="text-4xl sm:text-5xl md:text-6xl font-bold text-amber-900 leading-tight mt-4">
-          How Banana Bliss Began
+        <h1 class="text-5xl font-bold text-amber-900">
+          About Us
         </h1>
       </header>
 
       <!-- Hero -->
       <section>
-        <div class="grid md:grid-cols-3 gap-6 md:gap-8 mt-4">
+        <div class="grid md:grid-cols-3 gap-6 md:gap-8">
           <p class="md:col-span-2 text-base md:text-lg text-amber-800 leading-8">
             Banana Bliss started with a simple idea — to turn one of the world's most loved fruits into
             delicious desserts that bring people together. Inspired by homemade banana cakes and the comforting

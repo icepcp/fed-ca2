@@ -59,6 +59,7 @@ p {
     border-radius: 25px;
     text-decoration: none;
     font-weight: bold;
+    align-self: flex-start;
 }
 
 .hero-btn {
@@ -134,4 +135,9 @@ p {
     height: auto;
     border-radius: 1rem;
     transform: translateX(30px);
+}
+
+.category-card div {
+    display: flex;
+    flex-direction: column;
 }

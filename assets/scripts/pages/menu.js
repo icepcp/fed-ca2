@@ -24,21 +24,15 @@ export default function MenuPage() {
 
       ${Library(menuData)}
 
-      <!-- Pairings -->
-        <section class="bg-yellow-100 rounded-2xl p-10 text-center">
-
-          <h2 class="text-3xl font-bold text-amber-900 mb-4">
-            ☕ Perfect Pairings
-          </h2>
-
-          <p class="text-gray-700 max-w-3xl mx-auto leading-8">
-            Our handcrafted drinks are specially designed to complement Banana
-            Bliss desserts. Whether you prefer a refreshing smoothie with our
-            signature cakes or a rich coffee alongside a warm pastry, every
-            pairing is carefully selected to create the perfect café experience.
-          </p>
-
-        </section>
+      <h2 class="text-3xl font-bold text-amber-900">
+        ☕ Perfect Pairings
+      </h2>
+      <p class="text-gray-700 leading-8">
+        Our handcrafted drinks are specially designed to complement Banana
+        Bliss desserts. Whether you prefer a refreshing smoothie with our
+        signature cakes or a rich coffee alongside a warm pastry, every
+        pairing is carefully selected to create the perfect café experience.
+      </p>
 
     </main>
   `;
