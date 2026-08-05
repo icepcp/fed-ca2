@@ -1,6 +1,6 @@
 export default function FaqPage() {
   return `
-<header class="relative h-96 rounded-2xl overflow-hidden flex items-center justify-center">
+<header class="relative h-120 rounded-2xl overflow-hidden flex items-center justify-center">
 
   <!-- Background Video -->
   <video
@@ -10,7 +10,7 @@ export default function FaqPage() {
     playsinline
     class="absolute inset-0 w-full h-full object-cover z-0"
   >
-    <source src="assets/background.mp4" type="video/mp4">
+    <source src="assets/backgroundfaq.mp4" type="video/mp4">
   </video>
 
   <!-- Dark Overlay -->
@@ -18,20 +18,30 @@ export default function FaqPage() {
 
  
 
-  <div class="relative z-20">
-
+<div class="absolute inset-0 flex items-end justify-start p-8">
+  <div>
     <h1 
-      class="text-4xl sm:text-5xl md:text-6xl font-bold text-center leading-tight"
+      class="text-5xl md:text-7xl font-extrabold leading-tight"
       style="color:#FFFDD0;"
     >
       Frequently Asked Questions
     </h1>
 
-    <p class="text-base md:text-lg text-white leading-8 max-w-3xl mt-6">
-      Have a question about Banana Bliss? Find answers to some of our most commonly asked questions
-      below. If you need further assistance, our friendly staff will be happy to help at any of our
-      café outlets.
-    </p>
+    <p 
+  class="max-w-3xl mt-6"
+  style="
+    color:white;
+    font-size:20px;
+    line-height:2;
+    font-weight:500;
+  "
+>
+  Have a question about Banana Bliss? Find answers to some of our most commonly asked questions
+  below. If you need further assistance, our friendly staff will be happy to help at any of our
+  café outlets.
+</p>
+  </div>
+</div>
 
 </header>
 
@@ -153,111 +163,96 @@ export default function FaqPage() {
       </section>
 
       <!-- Promotions & Membership -->
-      <section>
-        <h2 class="text-2xl md:text-3xl font-bold text-amber-900 mt-4 mb-6">Promotions & Membership</h2>
+<section class="mt-10">
 
-        <div class="bg-white rounded-2xl shadow-md divide-y divide-amber-100 overflow-hidden">
+  <!-- Section Title -->
+  <div class="mb-6">
+    <h2 class="text-3xl md:text-4xl font-extrabold text-amber-900">
+      Promotions & Membership
+    </h2>
+    <p class="text-amber-700 mt-2 text-lg">
+      Enjoy exclusive deals, rewards, and special offers as a Banana Bliss member.
+    </p>
+  </div>
 
-          <div>
-            <button
-              type="button"
-              onclick="this.nextElementSibling.classList.toggle('hidden'); this.querySelector('.faq-icon').classList.toggle('rotate-180')"
-              class="w-full flex items-center justify-between gap-4 text-left px-6 py-5 md:px-7"
-            >
-              <span class="font-bold text-amber-900">Can I use more than one promotion at the same time?</span>
-              <svg class="faq-icon shrink-0 transition-transform duration-200" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#774D0C" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M6 9l6 6 6-6"/></svg>
-            </button>
-            <div class="hidden px-6 md:px-7 pb-5 text-gray-700 leading-7">
-              Unless otherwise stated, promotions cannot be combined. The best available promotion will be
-              applied to your purchase.
-            </div>
-          </div>
 
-          <div>
-            <button
-              type="button"
-              onclick="this.nextElementSibling.classList.toggle('hidden'); this.querySelector('.faq-icon').classList.toggle('rotate-180')"
-              class="w-full flex items-center justify-between gap-4 text-left px-6 py-5 md:px-7"
-            >
-              <span class="font-bold text-amber-900">How do I become a Banana Bliss member?</span>
-              <svg class="faq-icon shrink-0 transition-transform duration-200" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#774D0C" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M6 9l6 6 6-6"/></svg>
-            </button>
-            <div class="hidden px-6 md:px-7 pb-5 text-gray-700 leading-7">
-              Membership registration is available in person at any Banana Bliss outlet. Simply speak to one
-              of our staff members to sign up and start enjoying exclusive rewards.
-            </div>
-          </div>
+  <!-- FAQ Card -->
+  <div class="bg-white rounded-3xl shadow-lg overflow-hidden border border-amber-100">
 
-          <div>
-            <button
-              type="button"
-              onclick="this.nextElementSibling.classList.toggle('hidden'); this.querySelector('.faq-icon').classList.toggle('rotate-180')"
-              class="w-full flex items-center justify-between gap-4 text-left px-6 py-5 md:px-7"
-            >
-              <span class="font-bold text-amber-900">Do promotions change regularly?</span>
-              <svg class="faq-icon shrink-0 transition-transform duration-200" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#774D0C" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M6 9l6 6 6-6"/></svg>
-            </button>
-            <div class="hidden px-6 md:px-7 pb-5 text-gray-700 leading-7">
-              Yes! We introduce new seasonal offers, student deals and member-exclusive promotions throughout
-              the year. Follow our social media pages or visit our cafés to stay updated.
-            </div>
-          </div>
+    <div class="hover:bg-amber-50 transition">
+      <button
+        type="button"
+        onclick="this.nextElementSibling.classList.toggle('hidden'); this.querySelector('.faq-icon').classList.toggle('rotate-180')"
+        class="w-full flex items-center justify-between gap-4 text-left px-7 py-6"
+      >
+        <span class="font-bold text-lg text-amber-900">
+          Can I use more than one promotion at the same time?
+        </span>
 
-        </div>
-      </section>
+        <svg class="faq-icon shrink-0 transition-transform duration-200"
+          width="22" height="22" viewBox="0 0 24 24"
+          fill="none" stroke="#774D0C"
+          stroke-width="2.5">
+          <path d="M6 9l6 6 6-6"/>
+        </svg>
+      </button>
 
-      <!-- Menu & Events -->
-      <section>
-        <h2 class="text-2xl md:text-3xl font-bold text-amber-900 mt-4 mb-6">Menu & Events</h2>
+      <div class="hidden px-7 pb-6 text-gray-700 leading-7">
+        Unless otherwise stated, promotions cannot be combined. The best available promotion will be applied to your purchase.
+      </div>
+    </div>
 
-        <div class="bg-white rounded-2xl shadow-md divide-y divide-amber-100 overflow-hidden">
 
-          <div>
-            <button
-              type="button"
-              onclick="this.nextElementSibling.classList.toggle('hidden'); this.querySelector('.faq-icon').classList.toggle('rotate-180')"
-              class="w-full flex items-center justify-between gap-4 text-left px-6 py-5 md:px-7"
-            >
-              <span class="font-bold text-amber-900">Are seasonal menu items available all year?</span>
-              <svg class="faq-icon shrink-0 transition-transform duration-200" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#774D0C" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M6 9l6 6 6-6"/></svg>
-            </button>
-            <div class="hidden px-6 md:px-7 pb-5 text-gray-700 leading-7">
-              No. Seasonal desserts and drinks are available for a limited time only while supplies last.
-            </div>
-          </div>
+    <div class="border-t border-amber-100 hover:bg-amber-50 transition">
+      <button
+        type="button"
+        onclick="this.nextElementSibling.classList.toggle('hidden'); this.querySelector('.faq-icon').classList.toggle('rotate-180')"
+        class="w-full flex items-center justify-between gap-4 text-left px-7 py-6"
+      >
+        <span class="font-bold text-lg text-amber-900">
+          How do I become a Banana Bliss member?
+        </span>
 
-          <div>
-            <button
-              type="button"
-              onclick="this.nextElementSibling.classList.toggle('hidden'); this.querySelector('.faq-icon').classList.toggle('rotate-180')"
-              class="w-full flex items-center justify-between gap-4 text-left px-6 py-5 md:px-7"
-            >
-              <span class="font-bold text-amber-900">How do I sign up for workshops or café events?</span>
-              <svg class="faq-icon shrink-0 transition-transform duration-200" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#774D0C" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M6 9l6 6 6-6"/></svg>
-            </button>
-            <div class="hidden px-6 md:px-7 pb-5 text-gray-700 leading-7">
-              You can register in person at any Banana Bliss outlet. Spaces are limited, so we encourage
-              early registration.
-            </div>
-          </div>
+        <svg class="faq-icon shrink-0 transition-transform duration-200"
+          width="22" height="22" viewBox="0 0 24 24"
+          fill="none" stroke="#774D0C"
+          stroke-width="2.5">
+          <path d="M6 9l6 6 6-6"/>
+        </svg>
+      </button>
 
-          <div>
-            <button
-              type="button"
-              onclick="this.nextElementSibling.classList.toggle('hidden'); this.querySelector('.faq-icon').classList.toggle('rotate-180')"
-              class="w-full flex items-center justify-between gap-4 text-left px-6 py-5 md:px-7"
-            >
-              <span class="font-bold text-amber-900">Are your workshops suitable for beginners?</span>
-              <svg class="faq-icon shrink-0 transition-transform duration-200" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#774D0C" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M6 9l6 6 6-6"/></svg>
-            </button>
-            <div class="hidden px-6 md:px-7 pb-5 text-gray-700 leading-7">
-              Absolutely! Our workshops are designed for everyone, including beginners, families and anyone
-              who enjoys baking or decorating desserts.
-            </div>
-          </div>
+      <div class="hidden px-7 pb-6 text-gray-700 leading-7">
+        Membership registration is available in person at any Banana Bliss outlet. Simply speak to one of our staff members to sign up and start enjoying exclusive rewards.
+      </div>
+    </div>
 
-        </div>
-      </section>
+
+    <div class="border-t border-amber-100 hover:bg-amber-50 transition">
+      <button
+        type="button"
+        onclick="this.nextElementSibling.classList.toggle('hidden'); this.querySelector('.faq-icon').classList.toggle('rotate-180')"
+        class="w-full flex items-center justify-between gap-4 text-left px-7 py-6"
+      >
+        <span class="font-bold text-lg text-amber-900">
+          Do promotions change regularly?
+        </span>
+
+        <svg class="faq-icon shrink-0 transition-transform duration-200"
+          width="22" height="22" viewBox="0 0 24 24"
+          fill="none" stroke="#774D0C"
+          stroke-width="2.5">
+          <path d="M6 9l6 6 6-6"/>
+        </svg>
+      </button>
+
+      <div class="hidden px-7 pb-6 text-gray-700 leading-7">
+        Yes! We introduce new seasonal offers, student deals and member-exclusive promotions throughout the year. Follow our social media pages or visit our cafés to stay updated.
+      </div>
+    </div>
+
+  </div>
+
+</section>
 
      <!-- Still Have Questions -->
       <section class="bg-white rounded-2xl shadow-md p-8 md:p-12 text-center">
