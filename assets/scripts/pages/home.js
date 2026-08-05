@@ -120,7 +120,7 @@ export default function HomePage() {
       </section>
 
       <!-- Promotion Banner -->
-      <section class="rounded-2xl p-8 md:p-12 text-center mt-8" style="background-color:#A9752E;">
+      <section class="rounded-2xl p-8 md:p-12 text-center mt-8" style="background-color:#604630;">
         <h2 class="text-3xl md:text-5xl font-bold mb-4" style="color:#FFFFFF;">Current Promotion</h2>
         <p class="text-lg leading-8 max-w-2xl mx-auto mb-6" style="color:#FFEFD1;">
           Buy any Signature Banana Cake and enjoy <strong style="color:#FFFFFF;">20% OFF</strong> your second slice.
