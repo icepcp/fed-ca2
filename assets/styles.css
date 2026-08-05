@@ -117,13 +117,16 @@ p {
     display: grid;
     grid-template-columns: 50% 50%;
     column-gap: 0.5rem;
-    margin-top: 2rem;
     max-width: 80%;
+    align-items: center;
+    margin: 2rem auto 0;
 }
 
-.category-card div {
+.category-card section {
     align-content: center;
     justify-content: center;
+    display: flex;
+    flex-direction: column;
 }
 
 .category-card img {
