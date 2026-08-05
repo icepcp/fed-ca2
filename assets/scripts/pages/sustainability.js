@@ -36,7 +36,7 @@ export default function SustainabilityPage() {
           are committed to responsible sourcing and environmentally friendly practices that help us care
           for both our customers and the planet.
         </p>
-      </header>
+      </section>
 
       <!-- Responsibly Sourced Bananas with Carousel Inside Card -->
       <section>
@@ -292,7 +292,7 @@ export function initSustainabilityPage() {
   // Smooth continuous auto-rotation loop
   function autoRotateStep() {
     if (!isDragging) {
-      currentRotation -= 0.8; // Speed of auto-rotation
+      currentRotation -= 0.3; // Speed of auto-rotation
       applyRotation(currentRotation);
     }
     animationFrameId = requestAnimationFrame(autoRotateStep);
