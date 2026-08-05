@@ -38,7 +38,7 @@ export default function SustainabilityPage() {
         </p>
       </section>
 
-      <!-- Responsibly Sourced Bananas -->
+      <!-- Responsibly Sourced Bananas with Carousel Inside Card -->
       <section>
         <h2 class="text-3xl md:text-5xl font-bold text-amber-900 mt-4 mb-4">Responsibly Sourced Bananas</h2>
         <p class="text-base md:text-lg text-gray-700 leading-8 max-w-3xl mb-6">
@@ -47,35 +47,37 @@ export default function SustainabilityPage() {
           farming practices while ensuring every dessert is naturally delicious.
         </p>
 
-        <div class="bg-white rounded-2xl shadow-md p-6 md:p-7">
-          <p class="text-sm font-semibold text-amber-900 mb-3">Our Commitment</p>
-          <ul class="text-gray-700 leading-7 space-y-1">
-            <li>• Fresh bananas delivered daily</li>
-            <li>• Carefully selected quality ingredients</li>
-            <li>• Support for responsible farming practices</li>
-            <li>• Seasonal ingredients whenever possible</li>
-          </ul>
-        </div>
-      </section>
+        <!-- "Our Commitment" Box featuring the Carousel on the right -->
+        <div class="bg-white rounded-2xl shadow-md p-6 md:p-8">
+          <div class="grid lg:grid-cols-2 gap-8 items-center">
+            
+            <!-- Left Side: List -->
+            <div>
+              <p class="text-sm font-semibold text-amber-900 mb-3">Our Commitment</p>
+              <ul class="text-gray-700 leading-7 space-y-1">
+                <li>• Fresh bananas delivered daily</li>
+                <li>• Carefully selected quality ingredients</li>
+                <li>• Support for responsible farming practices</li>
+                <li>• Seasonal ingredients whenever possible</li>
+              </ul>
+            </div>
 
-      <!-- Behind the Scenes -->
-      <section>
-        <h2 class="text-3xl md:text-5xl font-bold text-amber-900 mt-4 mb-4">From Farm to Café</h2>
-        <p class="text-base md:text-lg text-gray-700 leading-8 max-w-3xl mb-6">
-          A look at the sourcing, packaging and everyday choices behind every Banana Bliss dessert.
-        </p>
+            <!-- Right Side: Carousel inside the same box -->
+            <div class="flex items-center justify-center overflow-hidden py-6">
+              <div class="flex justify-center items-center w-full" style="perspective: 1400px;">
+                <div id="sustainabilityCarousel" class="relative cursor-grab active:cursor-grabbing" style="width: 280px; height: 200px; transform-style: preserve-3d;">
+                  <img src="/assets/images/sustainability/sustainability.png" alt="Fresh bananas on the plant" class="carousel-slide absolute inset-0 w-full h-full object-cover shadow-md rounded-xl" draggable="false" />
+                  <img src="/assets/images/sustainability/bananachopping.jpeg" alt="Banana chopping" class="carousel-slide absolute inset-0 w-full h-full object-cover shadow-md rounded-xl" draggable="false" />
+                  <img src="/assets/images/sustainability/bananatree.png" alt="Fresh ingredients on display" class="carousel-slide absolute inset-0 w-full h-full object-cover shadow-md rounded-xl" draggable="false" />
+                  <img src="/assets/images/sustainability/baking.jpeg" alt="Baking" class="carousel-slide absolute inset-0 w-full h-full object-cover shadow-md rounded-xl" draggable="false" />
+                </div>
+              </div>
+            </div>
 
-        <div class="flex justify-center" style="perspective: 1400px;">
-          <div id="sustainabilityCarousel" class="relative cursor-grab active:cursor-grabbing" style="width: 340px; height: 240px; transform-style: preserve-3d;">
-            <img src="/assets/images/sustainability/sustainability.png" alt="Fresh bananas on the plant" class="carousel-slide absolute inset-0 w-full h-full object-cover shadow-md" draggable="false" />
-            <img src="/assets/images/sustainability/bananachopping.jpeg" alt="Banana chopping" class="carousel-slide absolute inset-0 w-full h-full object-cover shadow-md" draggable="false" />
-            <img src="/assets/images/sustainability/bananatree.png" alt="Fresh ingredients on display" class="carousel-slide absolute inset-0 w-full h-full object-cover shadow-md" draggable="false" />
-            <img src="/assets/images/sustainability/baking.jpeg" alt="Baking" class="carousel-slide absolute inset-0 w-full h-full object-cover shadow-md" draggable="false" />
           </div>
         </div>
-
-        <p class="text-center text-sm text-gray-500 mt-4">Drag left or right to rotate</p>
       </section>
+
       <!-- Quality Ingredients -->
       <section>
         <h2 class="text-3xl md:text-5xl font-bold text-amber-900 mt-4 mb-4">Quality Ingredients</h2>
@@ -260,7 +262,7 @@ export function initSustainabilityPage() {
   var count = slides.length;
   var anglePerSlide = 360 / count;
 
-  var width = track.offsetWidth;
+  var width = track.offsetWidth || 280;
   var radius = Math.round(width / (2 * Math.tan(Math.PI / count)));
 
   slides.forEach(function (slide, i) {
@@ -272,6 +274,8 @@ export function initSustainabilityPage() {
   var isDragging = false;
   var startX = 0;
   var startRotation = 0;
+  var autoRotateTimeout = null;
+  var animationFrameId = null;
 
   function applyRotation(rotation) {
     track.style.transform = "rotateY(" + rotation + "deg)";
@@ -285,10 +289,38 @@ export function initSustainabilityPage() {
     });
   }
 
+  // Smooth continuous auto-rotation loop
+  function autoRotateStep() {
+    if (!isDragging) {
+      currentRotation -= 0.8; // Speed of auto-rotation
+      applyRotation(currentRotation);
+    }
+    animationFrameId = requestAnimationFrame(autoRotateStep);
+  }
+
+  function startAutoRotate(delay) {
+    clearTimeout(autoRotateTimeout);
+    autoRotateTimeout = setTimeout(function () {
+      if (!animationFrameId) {
+        animationFrameId = requestAnimationFrame(autoRotateStep);
+      }
+    }, delay || 0);
+  }
+
+  function stopAutoRotate() {
+    clearTimeout(autoRotateTimeout);
+    if (animationFrameId) {
+      cancelAnimationFrame(animationFrameId);
+      animationFrameId = null;
+    }
+  }
+
   function pointerDown(e) {
     isDragging = true;
+    stopAutoRotate();
     startX = e.clientX;
     startRotation = currentRotation;
+    track.style.transition = "";
     track.setPointerCapture && track.setPointerCapture(e.pointerId);
   }
 
@@ -303,15 +335,8 @@ export function initSustainabilityPage() {
   function pointerUp() {
     if (!isDragging) return;
     isDragging = false;
-
-    var nearestSlideRotation = Math.round(currentRotation / anglePerSlide) * anglePerSlide;
-    currentRotation = nearestSlideRotation;
-    track.style.transition = "transform 0.4s ease";
-    applyRotation(currentRotation);
-
-    setTimeout(function () {
-      track.style.transition = "";
-    }, 400);
+    // Resume auto-rotation after a 2-second pause following manual drag
+    startAutoRotate(2000);
   }
 
   track.addEventListener("pointerdown", pointerDown);
@@ -319,4 +344,5 @@ export function initSustainabilityPage() {
   window.addEventListener("pointerup", pointerUp);
 
   applyRotation(0);
+  startAutoRotate(0);
 }
