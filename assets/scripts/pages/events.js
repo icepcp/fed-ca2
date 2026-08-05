@@ -3,26 +3,20 @@ export default function EventsPage() {
     <main class="bg-amber-50 min-h-screen flex flex-col gap-y-5">
 
       <header>
-        <h1 class="text-4xl sm:text-5xl md:text-6xl font-bold text-amber-900 leading-tight mt-4">
-          Create Sweet Memories at Banana Bliss
+        <h1 class="text-5xl font-bold text-amber-900">
+          Our Events
         </h1>
-      </header>
-
-      <!-- Intro -->
-      <section>
-        <p class="text-base md:text-lg text-amber-800 leading-8 max-w-3xl mt-4">
-          Create unforgettable moments with Banana Bliss.
-          Join our baking workshops, seasonal celebrations,
+        <p class="text-lg text-amber-800 -mt-3 text-xl/6">
+          Create Sweet Memories at Banana Bliss. Join our baking workshops, seasonal celebrations,
           and community events designed for dessert lovers.
-        </p>
-        <p class="text-base md:text-lg text-gray-700 leading-8 max-w-3xl mt-4">
+          <br><br>
           Whether you're decorating your first banana cake or celebrating a festive occasion with family and
           friends, there's always something exciting happening at Banana Bliss.
         </p>
-      </section>
+      </header>
 
          <!-- Decorative Divider -->
-        <div class="flex items-center gap-4 my-8">
+        <div class="flex items-center gap-4 my-4">
         <div class="flex-1 border-t border-[#CBB799]"></div>
         <span class="text-[#CBB799] text-2xl">❦</span>
         <div class="flex-1 border-t border-[#CBB799]"></div>

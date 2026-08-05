@@ -3,20 +3,16 @@ export default function SustainabilityPage() {
     <main class="bg-amber-50 min-h-screen flex flex-col gap-y-5">
 
       <header>
-        <h1 class="text-4xl sm:text-5xl md:text-6xl font-bold text-amber-900 leading-tight mt-4">
+        <h1 class="text-5xl font-bold text-amber-900">
           Fresh Ingredients. Better Choices.
         </h1>
-      </header>
-
-      <!-- Intro -->
-      <section>
-        <p class="text-base md:text-lg text-amber-800 leading-8 max-w-3xl mt-4">
+        <p class="text-lg text-amber-800 -mt-3 text-xl/6">
           At Banana Bliss, we believe that great desserts begin with great ingredients. Every cake, pastry
           and drink is made using carefully selected produce to ensure freshness, flavour and quality. We
           are committed to responsible sourcing and environmentally friendly practices that help us care
           for both our customers and the planet.
         </p>
-      </section>
+      </header>
 
       <!-- Responsibly Sourced Bananas -->
       <section>
