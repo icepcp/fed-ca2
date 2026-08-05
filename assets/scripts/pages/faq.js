@@ -1,21 +1,41 @@
 export default function FaqPage() {
   return `
-    <main class="bg-amber-50 min-h-screen flex flex-col gap-y-5">
+<header class="relative h-96 rounded-2xl overflow-hidden flex items-center justify-center">
 
-      <header>
-        <h1 class="text-4xl sm:text-5xl md:text-6xl font-bold text-amber-900 leading-tight mt-4">
-          Frequently Asked Questions
-        </h1>
-      </header>
+  <!-- Background Video -->
+  <video
+    autoplay
+    muted
+    loop
+    playsinline
+    class="absolute inset-0 w-full h-full object-cover z-0"
+  >
+    <source src="assets/background.mp4" type="video/mp4">
+  </video>
 
-      <!-- Intro -->
-      <section>
-        <p class="text-base md:text-lg text-amber-800 leading-8 max-w-3xl mt-4">
-          Have a question about Banana Bliss? Find answers to some of our most commonly asked questions
-          below. If you need further assistance, our friendly staff will be happy to help at any of our
-          café outlets.
-        </p>
-      </section>
+  <!-- Dark Overlay -->
+  <div class="absolute inset-0 bg-black/10 z-10"></div>
+
+ 
+
+  <div class="relative z-20">
+
+    <h1 
+      class="text-4xl sm:text-5xl md:text-6xl font-bold text-center leading-tight"
+      style="color:#FFFDD0;"
+    >
+      Frequently Asked Questions
+    </h1>
+
+    <p class="text-base md:text-lg text-white leading-8 max-w-3xl mt-6">
+      Have a question about Banana Bliss? Find answers to some of our most commonly asked questions
+      below. If you need further assistance, our friendly staff will be happy to help at any of our
+      café outlets.
+    </p>
+
+</header>
+
+      
 
       <!-- Ingredients & Allergens -->
       <section>

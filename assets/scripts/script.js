@@ -129,28 +129,28 @@ const routes = {
   "/promotions": {
     component: PromotionsPage,
     name: "Promotions",
-    icon: "/assets/icons/reviews.svg",
+    icon: "/assets/icons/percent.svg",
   },
   "/sustainability": {
     component: SustainabilityPage,
     name: "Sustainability",
-    icon: "/assets/icons/reviews.svg",
+    icon: "/assets/icons/energy_savings_leaf.svg",
     init: initSustainabilityPage,
   },
   "/events": {
     component: EventsPage,
     name: "Events",
-    icon: "/assets/icons/reviews.svg",
+    icon: "/assets/icons/event.svg",
   },
   "/faq": {
     component: FaqPage,
     name: "Faq",
-    icon: "/assets/icons/reviews.svg",
+    icon: "/assets/icons/contact_support.svg",
   },
   "/contactus": {
     component: ContactUsPage,
     name: "Contact Us",
-    icon: "/assets/icons/reviews.svg",
+    icon: "/assets/icons/mail.svg",
   },
 };
 
