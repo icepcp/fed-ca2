@@ -70,7 +70,7 @@ export default function SustainabilityPage() {
             <img src="/assets/images/sustainability/sustainability.png" alt="Fresh bananas on the plant" class="carousel-slide absolute inset-0 w-full h-full object-cover shadow-md" draggable="false" />
             <img src="/assets/images/sustainability/bananachopping.jpeg" alt="Banana chopping" class="carousel-slide absolute inset-0 w-full h-full object-cover shadow-md" draggable="false" />
             <img src="/assets/images/sustainability/bananatree.png" alt="Fresh ingredients on display" class="carousel-slide absolute inset-0 w-full h-full object-cover shadow-md" draggable="false" />
-            <img src="/assets/images/sustainability/baking.jpg" alt="Baking" class="carousel-slide absolute inset-0 w-full h-full object-cover shadow-md" draggable="false" />
+            <img src="/assets/images/sustainability/baking.jpeg" alt="Baking" class="carousel-slide absolute inset-0 w-full h-full object-cover shadow-md" draggable="false" />
           </div>
         </div>
 
