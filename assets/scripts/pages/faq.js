@@ -10,7 +10,7 @@ export default function FaqPage() {
     playsinline
     class="absolute inset-0 w-full h-full object-cover z-0"
   >
-    <source src="assets/backgroundfaq.mp4" type="video/mp4">
+    <source src="assets/videos/backgroundfaq.mp4" type="video/mp4">
   </video>
 
   <!-- Dark Overlay -->
