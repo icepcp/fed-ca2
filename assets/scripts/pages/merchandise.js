@@ -30,7 +30,7 @@ export default function MerchandisePage() {
   <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-4">
 
     <!-- Premium Quality -->
-    <div class="bg-white rounded-xl p-5 shadow-sm flex items-start gap-4">
+    <div class="bg-[#FFFFFB] rounded-xl p-5 shadow-sm flex items-start gap-4">
       <div class="w-9 h-9 shrink-0 rounded-full bg-amber-400 flex items-center justify-center">
         <svg class="w-4 h-4 text-stone-900" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
           <path stroke-linecap="round" stroke-linejoin="round" d="M11.049 2.927c.3-.921 1.603-.921 1.902 0l1.519 4.674a1 1 0 00.95.69h4.915c.969 0 1.371 1.24.588 1.81l-3.976 2.888a1 1 0 00-.363 1.118l1.518 4.674c.3.922-.755 1.688-1.538 1.118l-3.976-2.888a1 1 0 00-1.176 0l-3.976 2.888c-.783.57-1.838-.196-1.538-1.118l1.518-4.674a1 1 0 00-.363-1.118L2.176 10.1c-.783-.57-.38-1.81.588-1.81h4.914a1 1 0 00.951-.69z"/>
@@ -45,7 +45,7 @@ export default function MerchandisePage() {
     </div>
 
     <!-- Exclusive Designs -->
-    <div class="bg-white rounded-xl p-5 shadow-sm flex items-start gap-4">
+    <div class="bg-[#FFFFFB] rounded-xl p-5 shadow-sm flex items-start gap-4">
       <div class="w-9 h-9 shrink-0 rounded-full bg-amber-400 flex items-center justify-center">
         <svg class="w-4 h-4 text-stone-900" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
           <circle cx="12" cy="12" r="9"/>
@@ -64,9 +64,9 @@ export default function MerchandisePage() {
     </div>
 
     <!-- Eco-Friendly -->
-    <div class="bg-white rounded-xl p-5 shadow-sm flex items-start gap-4">
+    <div class="bg-[#FFFFFB] rounded-xl p-5 shadow-sm flex items-start gap-4">
       <div class="w-9 h-9 shrink-0 rounded-full flex items-center justify-center" style="background-color:#5f6b2e">
-        <svg class="w-4 h-4 text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+        <svg class="w-4 h-4 text-[#FFFFFB]" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
           <path stroke-linecap="round" stroke-linejoin="round" d="M11 20A7 7 0 019.8 6.1C15.5 5 20 8.5 20 14a8.38 8.38 0 01-.3 2.5 7 7 0 01-8.7 3.5z"/>
           <path stroke-linecap="round" stroke-linejoin="round" d="M2 21c0-3 1.85-5.36 5.08-6"/>
         </svg>
@@ -80,9 +80,9 @@ export default function MerchandisePage() {
     </div>
 
     <!-- Perfect Gifts -->
-    <div class="bg-white rounded-xl p-5 shadow-sm flex items-start gap-4">
+    <div class="bg-[#FFFFFB] rounded-xl p-5 shadow-sm flex items-start gap-4">
       <div class="w-9 h-9 shrink-0 rounded-full flex items-center justify-center" style="background-color:#5f6b2e">
-        <svg class="w-4 h-4 text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+        <svg class="w-4 h-4 text-[#FFFFFB]" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
           <rect x="3" y="8" width="18" height="4" rx="1"/>
           <path stroke-linecap="round" stroke-linejoin="round" d="M12 8v13M5 12v7a1 1 0 001 1h12a1 1 0 001-1v-7"/>
           <path stroke-linecap="round" stroke-linejoin="round" d="M12 8c-1.5 0-3-1-3-2.5S10 3 12 4c2-1 4 0 3 1.5S13.5 8 12 8zM12 8c1.5 0 3-1 3-2.5S14 3 12 4"/>
@@ -97,7 +97,7 @@ export default function MerchandisePage() {
     </div>
 
     <!-- Bring the Café Home -->
-    <div class="bg-white rounded-xl p-5 shadow-sm flex items-start gap-4">
+    <div class="bg-[#FFFFFB] rounded-xl p-5 shadow-sm flex items-start gap-4">
       <div class="w-9 h-9 shrink-0 rounded-full bg-amber-400 flex items-center justify-center">
         <svg class="w-4 h-4 text-stone-900" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
           <path stroke-linecap="round" stroke-linejoin="round" d="M3 11l9-7 9 7"/>

@@ -30,7 +30,7 @@ export default function FaqPage() {
     <p 
   class="max-w-3xl mt-6"
   style="
-    color:white;
+    color:#FFFFFB;
     font-size:20px;
     line-height:2;
     font-weight:500;
@@ -51,7 +51,7 @@ export default function FaqPage() {
       <section>
         <h2 class="text-2xl md:text-3xl font-bold text-amber-900 mt-4 mb-6">Ingredients & Allergens</h2>
 
-        <div class="bg-white rounded-2xl shadow-md divide-y divide-amber-100 overflow-hidden">
+        <div class="bg-[#FFFFFB] rounded-2xl shadow-md divide-y divide-amber-100 overflow-hidden">
 
           <div>
             <button
@@ -112,7 +112,7 @@ export default function FaqPage() {
       <section>
         <h2 class="text-2xl md:text-3xl font-bold text-amber-900 mt-4 mb-6">Cake Orders & Reservations</h2>
 
-        <div class="bg-white rounded-2xl shadow-md divide-y divide-amber-100 overflow-hidden">
+        <div class="bg-[#FFFFFB] rounded-2xl shadow-md divide-y divide-amber-100 overflow-hidden">
 
           <div>
             <button
@@ -177,7 +177,7 @@ export default function FaqPage() {
 
 
   <!-- FAQ Card -->
-  <div class="bg-white rounded-3xl shadow-lg overflow-hidden border border-amber-100">
+  <div class="bg-[#FFFFFB] rounded-3xl shadow-lg overflow-hidden border border-amber-100">
 
     <div class="hover:bg-amber-50 transition">
       <button
@@ -255,7 +255,7 @@ export default function FaqPage() {
 </section>
 
      <!-- Still Have Questions -->
-      <section class="bg-white rounded-2xl shadow-md p-8 md:p-12 text-center mt-6">
+      <section class="bg-[#FFFFFB] rounded-2xl shadow-md p-8 md:p-12 text-center mt-6">
         <h2 class="text-3xl md:text-5xl font-bold text-amber-900 mt-4 mb-4">We're Happy to Help</h2>
         <p class="text-base md:text-lg text-gray-700 leading-8 max-w-2xl mx-auto mb-8">
           If you can't find the answer you're looking for, feel free to visit any Banana Bliss outlet or

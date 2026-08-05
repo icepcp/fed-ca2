@@ -10,7 +10,7 @@ export default function CustomerReviews() {
         </p>
       </header>
       <!-- Overall Rating -->
-      <section class="bg-white rounded-2xl shadow-md p-8 md:p-12 text-center">
+      <section class="bg-[#FFFFFB] rounded-2xl shadow-md p-8 md:p-12 text-center">
         <p class="text-6xl font-bold text-amber-900 mt-4">
           4.9 <span class="text-3xl text-amber-600">/ 5.0</span>
         </p>
@@ -28,7 +28,7 @@ export default function CustomerReviews() {
 
         <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-5 md:gap-6">
 
-          <div class="bg-white rounded-2xl shadow-md p-6 md:p-7">
+          <div class="bg-[#FFFFFB] rounded-2xl shadow-md p-6 md:p-7">
             <div class="w-11 h-11 rounded-full flex items-center justify-center mb-4 bg-amber-400 font-bold text-amber-950">
               VN
             </div>
@@ -47,7 +47,7 @@ export default function CustomerReviews() {
             </p>
           </div>
 
-          <div class="bg-white rounded-2xl shadow-md p-6 md:p-7">
+          <div class="bg-[#FFFFFB] rounded-2xl shadow-md p-6 md:p-7">
             <div class="w-11 h-11 rounded-full flex items-center justify-center mb-4 bg-[#59571B] font-bold text-[#FDF6DC]">
               TJ
             </div>
@@ -66,7 +66,7 @@ export default function CustomerReviews() {
             </p>
           </div>
 
-          <div class="bg-white rounded-2xl shadow-md p-6 md:p-7">
+          <div class="bg-[#FFFFFB] rounded-2xl shadow-md p-6 md:p-7">
             <div class="w-11 h-11 rounded-full flex items-center justify-center mb-4 bg-amber-400 font-bold text-amber-950">
               TM
             </div>
@@ -85,7 +85,7 @@ export default function CustomerReviews() {
             </p>
           </div>
 
-          <div class="bg-white rounded-2xl shadow-md p-6 md:p-7">
+          <div class="bg-[#FFFFFB] rounded-2xl shadow-md p-6 md:p-7">
             <div class="w-11 h-11 rounded-full flex items-center justify-center mb-4 bg-[#59571B] font-bold text-[#FDF6DC]">
               AK
             </div>
@@ -104,7 +104,7 @@ export default function CustomerReviews() {
             </p>
           </div>
 
-          <div class="bg-white rounded-2xl shadow-md p-6 md:p-7">
+          <div class="bg-[#FFFFFB] rounded-2xl shadow-md p-6 md:p-7">
             <div class="w-11 h-11 rounded-full flex items-center justify-center mb-4 bg-amber-400 font-bold text-amber-950">
               EO
             </div>
@@ -123,7 +123,7 @@ export default function CustomerReviews() {
             </p>
           </div>
 
-          <div class="bg-white rounded-2xl shadow-md p-6 md:p-7">
+          <div class="bg-[#FFFFFB] rounded-2xl shadow-md p-6 md:p-7">
             <div class="w-11 h-11 rounded-full flex items-center justify-center mb-4 bg-[#59571B] font-bold text-[#FDF6DC]">
               CT
             </div>
@@ -151,7 +151,7 @@ export default function CustomerReviews() {
 
         <div class="grid sm:grid-cols-2 lg:grid-cols-4 gap-5 md:gap-6">
 
-          <div class="bg-white rounded-2xl shadow-md p-6 md:p-7 text-center">
+          <div class="bg-[#FFFFFB] rounded-2xl shadow-md p-6 md:p-7 text-center">
             <h3 class="text-lg font-bold text-amber-900">Original Banana Cake</h3>
             <p class="flex items-center justify-center gap-1 text-amber-600 font-bold text-2xl mt-2">
               <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l2.9 6.26L21 9.27l-4.5 4.39L17.8 21 12 17.77 6.2 21l1.3-7.34L3 9.27l6.1-1.01L12 2z"/></svg>
@@ -162,7 +162,7 @@ export default function CustomerReviews() {
             </p>
           </div>
 
-          <div class="bg-white rounded-2xl shadow-md p-6 md:p-7 text-center">
+          <div class="bg-[#FFFFFB] rounded-2xl shadow-md p-6 md:p-7 text-center">
             <h3 class="text-lg font-bold text-amber-900">Banana Smoothie</h3>
             <p class="flex items-center justify-center gap-1 text-amber-600 font-bold text-2xl mt-2">
               <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l2.9 6.26L21 9.27l-4.5 4.39L17.8 21 12 17.77 6.2 21l1.3-7.34L3 9.27l6.1-1.01L12 2z"/></svg>
@@ -173,7 +173,7 @@ export default function CustomerReviews() {
             </p>
           </div>
 
-          <div class="bg-white rounded-2xl shadow-md p-6 md:p-7 text-center">
+          <div class="bg-[#FFFFFB] rounded-2xl shadow-md p-6 md:p-7 text-center">
             <h3 class="text-lg font-bold text-amber-900">Chocolate Banana Cake</h3>
             <p class="flex items-center justify-center gap-1 text-amber-600 font-bold text-2xl mt-2">
               <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l2.9 6.26L21 9.27l-4.5 4.39L17.8 21 12 17.77 6.2 21l1.3-7.34L3 9.27l6.1-1.01L12 2z"/></svg>
@@ -184,7 +184,7 @@ export default function CustomerReviews() {
             </p>
           </div>
 
-          <div class="bg-white rounded-2xl shadow-md p-6 md:p-7 text-center">
+          <div class="bg-[#FFFFFB] rounded-2xl shadow-md p-6 md:p-7 text-center">
             <h3 class="text-lg font-bold text-amber-900">Banana Waffles</h3>
             <p class="flex items-center justify-center gap-1 text-amber-600 font-bold text-2xl mt-2">
               <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l2.9 6.26L21 9.27l-4.5 4.39L17.8 21 12 17.77 6.2 21l1.3-7.34L3 9.27l6.1-1.01L12 2z"/></svg>
@@ -199,7 +199,7 @@ export default function CustomerReviews() {
       </section>
 
       <!-- Why Customers Love Us -->
-      <section class="bg-white rounded-2xl shadow-md p-8 md:p-12 text-center">
+      <section class="bg-[#FFFFFB] rounded-2xl shadow-md p-8 md:p-12 text-center">
         <h2 class="text-3xl md:text-5xl font-bold text-amber-900 mt-4 mb-6">Why Customers Love Banana Bliss</h2>
 
         <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-5 md:gap-6 text-left">
@@ -265,7 +265,7 @@ export default function CustomerReviews() {
       </section>
 
       <!-- Write a Review -->
-      <section class="bg-white rounded-2xl shadow-md p-8 md:p-12">
+      <section class="bg-[#FFFFFB] rounded-2xl shadow-md p-8 md:p-12">
         <h2 class="text-3xl md:text-5xl font-bold text-amber-900 mt-4 mb-2 text-center">Write a Review</h2>
         <p class="text-gray-600 text-center max-w-2xl mx-auto mb-8">
           We'd love to hear what you think! Tell us about your visit and your favourite Banana Bliss treat.
@@ -299,7 +299,7 @@ export default function CustomerReviews() {
               <select
                 id="reviewFavourite"
                 name="reviewFavourite"
-                class="w-full rounded-lg border border-amber-200 px-4 py-2.5 text-gray-700 bg-white focus:outline-none focus:ring-2 focus:ring-amber-400 focus:border-amber-400"
+                class="w-full rounded-lg border border-amber-200 px-4 py-2.5 text-gray-700 bg-[#FFFFFB] focus:outline-none focus:ring-2 focus:ring-amber-400 focus:border-amber-400"
               >
                 <option value="">Select an item</option>
 
@@ -409,7 +409,7 @@ export default function CustomerReviews() {
         <a href="#/menu" class="inline-flex items-center justify-center rounded-full font-semibold px-8 py-3 bg-amber-400 text-amber-950 shadow-md hover:-translate-y-0.5 transition">
           Explore Menu
         </a>
-        <a href="#/locations" class="inline-flex items-center justify-center rounded-full font-semibold px-8 py-3 bg-white text-amber-900 border-2 border-amber-200 hover:-translate-y-0.5 transition">
+        <a href="#/locations" class="inline-flex items-center justify-center rounded-full font-semibold px-8 py-3 bg-[#FFFFFB] text-amber-900 border-2 border-amber-200 hover:-translate-y-0.5 transition">
           Visit Us
         </a>
       </section>

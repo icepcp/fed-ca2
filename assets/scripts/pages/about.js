@@ -45,7 +45,7 @@ export default function AboutPage() {
         <h3 class="text-2xl md:text-3xl font-bold text-amber-900 mb-6">Our Values</h3>
         <div class="grid sm:grid-cols-2 gap-5 md:gap-6">
 
-          <div class="bg-white rounded-2xl shadow-md p-6 md:p-7">
+          <div class="bg-[#FFFFFB] rounded-2xl shadow-md p-6 md:p-7">
             <div class="w-11 h-11 rounded-full flex items-center justify-center mb-4 bg-amber-400">
               <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#4A2F08" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6L9 17l-5-5"/></svg>
             </div>
@@ -56,7 +56,7 @@ export default function AboutPage() {
             </p>
           </div>
 
-          <div class="bg-white rounded-2xl shadow-md p-6 md:p-7">
+          <div class="bg-[#FFFFFB] rounded-2xl shadow-md p-6 md:p-7">
             <div class="w-11 h-11 rounded-full flex items-center justify-center mb-4 bg-amber-400">
               <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#4A2F08" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 1 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/></svg>
             </div>
@@ -67,7 +67,7 @@ export default function AboutPage() {
             </p>
           </div>
 
-          <div class="bg-white rounded-2xl shadow-md p-6 md:p-7">
+          <div class="bg-[#FFFFFB] rounded-2xl shadow-md p-6 md:p-7">
             <div class="w-11 h-11 rounded-full flex items-center justify-center mb-4 bg-[#59571B]">
               <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#FDF6DC" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M11 20A7 7 0 0 1 9.8 6.1C15.5 5 17 4.48 19 2c1 2 2 4.18 2 8 0 5.5-4.78 10-10 10z"/><path d="M2 21c0-3 1.85-5.36 5.08-6C9.5 14.52 11 13 11 11"/></svg>
             </div>
@@ -78,7 +78,7 @@ export default function AboutPage() {
             </p>
           </div>
 
-          <div class="bg-white rounded-2xl shadow-md p-6 md:p-7">
+          <div class="bg-[#FFFFFB] rounded-2xl shadow-md p-6 md:p-7">
             <div class="w-11 h-11 rounded-full flex items-center justify-center mb-4 bg-[#59571B]">
               <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#FDF6DC" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2l2.9 6.26L21 9.27l-4.5 4.39L17.8 21 12 17.77 6.2 21l1.3-7.34L3 9.27l6.1-1.01L12 2z"/></svg>
             </div>
@@ -93,7 +93,7 @@ export default function AboutPage() {
       </section>
 
       <!-- What makes us unique -->
-      <section class="bg-white rounded-2xl shadow-md p-8 md:p-12 text-center">
+      <section class="bg-[#FFFFFB] rounded-2xl shadow-md p-8 md:p-12 text-center">
         <span class="inline-block text-xs font-semibold bg-yellow-100 text-amber-700 border border-amber-200 rounded-full px-3 py-1 mb-4">
           The Difference
         </span>
@@ -112,7 +112,7 @@ export default function AboutPage() {
 
         <div class="grid md:grid-cols-3 gap-5 md:gap-6">
 
-          <div class="bg-white rounded-2xl shadow-md p-6 md:p-7">
+          <div class="bg-[#FFFFFB] rounded-2xl shadow-md p-6 md:p-7">
             <span class="text-3xl font-bold text-amber-600">01</span>
             <h3 class="text-xl font-bold text-amber-900 mt-3 mb-2">Warm Atmosphere</h3>
             <p class="text-gray-700 leading-7">
@@ -122,7 +122,7 @@ export default function AboutPage() {
             </p>
           </div>
 
-          <div class="bg-white rounded-2xl shadow-md p-6 md:p-7">
+          <div class="bg-[#FFFFFB] rounded-2xl shadow-md p-6 md:p-7">
             <span class="text-3xl font-bold text-amber-600">02</span>
             <h3 class="text-xl font-bold text-amber-900 mt-3 mb-2">Quality Ingredients</h3>
             <p class="text-gray-700 leading-7">
@@ -131,7 +131,7 @@ export default function AboutPage() {
             </p>
           </div>
 
-          <div class="bg-white rounded-2xl shadow-md p-6 md:p-7">
+          <div class="bg-[#FFFFFB] rounded-2xl shadow-md p-6 md:p-7">
             <span class="text-3xl font-bold text-amber-600">03</span>
             <h3 class="text-xl font-bold text-amber-900 mt-3 mb-2">Friendly Service</h3>
             <p class="text-gray-700 leading-7">
@@ -145,7 +145,7 @@ export default function AboutPage() {
 
       <!-- CTA -->
       <section class="flex flex-wrap gap-4 justify-center pb-6">
-        <a href="#/locations" class="inline-flex items-center justify-center rounded-full font-semibold px-8 py-3 bg-white text-amber-900 border-2 border-amber-200 hover:-translate-y-0.5 transition">
+        <a href="#/locations" class="inline-flex items-center justify-center rounded-full font-semibold px-8 py-3 bg-[#FFFFFB] text-amber-900 border-2 border-amber-200 hover:-translate-y-0.5 transition">
           Visit Us
         </a>
       </section>

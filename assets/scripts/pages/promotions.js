@@ -18,7 +18,7 @@ export default function PromotionsPage() {
 
         <div class="grid sm:grid-cols-2 gap-5 md:gap-6">
 
-          <div class="bg-white rounded-2xl shadow-md overflow-hidden">
+          <div class="bg-[#FFFFFB] rounded-2xl shadow-md overflow-hidden">
             <img src="/assets/images/promos/studentcombo.png" alt="Student Cake Combo" class="w-full h-64 object-contain bg-amber-50" />
             <div class="p-6 md:p-7">
               <div class="w-11 h-11 rounded-full flex items-center justify-center mb-4 bg-amber-400">
@@ -36,7 +36,7 @@ export default function PromotionsPage() {
             </div>
           </div>
 
-          <div class="bg-white rounded-2xl shadow-md overflow-hidden">
+          <div class="bg-[#FFFFFB] rounded-2xl shadow-md overflow-hidden">
             <img src="/assets/images/promos/studentsmoothie.png" alt="Student Smoothie Deal" class="w-full h-64 object-contain bg-amber-50" />
             <div class="p-6 md:p-7">
               <div class="w-11 h-11 rounded-full flex items-center justify-center mb-4" style="background-color:#59571B;">
@@ -59,7 +59,7 @@ export default function PromotionsPage() {
 
         <div class="grid md:grid-cols-3 gap-5 md:gap-6">
 
-          <div class="bg-white rounded-2xl shadow-md overflow-hidden">
+          <div class="bg-[#FFFFFB] rounded-2xl shadow-md overflow-hidden">
             <img src="/assets/images/promos/promo.jpeg" alt="Banana Bliss Dessert Set" class="w-full h-64 object-contain bg-amber-50" />
             <div class="p-6 md:p-7">
               <div class="w-11 h-11 rounded-full flex items-center justify-center mb-4 bg-amber-400">
@@ -75,7 +75,7 @@ export default function PromotionsPage() {
             </div>
           </div>
 
-          <div class="bg-white rounded-2xl shadow-md overflow-hidden">
+          <div class="bg-[#FFFFFB] rounded-2xl shadow-md overflow-hidden">
             <img src="/assets/images/promos/coffeecake.png" alt="Coffee & Cake Combo" class="w-full h-64 object-contain bg-amber-50" />
             <div class="p-6 md:p-7">
               <div class="w-11 h-11 rounded-full flex items-center justify-center mb-4" style="background-color:#59571B;">
@@ -91,7 +91,7 @@ export default function PromotionsPage() {
             </div>
           </div>
 
-          <div class="bg-white rounded-2xl shadow-md overflow-hidden">
+          <div class="bg-[#FFFFFB] rounded-2xl shadow-md overflow-hidden">
             <img src="/assets/images/promos/family.png" alt="Family Sharing Bundle" class="w-full h-64 object-contain bg-amber-50" />
             <div class="p-6 md:p-7">
               <div class="w-11 h-11 rounded-full flex items-center justify-center mb-4 bg-amber-400">
@@ -117,7 +117,7 @@ export default function PromotionsPage() {
 
         <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-5 md:gap-6">
 
-          <div class="bg-white rounded-2xl shadow-md overflow-hidden">
+          <div class="bg-[#FFFFFB] rounded-2xl shadow-md overflow-hidden">
             <img src="/assets/images/promos/freecoffee.png" alt="Free Coffee Refill" class="w-full h-64 object-contain bg-amber-50" />
             <div class="p-6 md:p-7">
               <div class="w-11 h-11 rounded-full flex items-center justify-center mb-4" style="background-color:#59571B;">
@@ -130,7 +130,7 @@ export default function PromotionsPage() {
             </div>
           </div>
 
-          <div class="bg-white rounded-2xl shadow-md overflow-hidden">
+          <div class="bg-[#FFFFFB] rounded-2xl shadow-md overflow-hidden">
             <img src="/assets/images/promos/birthday.png" alt="Birthday Treat" class="w-full h-64 object-contain bg-amber-50" />
             <div class="p-6 md:p-7">
               <div class="w-11 h-11 rounded-full flex items-center justify-center mb-4 bg-amber-400">
@@ -144,7 +144,7 @@ export default function PromotionsPage() {
             </div>
           </div>
 
-          <div class="bg-white rounded-2xl shadow-md overflow-hidden">
+          <div class="bg-[#FFFFFB] rounded-2xl shadow-md overflow-hidden">
             <img src="/assets/images/promos/merchandise.png" alt="Merchandise Discount" class="w-full h-64 object-contain bg-amber-50" />
             <div class="p-6 md:p-7">
               <div class="w-11 h-11 rounded-full flex items-center justify-center mb-4" style="background-color:#59571B;">
@@ -166,7 +166,7 @@ export default function PromotionsPage() {
 
         <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-5 md:gap-6">
 
-          <div class="bg-white rounded-2xl shadow-md overflow-hidden">
+          <div class="bg-[#FFFFFB] rounded-2xl shadow-md overflow-hidden">
             <img src="/assets/images/promos/seasonaldrink.png" alt="Summer Banana Mango Smoothie" class="w-full h-64 object-contain bg-amber-50" />
             <div class="p-6 md:p-7">
               <span class="inline-block text-xs font-semibold bg-amber-400 text-amber-950 rounded-full px-3 py-1 mb-3">
@@ -180,7 +180,7 @@ export default function PromotionsPage() {
             </div>
           </div>
 
-          <div class="bg-white rounded-2xl shadow-md overflow-hidden">
+          <div class="bg-[#FFFFFB] rounded-2xl shadow-md overflow-hidden">
             <img src="/assets/images/promos/seasonalcake.png" alt="Banana Biscoff Cake" class="w-full h-64 object-contain bg-amber-50" />
             <div class="p-6 md:p-7">
               <span class="inline-block text-xs font-semibold bg-amber-400 text-amber-950 rounded-full px-3 py-1 mb-3">
@@ -194,7 +194,7 @@ export default function PromotionsPage() {
             </div>
           </div>
 
-          <div class="bg-white rounded-2xl shadow-md overflow-hidden">
+          <div class="bg-[#FFFFFB] rounded-2xl shadow-md overflow-hidden">
             <img src="/assets/images/promos/giftbox.png" alt="Festive Banana Gift Box" class="w-full h-64 object-contain bg-amber-50" />
             <div class="p-6 md:p-7">
               <span class="inline-block text-xs font-semibold bg-amber-400 text-amber-950 rounded-full px-3 py-1 mb-3">
@@ -215,7 +215,7 @@ export default function PromotionsPage() {
       </section>
 
       <!-- Banana Bliss Rewards -->
-      <section class="bg-white rounded-2xl shadow-md p-8 md:p-12">
+      <section class="bg-[#FFFFFB] rounded-2xl shadow-md p-8 md:p-12">
         <h2 class="text-3xl md:text-5xl font-bold text-amber-900 mt-4 mb-2 text-center">Banana Bliss Rewards</h2>
         <p class="text-gray-600 text-center max-w-2xl mx-auto mb-8">
           Members enjoy exclusive benefits throughout the year.
@@ -265,8 +265,8 @@ export default function PromotionsPage() {
               <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#4A2F08" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 10v6M2 10l10-5 10 5-10 5z"/><path d="M6 12v5c0 1.66 2.69 3 6 3s6-1.34 6-3v-5"/></svg>
             </div>
             <div>
-              <p class="text-xs font-semibold uppercase tracking-wide" style="color:#F9EFBD;">Student Special</p>
-              <p class="text-lg font-bold" style="color:#F9EFBD;">20% OFF Selected Smoothies, Weekdays Only</p>
+              <p class="text-xs font-semibold uppercase tracking-wide" style="color:#FFFFFB;">Student Special</p>
+              <p class="text-lg font-bold" style="color:#FFFFFB;">20% OFF Selected Smoothies, Weekdays Only</p>
             </div>
           </div>
 
@@ -277,8 +277,8 @@ export default function PromotionsPage() {
                 <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#F9EFBD" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2l2.9 6.26L21 9.27l-4.5 4.39L17.8 21 12 17.77 6.2 21l1.3-7.34L3 9.27l6.1-1.01L12 2z"/></svg>
               </div>
               <div>
-                <p class="text-xs font-semibold uppercase tracking-wide" style="color:#F9EFBD;">Member Exclusive</p>
-                <p class="text-lg font-bold" style="color:#F9EFBD;">Double Reward Points This Weekend!</p>
+                <p class="text-xs font-semibold uppercase tracking-wide" style="color:#FFFFFB;">Member Exclusive</p>
+                <p class="text-lg font-bold" style="color:#FFFFFB;">Double Reward Points This Weekend!</p>
               </div>
             </div>
           </div>
@@ -289,8 +289,8 @@ export default function PromotionsPage() {
               <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#4A2F08" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="7" width="18" height="13" rx="2"/><path d="M8 7V5a2 2 0 0 1 2-2h4a2 2 0 0 1 2 2v2"/></svg>
             </div>
             <div>
-              <p class="text-xs font-semibold uppercase tracking-wide" style="color:#F9EFBD;">Bundle & Save</p>
-              <p class="text-lg font-bold" style="color:#F9EFBD;">Coffee + Signature Cake Only S$10.90</p>
+              <p class="text-xs font-semibold uppercase tracking-wide" style="color:#FFFFFB;">Bundle & Save</p>
+              <p class="text-lg font-bold" style="color:#FFFFFB;">Coffee + Signature Cake Only S$10.90</p>
             </div>
           </div>
 
@@ -301,8 +301,8 @@ export default function PromotionsPage() {
                 <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#F9EFBD" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/></svg>
               </div>
               <div>
-                <p class="text-xs font-semibold uppercase tracking-wide" style="color:#F9EFBD;">Limited-Time Offer</p>
-                <p class="text-lg font-bold" style="color:#F9EFBD;">Buy 2 Slices, Get the 3rd at 50% OFF</p>
+                <p class="text-xs font-semibold uppercase tracking-wide" style="color:#FFFFFB;">Limited-Time Offer</p>
+                <p class="text-lg font-bold" style="color:#FFFFFB;">Buy 2 Slices, Get the 3rd at 50% OFF</p>
               </div>
             </div>
           </div>
@@ -313,8 +313,8 @@ export default function PromotionsPage() {
               <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#4A2F08" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M6 2 3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4z"/><path d="M3 6h18"/><path d="M16 10a4 4 0 0 1-8 0"/></svg>
             </div>
             <div>
-              <p class="text-xs font-semibold uppercase tracking-wide" style="color:#F9EFBD;">Merchandise Deal</p>
-              <p class="text-lg font-bold" style="color:#F9EFBD;">Spend S$40 and Enjoy 10% OFF All Merchandise</p>
+              <p class="text-xs font-semibold uppercase tracking-wide" style="color:#FFFFFB;">Merchandise Deal</p>
+              <p class="text-lg font-bold" style="color:#FFFFFB;">Spend S$40 and Enjoy 10% OFF All Merchandise</p>
             </div>
           </div>
 

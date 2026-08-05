@@ -12,10 +12,10 @@ export default function LocationsPage() {
         </div>
         <div class="absolute inset-0 bg-gradient-to-b from-transparent via-black/20 to-black/60 z-10 pointer-events-none"></div>
         <header class="relative z-20 p-8 pointer-events-none flex flex-col h-full justify-end">
-          <h1 class="text-5xl font-bold text-white!">
+          <h1 class="text-5xl font-bold text-[#FFFFFB]!">
             Our Locations
           </h1>
-          <p class="text-lg text-white/90! -mt-3 text-xl/6">
+          <p class="text-lg text-[#FFFFFB]/90! -mt-3 text-xl/6">
             Find your nearest Banana Bliss Café and enjoy freshly baked banana
             desserts, handcrafted beverages and our warm café atmosphere.
           </p>

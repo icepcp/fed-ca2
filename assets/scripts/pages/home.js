@@ -94,7 +94,7 @@ export default function HomePage() {
         </h2>
 
         <div class="grid md:grid-cols-3 gap-5 md:gap-6">
-          <div class="bg-white rounded-2xl shadow-md overflow-hidden">
+          <div class="bg-[#FFFFFB] rounded-2xl shadow-md overflow-hidden">
             <img 
               src="/assets/images/menu/cakes/naked-banana.jpeg" 
               alt="Naked Banana Cake" 
@@ -108,7 +108,7 @@ export default function HomePage() {
             </div>
           </div>
 
-          <div class="bg-white rounded-2xl shadow-md overflow-hidden">
+          <div class="bg-[#FFFFFB] rounded-2xl shadow-md overflow-hidden">
             <img 
               src="/assets/images/menu/cakes/chocolate.jpeg" 
               alt="Chocolate Banana Cake" 
@@ -122,7 +122,7 @@ export default function HomePage() {
             </div>
           </div>
 
-          <div class="bg-white rounded-2xl shadow-md overflow-hidden">
+          <div class="bg-[#FFFFFB] rounded-2xl shadow-md overflow-hidden">
             <img 
               src="/assets/images/menu/drinks/smoothies/banana.jpeg" 
               alt="Banana Smoothie" 

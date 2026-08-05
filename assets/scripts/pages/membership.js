@@ -21,7 +21,7 @@ export default function MembershipPage() {
 
         <div class="grid sm:grid-cols-2 gap-5 md:gap-6">
 
-          <div class="bg-white rounded-2xl shadow-md p-6 md:p-7">
+          <div class="bg-[#FFFFFB] rounded-2xl shadow-md p-6 md:p-7">
             <div class="w-11 h-11 rounded-full flex items-center justify-center mb-4 bg-amber-400">
               <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#4A2F08" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M20.59 13.41L11 3.83A2 2 0 0 0 9.59 3.24L4 3a1 1 0 0 0-1 1l.24 5.59a2 2 0 0 0 .59 1.41l9.58 9.58a2 2 0 0 0 2.83 0l4.35-4.35a2 2 0 0 0 0-2.82z"/><circle cx="7.5" cy="7.5" r="1.5"/></svg>
             </div>
@@ -31,7 +31,7 @@ export default function MembershipPage() {
             </p>
           </div>
 
-          <div class="bg-white rounded-2xl shadow-md p-6 md:p-7">
+          <div class="bg-[#FFFFFB] rounded-2xl shadow-md p-6 md:p-7">
             <div class="w-11 h-11 rounded-full flex items-center justify-center mb-4 bg-[#59571B]">
               <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#FDF6DC" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 12v10H4V12"/><path d="M2 7h20v5H2z"/><path d="M12 22V7"/><path d="M12 7H7.5a2.5 2.5 0 0 1 0-5C11 2 12 7 12 7z"/><path d="M12 7h4.5a2.5 2.5 0 0 0 0-5C13 2 12 7 12 7z"/></svg>
             </div>
@@ -42,7 +42,7 @@ export default function MembershipPage() {
             </p>
           </div>
 
-          <div class="bg-white rounded-2xl shadow-md p-6 md:p-7">
+          <div class="bg-[#FFFFFB] rounded-2xl shadow-md p-6 md:p-7">
             <div class="w-11 h-11 rounded-full flex items-center justify-center mb-4 bg-amber-400">
               <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#4A2F08" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2l2.9 6.26L21 9.27l-4.5 4.39L17.8 21 12 17.77 6.2 21l1.3-7.34L3 9.27l6.1-1.01L12 2z"/></svg>
             </div>
@@ -52,7 +52,7 @@ export default function MembershipPage() {
             </p>
           </div>
 
-          <div class="bg-white rounded-2xl shadow-md p-6 md:p-7">
+          <div class="bg-[#FFFFFB] rounded-2xl shadow-md p-6 md:p-7">
             <div class="w-11 h-11 rounded-full flex items-center justify-center mb-4 bg-[#59571B]">
               <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#FDF6DC" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 8A6 6 0 0 0 6 8c0 7-3 9-3 9h18s-3-2-3-9"/><path d="M13.73 21a2 2 0 0 1-3.46 0"/></svg>
             </div>
@@ -72,7 +72,7 @@ export default function MembershipPage() {
 
         <div class="grid md:grid-cols-3 gap-5 md:gap-6">
 
-          <div class="bg-white rounded-2xl shadow-md p-6 md:p-7">
+          <div class="bg-[#FFFFFB] rounded-2xl shadow-md p-6 md:p-7">
             <h3 class="text-xl font-bold text-amber-900 mb-1">Banana Member</h3>
             <p class="text-sm text-gray-500 mb-4">Spend: Up to S$199 per year</p>
             <ul class="text-gray-700 leading-7 space-y-1">
@@ -82,7 +82,7 @@ export default function MembershipPage() {
             </ul>
           </div>
 
-          <div class="bg-white rounded-2xl shadow-md p-6 md:p-7 border-2 border-amber-400 relative">
+          <div class="bg-[#FFFFFB] rounded-2xl shadow-md p-6 md:p-7 border-2 border-amber-400 relative">
             <span class="inline-block text-xs font-semibold bg-amber-400 text-amber-950 rounded-full px-3 py-1 mb-3">
               Most Popular
             </span>
@@ -96,7 +96,7 @@ export default function MembershipPage() {
             </ul>
           </div>
 
-          <div class="bg-white rounded-2xl shadow-md p-6 md:p-7">
+          <div class="bg-[#FFFFFB] rounded-2xl shadow-md p-6 md:p-7">
             <h3 class="text-xl font-bold text-amber-900 mb-1">Banana Bliss VIP</h3>
             <p class="text-sm text-gray-500 mb-4">Spend: S$500 and above per year</p>
             <ul class="text-gray-700 leading-7 space-y-1">
@@ -112,7 +112,7 @@ export default function MembershipPage() {
       </section>
 
       <!-- How to Join -->
-      <section class="bg-white rounded-2xl shadow-md p-8 md:p-12 text-center">
+      <section class="bg-[#FFFFFB] rounded-2xl shadow-md p-8 md:p-12 text-center">
         <h2 class="text-3xl md:text-5xl font-bold text-amber-900 mt-4 mb-5">How to Join</h2>
         <p class="text-base md:text-lg text-gray-700 leading-8 max-w-3xl mx-auto">
           Joining Banana Bliss Rewards is quick and easy. Simply visit any Banana Bliss Café outlet and speak

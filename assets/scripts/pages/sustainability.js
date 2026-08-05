@@ -48,7 +48,7 @@ export default function SustainabilityPage() {
         </p>
 
         <!-- "Our Commitment" Box featuring the Carousel on the right -->
-        <div class="bg-white rounded-2xl shadow-md p-6 md:p-8">
+        <div class="bg-[#FFFFFB] rounded-2xl shadow-md p-6 md:p-8">
           <div class="grid lg:grid-cols-2 gap-8 items-center">
             
             <!-- Left Side: List -->
@@ -89,35 +89,35 @@ export default function SustainabilityPage() {
 
         <div class="grid sm:grid-cols-2 lg:grid-cols-5 gap-4">
 
-          <div class="bg-white rounded-2xl shadow-md p-5 text-center">
+          <div class="bg-[#FFFFFB] rounded-2xl shadow-md p-5 text-center">
             <div class="w-11 h-11 mx-auto rounded-full flex items-center justify-center mb-3 bg-amber-400">
               <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#4A2F08" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M8 2h8l4 6-10 13L2 8z"/><path d="M2 8h20M10 2l2 6-2 13M14 2l-2 6 2 13"/></svg>
             </div>
             <p class="text-sm font-semibold text-amber-900">Fresh Ripe Bananas</p>
           </div>
 
-          <div class="bg-white rounded-2xl shadow-md p-5 text-center">
+          <div class="bg-[#FFFFFB] rounded-2xl shadow-md p-5 text-center">
             <div class="w-11 h-11 mx-auto rounded-full flex items-center justify-center mb-3" style="background-color:#59571B;">
               <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#FDF6DC" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 2v7c0 1.1.9 2 2 2h4a2 2 0 0 0 2-2V2"/><path d="M7 2v20"/><path d="M21 15V2a5 5 0 0 0-5 5v6c0 1.1.9 2 2 2h3zm0 0v7"/></svg>
             </div>
             <p class="text-sm font-semibold text-amber-900">Premium Dairy</p>
           </div>
 
-          <div class="bg-white rounded-2xl shadow-md p-5 text-center">
+          <div class="bg-[#FFFFFB] rounded-2xl shadow-md p-5 text-center">
             <div class="w-11 h-11 mx-auto rounded-full flex items-center justify-center mb-3 bg-amber-400">
               <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#4A2F08" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 8h1a4 4 0 0 1 0 8h-1"/><path d="M2 8h16v9a4 4 0 0 1-4 4H6a4 4 0 0 1-4-4z"/></svg>
             </div>
             <p class="text-sm font-semibold text-amber-900">Quality Chocolate</p>
           </div>
 
-          <div class="bg-white rounded-2xl shadow-md p-5 text-center">
+          <div class="bg-[#FFFFFB] rounded-2xl shadow-md p-5 text-center">
             <div class="w-11 h-11 mx-auto rounded-full flex items-center justify-center mb-3" style="background-color:#59571B;">
               <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#FDF6DC" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><ellipse cx="12" cy="14" rx="7" ry="8"/></svg>
             </div>
             <p class="text-sm font-semibold text-amber-900">Fresh Eggs</p>
           </div>
 
-          <div class="bg-white rounded-2xl shadow-md p-5 text-center">
+          <div class="bg-[#FFFFFB] rounded-2xl shadow-md p-5 text-center">
             <div class="w-11 h-11 mx-auto rounded-full flex items-center justify-center mb-3 bg-amber-400">
               <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#4A2F08" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6L9 17l-5-5"/></svg>
             </div>
@@ -138,28 +138,28 @@ export default function SustainabilityPage() {
 
         <div class="grid sm:grid-cols-2 gap-5 md:gap-6">
 
-          <div class="bg-white rounded-2xl shadow-md p-6 md:p-7 flex gap-4 items-start">
+          <div class="bg-[#FFFFFB] rounded-2xl shadow-md p-6 md:p-7 flex gap-4 items-start">
             <div class="w-11 h-11 shrink-0 rounded-full flex items-center justify-center bg-amber-400">
               <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#4A2F08" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M6 2 3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4z"/><path d="M3 6h18"/></svg>
             </div>
             <p class="text-gray-700 leading-7 pt-2">Recyclable paper bags</p>
           </div>
 
-          <div class="bg-white rounded-2xl shadow-md p-6 md:p-7 flex gap-4 items-start">
+          <div class="bg-[#FFFFFB] rounded-2xl shadow-md p-6 md:p-7 flex gap-4 items-start">
             <div class="w-11 h-11 shrink-0 rounded-full flex items-center justify-center" style="background-color:#59571B;">
               <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#FDF6DC" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="7" width="18" height="13" rx="2"/><path d="M8 7V5a2 2 0 0 1 2-2h4a2 2 0 0 1 2 2v2"/></svg>
             </div>
             <p class="text-gray-700 leading-7 pt-2">Biodegradable takeaway boxes</p>
           </div>
 
-          <div class="bg-white rounded-2xl shadow-md p-6 md:p-7 flex gap-4 items-start">
+          <div class="bg-[#FFFFFB] rounded-2xl shadow-md p-6 md:p-7 flex gap-4 items-start">
             <div class="w-11 h-11 shrink-0 rounded-full flex items-center justify-center bg-amber-400">
               <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#4A2F08" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M8 2h8l4 6-10 13L2 8z"/><path d="M2 8h20"/></svg>
             </div>
             <p class="text-gray-700 leading-7 pt-2">Paper straws</p>
           </div>
 
-          <div class="bg-white rounded-2xl shadow-md p-6 md:p-7 flex gap-4 items-start">
+          <div class="bg-[#FFFFFB] rounded-2xl shadow-md p-6 md:p-7 flex gap-4 items-start">
             <div class="w-11 h-11 shrink-0 rounded-full flex items-center justify-center" style="background-color:#59571B;">
               <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#FDF6DC" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 8h1a4 4 0 0 1 0 8h-1"/><path d="M2 8h16v9a4 4 0 0 1-4 4H6a4 4 0 0 1-4-4z"/><path d="M6 1v3M10 1v3M14 1v3"/></svg>
             </div>
@@ -177,7 +177,7 @@ export default function SustainabilityPage() {
           production to minimise leftovers while ensuring every customer enjoys freshly prepared desserts.
         </p>
 
-        <div class="bg-white rounded-2xl shadow-md p-6 md:p-7">
+        <div class="bg-[#FFFFFB] rounded-2xl shadow-md p-6 md:p-7">
           <p class="text-sm font-semibold text-amber-900 mb-3">Our Food Waste Initiatives</p>
           <ul class="text-gray-700 leading-7 space-y-1">
             <li>• Bake fresh in small batches throughout the day</li>
@@ -203,7 +203,7 @@ export default function SustainabilityPage() {
       </section>
 
       <!-- Why It Matters -->
-      <section class="bg-white rounded-2xl shadow-md p-8 md:p-12 text-center">
+      <section class="bg-[#FFFFFB] rounded-2xl shadow-md p-8 md:p-12 text-center">
         <h2 class="text-3xl md:text-5xl font-bold text-amber-900 mt-4 mb-6">By Supporting Banana Bliss, You're Helping Us</h2>
 
         <div class="grid sm:grid-cols-2 lg:grid-cols-5 gap-5 md:gap-6 text-left">
