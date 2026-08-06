@@ -3,10 +3,11 @@ export default function EventsPage() {
     <main class="bg-amber-50 min-h-screen flex flex-col gap-y-5">
 
       <header>
-        <h1 class="text-5xl font-bold text-amber-900">
+        <h1 class="text-5xl font-bold text-[#FFFFFB]">
           Our Events
         </h1>
-        <p class="text-lg text-amber-800 -mt-3 text-xl/6">
+
+        <p class="text-lg text-[#FFFFFB] -mt-3 text-xl/6">
           Create Sweet Memories at Banana Bliss. Join our baking workshops, seasonal celebrations,
           and community events designed for dessert lovers.
           <br><br>
@@ -15,23 +16,68 @@ export default function EventsPage() {
         </p>
       </header>
 
-         <!-- Decorative Divider -->
-        <div class="flex items-center gap-4 my-4">
+      <!-- Decorative Divider -->
+      <div class="flex items-center gap-4 my-4">
         <div class="flex-1 border-t border-[#CBB799]"></div>
         <span class="text-[#CBB799] text-2xl">❦</span>
         <div class="flex-1 border-t border-[#CBB799]"></div>
-        </div>
+      </div>
 
       <!-- Featured Event Banner -->
-      <section class="rounded-2xl p-8 md:p-10" style="background-color:#604630;">
-        <h2 class="text-2xl md:text-4xl font-bold mb-2" style="color:#F9EFBD;">Banana Cake Decorating Workshop</h2>
-        <p class="text-lg font-semibold mb-4" style="color:#FFEFD1;">Learn • Create • Take Home Your Masterpiece</p>
-        <div class="flex flex-wrap gap-x-6 gap-y-2 text-sm md:text-base" style="color:#FFEFD1;">
-          <span> 16 August 2026   </span><span>|</span>
-          <span> 10:00 AM – 12:00 PM   </span><span>|</span>
-          <span>Limited to 20 participants</span>
+      <section class="relative rounded-2xl overflow-hidden h-[500px]">
+
+        <!-- Background Video -->
+        <video
+          autoplay
+          muted
+          loop
+          playsinline
+          class="absolute inset-0 w-full h-full object-cover"
+        >
+          <source src="assets/videos/backgroundevent.mp4" type="video/mp4">
+          Your browser does not support the video tag.
+        </video>
+
+        <!-- Dark Overlay -->
+        <div class="absolute inset-0 bg-black/30"></div>
+
+        <!-- Content -->
+        <div class="absolute inset-0 flex items-end justify-start p-8">
+        <div>
+
+          <h2 
+            class="text-2xl md:text-4xl font-bold mb-2"
+            style="color:#FFFDD0;"
+          >
+            Banana Cake Decorating Workshop
+          </h2>
+
+          <p 
+            class="text-lg font-semibold mt-4 mb-4"
+            style="color:#FFFFFB;"
+          >
+             Learn • Create • Take Home Your Masterpiece
+          </p>
+
+          <div class="flex flex-wrap gap-x-6 gap-y-2 text-sm md:text-base text-[#FFFFFB]">
+            <span>16 August 2026</span>
+            <span>|</span>
+            <span>10:00 AM – 12:00 PM</span>
+            <span>|</span>
+            <span>Limited to 20 participants</span>
+          </div>
+
+          <div class="mt-6">
+         <p 
+          class="text-lg font-semibold"
+          style="color:#FFFFFB;"
+          >
+            Register in-store today!
+        </p>
+        </div>    
+
         </div>
-        <p class="text-sm font-semibold mt-4" style="color:#FFFFFF;">Register in-store today!</p>
+
       </section>
 
       <!-- Upcoming Events -->
@@ -44,17 +90,17 @@ export default function EventsPage() {
             <div class="w-11 h-11 rounded-full flex items-center justify-center mb-4 bg-[#D2A941]">
               <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#4A2F08" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6L9 17l-5-5"/></svg>
             </div>
-            <h3 class="text-xl font-bold text-amber-900 mb-2">Banana Cake Decorating Workshop</h3>
-            <p class="text-sm font-semibold text-amber-700 mb-1">Saturday, 16 August 2026</p>
-            <p class="text-sm text-gray-500 mb-1">10:00 AM – 12:00 PM • Orchard Outlet</p>
+            <h3 class="text-xl font-bold text-amber-900 mb-2">Banana Bread Baking Workshop</h3>
+            <p class="text-sm font-semibold text-amber-700 mb-1">Sunday, 30 August 2026</p>
+            <p class="text-sm text-gray-500 mb-1">2:00 PM – 4:30 PM • Causeway Point</p>
             <p class="text-lg font-bold text-orange-600 mb-4">S$35 per person</p>
             <p class="text-sm font-semibold text-amber-900 mb-2">Workshop Highlights</p>
             <ul class="text-gray-700 leading-7 space-y-1">
-              <li>• Learn basic cake decorating techniques</li>
-              <li>• Decorate your own mini banana cake</li>
-              <li>• Professional guidance from our pastry chefs</li>
-              <li>• Take your finished cake home</li>
-              <li>• Complimentary drink included</li>
+              <li>• Learn the secrets to baking soft and moist banana bread</li>
+              <li>• Mix and prepare your own banana bread from scratch</li>
+              <li>• Discover tips on selecting the best bananas for baking</li>
+              <li>• Bake and bring home your freshly made banana bread</li>
+              <li>• Complimentary coffee or tea included</li>
             </ul>
           </div>
 
@@ -136,7 +182,7 @@ export default function EventsPage() {
 
         <div class="grid md:grid-cols-3 gap-5 md:gap-6">
 
-          <div class="bg-[#F9EFBD] rounded-2xl shadow-md p-6 md:p-7">
+          <div class="bg-[#FFFFFB] rounded-2xl shadow-md p-6 md:p-7">
             <div class="w-11 h-11 rounded-full flex items-center justify-center mb-4 bg-[#D2A941]">
               <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#4A2F08" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 8h1a4 4 0 0 1 0 8h-1"/><path d="M2 8h16v9a4 4 0 0 1-4 4H6a4 4 0 0 1-4-4z"/><path d="M6 1v3M10 1v3M14 1v3"/></svg>
             </div>
@@ -147,7 +193,7 @@ export default function EventsPage() {
             </p>
           </div>
 
-          <div class="bg-[#F9EFBD] rounded-2xl shadow-md p-6 md:p-7">
+          <div class="bg-[#FFFFFB] rounded-2xl shadow-md p-6 md:p-7">
             <div class="w-11 h-11 rounded-full flex items-center justify-center mb-4" style="background-color:#59571B;">
               <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#FDF6DC" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/></svg>
             </div>
@@ -159,7 +205,7 @@ export default function EventsPage() {
             </p>
           </div>
 
-          <div class="bg-[#F9EFBD] rounded-2xl shadow-md p-6 md:p-7">
+          <div class="bg-[#FFFFFB] rounded-2xl shadow-md p-6 md:p-7">
             <div class="w-11 h-11 rounded-full flex items-center justify-center mb-4 bg-[#D2A941]">
               <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#4A2F08" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 1 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/></svg>
             </div>

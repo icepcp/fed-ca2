@@ -1,49 +1,49 @@
 export default function FaqPage() {
   return `
-<header class="relative h-120 rounded-2xl overflow-hidden flex items-center justify-center">
+    <header class="relative h-120 rounded-2xl overflow-hidden flex items-center justify-center">
 
-  <!-- Background Video -->
-  <video
-    autoplay
-    muted
-    loop
-    playsinline
-    class="absolute inset-0 w-full h-full object-cover z-0"
-  >
-    <source src="assets/videos/backgroundfaq.mp4" type="video/mp4">
-  </video>
+    <!-- Background Video -->
+      <video
+      autoplay
+      muted
+      loop
+      playsinline
+      class="absolute inset-0 w-full h-full object-cover z-0"
+    >
+        <source src="assets/videos/backgroundfaq.mp4" type="video/mp4">
+      </video>
 
-  <!-- Dark Overlay -->
-  <div class="absolute inset-0 bg-black/10 z-10"></div>
+      <!-- Dark Overlay -->
+      <div class="absolute inset-0 bg-black/10 z-10"></div>
 
  
 
-<div class="absolute inset-0 flex items-end justify-start p-8">
-  <div>
-    <h1 
-      class="text-5xl md:text-7xl font-extrabold leading-tight"
-      style="color:#FFFDD0;"
-    >
-      Frequently Asked Questions
-    </h1>
+       <div class="absolute inset-0 flex items-end justify-start p-8">
+        <div>
+     <h1 
+        class="text-5xl md:text-7xl font-extrabold leading-tight"
+        style="color:#FFFDD0;"
+      >
+        Frequently Asked Questions
+     </h1>
 
-    <p 
-  class="max-w-3xl mt-6"
-  style="
-    color:#FFFFFB;
-    font-size:20px;
-    line-height:2;
-    font-weight:500;
-  "
->
-  Have a question about Banana Bliss? Find answers to some of our most commonly asked questions
-  below. If you need further assistance, our friendly staff will be happy to help at any of our
-  café outlets.
-</p>
-  </div>
-</div>
+      <p 
+          class="max-w-3xl mt-6"
+          style="
+          color:#FFFFFB;
+          font-size:20px;
+          line-height:2;
+          font-weight:500;
+          "
+          >
+           Have a question about Banana Bliss? Find answers to some of our most commonly asked questions
+          below. If you need further assistance, our friendly staff will be happy to help at any of our
+          café outlets.
+      </p>
+      </div>
+      </div>
 
-</header>
+      </header>
 
       
 
