@@ -254,7 +254,7 @@ function initCoverflow(containerId) {
   function pointerUp() {
     if (!isDragging) return;
     isDragging = false;
-    startAutoRotate(2000);
+    startAutoRotate(1000);
   }
 
   track.addEventListener("pointerdown", pointerDown);

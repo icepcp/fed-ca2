@@ -336,7 +336,7 @@ export function initSustainabilityPage() {
     if (!isDragging) return;
     isDragging = false;
     // Resume auto-rotation after a 2-second pause following manual drag
-    startAutoRotate(2000);
+    startAutoRotate(1000);
   }
 
   track.addEventListener("pointerdown", pointerDown);
