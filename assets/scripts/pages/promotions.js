@@ -78,42 +78,100 @@ export default function PromotionsPage() {
 
       <!-- Student Specials -->
       <section class="promo-section" data-section="students">
-        <h2 class="text-3xl md:text-5xl font-bold text-amber-900 mt-4 mb-6">For Students</h2>
-
-        <div class="flex flex-col gap-5">
-
+        <h2 class="text-3xl md:text-5xl font-bold text-amber-900 mt-4 mb-6">
+          For Students
+        </h2>
+        
+        <div class="max-w-5xl mx-auto flex flex-col gap-5">
+        
+          <!-- Student Cake Combo -->
           <div class="bg-[#FFFFFB] rounded-2xl shadow-md overflow-hidden grid md:grid-cols-2 transition-transform duration-300 hover:scale-[1.02]">
+
             <div class="relative">
-              <img src="/assets/images/promos/studentcombo.png" alt="Student Cake Combo" class="w-full h-56 md:h-full object-contain bg-amber-50" />
-              <span class="absolute top-3 left-3 text-xs font-bold px-3 py-1 rounded-full bg-orange-500 text-white shadow-md">SAVE S$3.50</span>
-            </div>
-            <div class="p-6 md:p-7 flex flex-col justify-center">
-              <div class="w-11 h-11 rounded-full flex items-center justify-center mb-4 bg-amber-400">
-                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#4A2F08" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 10v6M2 10l10-5 10 5-10 5z"/><path d="M6 12v5c0 1.66 2.69 3 6 3s6-1.34 6-3v-5"/></svg>
-              </div>
-              <h3 class="text-xl font-bold text-amber-900 mb-1">Student Cake Combo</h3>
-              <p class="text-sm font-semibold text-amber-700 mb-3">Mon – Fri | 11:00 AM – 5:00 PM</p>
-              <p class="text-gray-700 leading-7 mb-3">1 Signature Banana Cake Slice + 1 Regular Drink</p>
-              <p class="text-2xl font-bold text-orange-600">
-                S$11.90 <span class="text-sm font-semibold text-gray-500 line-through ml-1">S$15.40</span>
-              </p>
-              <p class="text-xs text-gray-500 mt-2">Valid with a student ID.</p>
-            </div>
-          </div>
+              <img
+                src="/assets/images/promos/studentcombo.png"
+                alt="Student Cake Combo"
+                class="w-full h-44 md:h-72 object-contain bg-amber-50"
+              />
 
-          <div class="bg-[#FFFFFB] rounded-2xl shadow-md overflow-hidden grid md:grid-cols-2 transition-transform duration-300 hover:scale-[1.02]">
-            <div class="relative order-2 md:order-1">
-              <img src="/assets/images/promos/studentsmoothie.png" alt="Student Smoothie Deal" class="w-full h-56 md:h-full object-contain bg-amber-50" />
-              <span class="absolute top-3 left-3 text-xs font-bold px-3 py-1 rounded-full bg-orange-500 text-white shadow-md">15% OFF</span>
+              <span class="absolute top-3 left-3 text-xs font-bold px-3 py-1 rounded-full bg-orange-500 text-white shadow-md">
+                SAVE S$3.50
+              </span>
             </div>
-            <div class="p-6 md:p-7 flex flex-col justify-center order-1 md:order-2">
-              <div class="w-11 h-11 rounded-full flex items-center justify-center mb-4" style="background-color:#59571B;">
-                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#FDF6DC" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M8 2h8l4 6-10 13L2 8z"/><path d="M2 8h20M10 2l2 6-2 13M14 2l-2 6 2 13"/></svg>
+
+            <div class="p-5 md:p-6 flex flex-col justify-center">
+
+              <div class="w-9 h-9 rounded-full flex items-center justify-center mb-3 bg-amber-400">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#4A2F08" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M22 10v6M2 10l10-5 10 5-10 5z"/>
+                  <path d="M6 12v5c0 1.66 2.69 3 6 3s6-1.34 6-3v-5"/>
+                </svg>
               </div>
-              <h3 class="text-xl font-bold text-amber-900 mb-1">Student Smoothie Deal</h3>
-              <p class="text-sm font-semibold text-amber-700 mb-3">Weekdays Only</p>
-              <p class="text-gray-700 leading-7">Show your student pass and enjoy 15% OFF all Banana Smoothies every weekday.</p>
+
+              <h3 class="text-lg font-bold text-amber-900 mb-1">
+                Student Cake Combo
+              </h3>
+
+              <p class="text-sm font-semibold text-amber-700 mb-2">
+                Mon – Fri | 11:00 AM – 5:00 PM
+              </p>
+
+              <p class="text-gray-700 leading-7 mb-2">
+                1 Signature Banana Cake Slice + 1 Regular Drink
+              </p>
+
+              <p class="text-xl font-bold text-orange-600">
+                S$11.90
+                <span class="text-sm font-semibold text-gray-500 line-through ml-1">
+                  S$15.40
+                </span>
+              </p>
+
+              <p class="text-xs text-gray-500 mt-2">
+                Valid with a student ID.
+              </p>
+
+          </div>
+        </div>
+
+          <!-- Student Smoothie -->
+          <div class="bg-[#FFFFFB] rounded-2xl shadow-md overflow-hidden grid md:grid-cols-2 transition-transform duration-300 hover:scale-[1.02]">
+
+            <div class="relative order-2 md:order-1">
+              <img
+                src="/assets/images/promos/studentsmoothie.png"
+                alt="Student Smoothie Deal"
+                class="w-full h-44 md:h-72 object-contain bg-amber-50"
+              />
+
+              <span class="absolute top-3 left-3 text-xs font-bold px-3 py-1 rounded-full bg-orange-500 text-white shadow-md">
+                15% OFF
+              </span>
             </div>
+
+            <div class="p-5 md:p-6 flex flex-col justify-center order-1 md:order-2">
+
+              <div class="w-9 h-9 rounded-full flex items-center justify-center mb-3" style="background-color:#59571B;">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#FDF6DC" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M8 2h8l4 6-10 13L2 8z"/>
+                  <path d="M2 8h20M10 2l2 6-2 13M14 2l-2 6 2 13"/>
+                </svg>
+              </div>
+
+              <h3 class="text-lg font-bold text-amber-900 mb-1">
+                Student Smoothie Deal
+              </h3>
+
+              <p class="text-sm font-semibold text-amber-700 mb-2">
+                Weekdays Only
+              </p>
+
+              <p class="text-gray-700 leading-7">
+                Show your student pass and enjoy 15% OFF all Banana Smoothies every weekday.
+              </p>
+
+            </div>
+
           </div>
 
         </div>
