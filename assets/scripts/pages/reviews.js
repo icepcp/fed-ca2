@@ -10,18 +10,21 @@ export default function CustomerReviews() {
         </p>
       </header>
       <!-- Overall Rating -->
-      <section class="bg-[#FFFFFB] rounded-2xl shadow-md p-8 md:p-12 text-center">
-        <p class="text-6xl font-bold text-amber-900 mt-4">
-          4.9 <span class="text-3xl text-amber-600">/ 5.0</span>
-        </p>
-        <p class="text-gray-600 mt-3">
-          Based on <strong>248 customer reviews</strong>
-        </p>
-        <p class="italic text-gray-700 mt-6 max-w-2xl mx-auto">
-          "Loved by our customers for our freshly baked banana desserts and warm café atmosphere."
-        </p>
+      <section class="relative rounded-2xl overflow-hidden shadow-md">
+        <img src="/assets/images/reviews/reviews.png" alt="Banana Bliss café counter" class="w-full h-72 md:h-96 object-cover" />
+        <div class="absolute inset-0 bg-black/35"></div>
+        <div class="absolute inset-0 flex flex-col items-center justify-center text-center px-6">
+          <p class="text-5xl md:text-6xl font-bold drop-shadow-md" style="color:#FFFFFB;">
+            4.9 <span class="text-2xl md:text-3xl" style="color:#FFFFFB;">/ 5.0</span>
+          </p>
+          <p class="mt-3 drop-shadow-md" style="color:#FFFFFB;">
+            Based on <strong>248 customer reviews</strong>
+          </p>
+          <p class="italic mt-6 max-w-2xl drop-shadow-md" style="color:#FFFFFB;">
+            "Loved by our customers for our freshly baked banana desserts and warm café atmosphere."
+          </p>
+        </div>
       </section>
-
       <!-- Guest Reviews -->
       <section>
         <h2 class="text-3xl md:text-5xl font-bold text-amber-900 mt-4 mb-6">What Our Guests Say</h2>
