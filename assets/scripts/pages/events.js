@@ -131,49 +131,128 @@ export default function EventsPage() {
         <div class="flex-1 border-t border-[#CBB799]"></div>
         </div>
 
-      <!-- Seasonal Café Events -->
-      <section>
-        <h2 class="text-3xl md:text-5xl font-bold text-amber-900 mt-4 mb-6">Seasonal Café Events</h2>
+   <section>
 
-        <div class="grid md:grid-cols-3 gap-5 md:gap-6">
+  <div class="grid md:grid-cols-3 gap-6 items-start">
 
-          <div class="bg-[#F9EFBD] rounded-2xl shadow-md p-6 md:p-7">
-            <span class="inline-block text-xs font-semibold bg-[#D2A941] text-amber-950 rounded-full px-3 py-1 mb-3">
-              1 Jun – 31 Jul
-            </span>
-            <h3 class="text-xl font-bold text-amber-900 mb-2">Summer Tropical Dessert Festival</h3>
-            <p class="text-gray-700 leading-7">
-              Enjoy our limited-time tropical menu featuring mango banana smoothies, passionfruit banana
-              parfaits and exclusive summer desserts.
-            </p>
-          </div>
-
-          <div class="bg-[#F9EFBD] rounded-2xl shadow-md p-6 md:p-7">
-            <span class="inline-block text-xs font-semibold bg-[#D2A941] text-amber-950 rounded-full px-3 py-1 mb-3">
-              24 – 31 Oct
-            </span>
-            <h3 class="text-xl font-bold text-amber-900 mb-2">Halloween Dessert Week</h3>
-            <p class="text-gray-700 leading-7">
-              Celebrate Halloween with spooky banana-themed desserts, costume discounts and fun café
-              decorations.
-            </p>
-          </div>
-
-          <div class="bg-[#F9EFBD] rounded-2xl shadow-md p-6 md:p-7">
-            <span class="inline-block text-xs font-semibold bg-[#D2A941] text-amber-950 rounded-full px-3 py-1 mb-3">
-              1 – 31 Dec
-            </span>
-            <h3 class="text-xl font-bold text-amber-900 mb-2">Christmas Banana Wonderland</h3>
-            <p class="text-gray-700 leading-7">
-              Enjoy festive banana desserts, holiday gift boxes and special Christmas drinks while
-              experiencing our beautifully decorated café.
-            </p>
-          </div>
-
-        </div>
-      </section>
-
+    <!-- Card 1 -->
+    <div class="rounded-2xl shadow-md overflow-hidden bg-[#FFFFFB]">
       
+      <img
+        src="assets/images/event/summertropical.jpeg"
+        class="w-full h-56 object-cover"
+      >
+
+      <div class="p-6 md:p-7">
+
+        <span class="inline-block text-xs font-semibold bg-[#D2A941] text-amber-950 rounded-full px-3 py-1 mb-3">
+          1 – 31 Aug
+        </span>
+
+        <h3 class="text-xl font-bold text-amber-900 mb-2">
+          Summer Tropical Dessert Festival
+        </h3>
+
+      <p id="summerDesc" class="text-gray-700 leading-7 mb-4 hidden">
+         Enjoy our limited-time tropical menu featuring mango banana smoothies,
+         passionfruit banana parfaits and exclusive summer desserts.
+      </p>
+    <button
+       id="summerBtn"
+       onclick="
+       document.getElementById('summerDesc').classList.toggle('hidden');
+       this.textContent = this.textContent.trim() === 'More Details' ? 'Close' : 'More Details';
+      "
+       class="text-[#D2A941] text-xl font-regular hover:text-[#B88A2E] transition duration-300"
+     >
+        More Details
+    </button>
+
+      </div>
+
+    </div>
+
+
+    <!-- Card 2 -->
+    <div class="rounded-2xl shadow-md overflow-hidden bg-[#FFFFFB]">
+
+   <img
+      src="assets/images/event/halloween.jpeg"
+      class="w-full h-56 object-cover"
+   >
+
+    <div class="p-6 md:p-7">
+
+    <span class="inline-block text-xs font-semibold bg-[#D2A941] text-amber-950 rounded-full px-3 py-1 mb-3">
+      24 – 31 Oct
+    </span>
+
+    <h3 class="text-xl font-bold text-amber-900 mb-2">
+      Halloween Dessert Week
+    </h3>
+
+      <p id="halloweenDesc" class="text-gray-700 leading-7 mb-4 hidden">
+        Celebrate Halloween with spooky banana-themed desserts, costume discounts,
+        and fun café decorations. Enjoy a sweet seasonal experience!
+      </p>
+
+    <button
+      id="halloweenBtn"
+      onclick="
+      document.getElementById('halloweenDesc').classList.toggle('hidden');
+      this.textContent = this.textContent.trim() === 'More Details' ? 'Close' : 'More Details';
+      "
+      class="text-[#D2A941] text-xl font-normal hover:text-[#B88A2E] transition duration-300"
+    >
+      More Details
+    </button>
+
+    </div>
+
+  </div>
+
+
+    <!-- Card 3 -->
+    <div class="rounded-2xl shadow-md overflow-hidden bg-[#FFFFFB]">
+
+    <img
+      src="assets/images/event/christmas.jpeg"
+      class="w-full h-56 object-cover"
+    >
+
+    <div class="p-6 md:p-7">
+
+    <span class="inline-block text-xs font-semibold bg-[#D2A941] text-amber-950 rounded-full px-3 py-1 mb-3">
+      1 – 31 Dec
+    </span>
+
+    <h3 class="text-xl font-bold text-amber-900 mb-2">
+      Christmas Banana Wonderland
+    </h3>
+
+    <p id="christmasDesc" class="text-gray-700 leading-7 mb-4 hidden">
+      Enjoy festive banana desserts, holiday gift boxes and special Christmas 
+      drinks while experiencing our beautifully decorated café.
+    </p>
+
+    <button
+      id="christmasBtn"
+      onclick="
+      document.getElementById('christmasDesc').classList.toggle('hidden');
+      this.textContent = this.textContent.trim() === 'More Details' ? 'Close' : 'More Details';
+      "
+      class="text-[#D2A941] text-xl font-normal hover:text-[#B88A2E] transition duration-300"
+    >
+      More Details
+    </button>
+
+      </div>
+
+    </div>
+
+
+
+   </section>
 
       <!-- Community Activities -->
       <section>
@@ -181,7 +260,7 @@ export default function EventsPage() {
 
         <div class="grid md:grid-cols-3 gap-5 md:gap-6">
 
-          <div class="bg-[#FFFFFB] rounded-2xl shadow-md p-6 md:p-7">
+          <div class="bg-[#F9EFBD] rounded-2xl shadow-md p-6 md:p-7">
             <div class="w-11 h-11 rounded-full flex items-center justify-center mb-4 bg-[#D2A941]">
               <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#4A2F08" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 8h1a4 4 0 0 1 0 8h-1"/><path d="M2 8h16v9a4 4 0 0 1-4 4H6a4 4 0 0 1-4-4z"/><path d="M6 1v3M10 1v3M14 1v3"/></svg>
             </div>
@@ -192,7 +271,7 @@ export default function EventsPage() {
             </p>
           </div>
 
-          <div class="bg-[#FFFFFB] rounded-2xl shadow-md p-6 md:p-7">
+          <div class="bg-[#F9EFBD] rounded-2xl shadow-md p-6 md:p-7">
             <div class="w-11 h-11 rounded-full flex items-center justify-center mb-4" style="background-color:#59571B;">
               <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#FDF6DC" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/></svg>
             </div>
@@ -204,7 +283,7 @@ export default function EventsPage() {
             </p>
           </div>
 
-          <div class="bg-[#FFFFFB] rounded-2xl shadow-md p-6 md:p-7">
+          <div class="bg-[#F9EFBD] rounded-2xl shadow-md p-6 md:p-7">
             <div class="w-11 h-11 rounded-full flex items-center justify-center mb-4 bg-[#D2A941]">
               <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#4A2F08" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 1 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/></svg>
             </div>
@@ -240,7 +319,7 @@ export default function EventsPage() {
       </section>
 
       <!-- Registration Information -->
-      <section class="bg-[#F9EFBD] rounded-2xl shadow-md p-8 md:p-12">
+      <section class="bg-[#FFFFFB] rounded-2xl shadow-md p-8 md:p-12">
         <h2 class="text-3xl md:text-5xl font-bold text-amber-900 mt-4 mb-6">Registration Information</h2>
         <ul class="text-lg text-gray-600 leading-9 space-y-2 max-w-4xl">
           <li>• Registration can be completed at any Banana Bliss outlet.</li>
