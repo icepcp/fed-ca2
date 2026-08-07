@@ -194,7 +194,7 @@ export default function PromotionsPage() {
               </div>
               <h3 class="text-xl font-bold text-amber-900 mb-3">Banana Bliss Dessert Set</h3>
               <ul class="text-gray-700 leading-7 space-y-1 mb-4">
-                <li>• Original Banana Cake</li>
+                <li>• Naked Banana Cake</li>
                 <li>• Banana Smoothie</li>
               </ul>
               <p class="text-2xl font-bold text-orange-600">S$13.90</p>

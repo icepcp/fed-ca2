@@ -37,7 +37,7 @@ export default function CustomerReviews() {
           <button type="button" class="review-filter-btn px-4 py-2 rounded-full text-sm font-semibold bg-amber-400 text-amber-950" data-filter="all">All</button>
           <button type="button" class="review-filter-btn px-4 py-2 rounded-full text-sm font-semibold bg-white text-amber-900 border border-amber-200" data-filter="cakes">Cakes</button>
           <button type="button" class="review-filter-btn px-4 py-2 rounded-full text-sm font-semibold bg-white text-amber-900 border border-amber-200" data-filter="drinks">Drinks</button>
-          <button type="button" class="review-filter-btn px-4 py-2 rounded-full text-sm font-semibold bg-white text-amber-900 border border-amber-200" data-filter="desserts-pastries">Pasteries & Desserts</button>
+          <button type="button" class="review-filter-btn px-4 py-2 rounded-full text-sm font-semibold bg-white text-amber-900 border border-amber-200" data-filter="desserts-pastries">Pastries & Desserts</button>
         </div>
 
         <!-- Carousel -->
@@ -50,9 +50,9 @@ export default function CustomerReviews() {
                 ${'<svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l2.9 6.26L21 9.27l-4.5 4.39L17.8 21 12 17.77 6.2 21l1.3-7.34L3 9.27l6.1-1.01L12 2z"/></svg>'.repeat(5)}
               </div>
               <h3 class="text-xl font-bold text-amber-900">Victoria Neo</h3>
-              <p class="text-sm font-semibold text-amber-700 mb-3">Favourite: Original Banana Cake</p>
+              <p class="text-sm font-semibold text-amber-700 mb-3">Favourite: Naked Banana Cake</p>
               <p class="text-gray-700 leading-7">
-                "The Original Banana Cake was incredibly soft and moist. It wasn't overly sweet, and the cream
+                "The Naked Banana Cake was incredibly soft and moist. It wasn't overly sweet, and the cream
                 cheese frosting paired perfectly with the fresh banana flavour. I'll definitely be coming back!"
               </p>
             </div>
@@ -166,9 +166,9 @@ export default function CustomerReviews() {
         <div class="grid sm:grid-cols-2 lg:grid-cols-4 gap-5 md:gap-6">
 
           <div class="bg-[#FFFFFB] rounded-2xl shadow-md overflow-hidden text-center transition-transform duration-300 hover:scale-105">
-            <img src="/assets/images/menu/cakes/naked-banana.jpeg" alt="Original Banana Cake" class="w-full aspect-square object-cover" />
+            <img src="/assets/images/menu/cakes/naked-banana.jpeg" alt="Naked Banana Cake" class="w-full aspect-square object-cover" />
             <div class="p-6">
-              <h3 class="text-lg font-bold text-amber-900">Original Banana Cake</h3>
+              <h3 class="text-lg font-bold text-amber-900">Naked Banana Cake</h3>
               <p class="flex items-center justify-center gap-1 text-amber-600 font-bold text-2xl mt-2">
                 <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l2.9 6.26L21 9.27l-4.5 4.39L17.8 21 12 17.77 6.2 21l1.3-7.34L3 9.27l6.1-1.01L12 2z"/></svg>
                 4.9 / 5
@@ -208,7 +208,7 @@ export default function CustomerReviews() {
           </div>
 
           <div class="bg-[#FFFFFB] rounded-2xl shadow-md overflow-hidden text-center transition-transform duration-300 hover:scale-105">
-            <img src="/assets/images/menu/drinks/banana-latte.jpeg" alt="Banana Waffles" class="w-full aspect-square object-cover" />
+            <img src="/assets/images/menu/desserts/waffle.jpeg" alt="Banana Waffles" class="w-full aspect-square object-cover" />
             <div class="p-6">
               <h3 class="text-lg font-bold text-amber-900">Banana Waffles</h3>
               <p class="flex items-center justify-center gap-1 text-amber-600 font-bold text-2xl mt-2">

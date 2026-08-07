@@ -34,7 +34,7 @@ export default function SustainabilityPage() {
 
           <div class="rounded-2xl p-6 text-center shadow-md transition-transform duration-300 hover:-translate-y-1" style="background-color:#59571B;">
             <p class="text-4xl md:text-5xl font-bold mb-1" style="color:#FDF6DC;">100%</p>
-            <p class="text-sm font-semibold" style="color:#E7E4CC;">Responsibly Farmed Bananas</p>
+            <p class="text-sm font-semibold" style="color:#E7E4CC;">Responsibly Sourced Bananas</p>
           </div>
 
           <div class="rounded-2xl p-6 text-center shadow-md transition-transform duration-300 hover:-translate-y-1 bg-amber-400">
