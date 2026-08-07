@@ -1,6 +1,7 @@
 export default function PromotionsPage() {
   return `
     <main class="bg-amber-50 min-h-screen flex flex-col gap-y-5">
+
       <header>
         <h1 class="text-5xl font-bold text-amber-900">
           Sweet Deals, Bigger Smiles
@@ -11,72 +12,197 @@ export default function PromotionsPage() {
           always a reason to visit Banana Bliss.
         </p>
       </header>
-      
-      <!-- Student Specials -->
-      <section>
-        <h2 class="text-3xl md:text-5xl font-bold text-amber-900 mt-4 mb-6">For Students</h2>
 
-        <div class="grid lg:grid-cols-2 gap-5 md:gap-6">
+      <!-- Filter Pills -->
+      <div class="flex flex-wrap gap-2">
+        <button type="button" class="promo-filter-btn px-4 py-2 rounded-full text-sm font-semibold bg-amber-400 text-amber-950" data-filter="all">All Deals</button>
+        <button type="button" class="promo-filter-btn px-4 py-2 rounded-full text-sm font-semibold bg-white text-amber-900 border border-amber-200" data-filter="limited-time">Limited Time</button>
+        <button type="button" class="promo-filter-btn px-4 py-2 rounded-full text-sm font-semibold bg-white text-amber-900 border border-amber-200" data-filter="students">Students</button>
+        <button type="button" class="promo-filter-btn px-4 py-2 rounded-full text-sm font-semibold bg-white text-amber-900 border border-amber-200" data-filter="bundles">Bundles</button>
+        <button type="button" class="promo-filter-btn px-4 py-2 rounded-full text-sm font-semibold bg-white text-amber-900 border border-amber-200" data-filter="birthday-rewards">Birthday & Rewards</button>
+      </div>
 
-          <div class="bg-[#FFFFFB] rounded-2xl shadow-md overflow-hidden">
-            <img src="/assets/images/promos/studentcombo.png" alt="Student Cake Combo" class="w-full h-64 object-contain bg-amber-50" />
-            <div class="p-6 md:p-7">
-              <div class="w-11 h-11 rounded-full flex items-center justify-center mb-4 bg-amber-400">
-                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#4A2F08" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 10v6M2 10l10-5 10 5-10 5z"/><path d="M6 12v5c0 1.66 2.69 3 6 3s6-1.34 6-3v-5"/></svg>
+      <!-- Hero Carousel: Limited-Time Deals -->
+      <section class="promo-section" data-section="limited-time">
+        <h2 class="text-3xl md:text-5xl font-bold text-amber-900 mt-4 mb-6">Limited-Time Only</h2>
+
+        <div class="relative">
+          <div id="limitedTrack" class="flex gap-4 overflow-x-auto snap-x snap-mandatory pb-2" style="scrollbar-width: none;">
+
+            <div class="shrink-0 snap-start w-[85%] sm:w-[60%] lg:w-[45%] rounded-xl overflow-hidden bg-[#FFFFFB] shadow-md transition-transform duration-300 hover:scale-105">
+              <div class="relative">
+                <img src="/assets/images/promos/seasonaldrink.png" alt="Summer Banana Mango Smoothie" class="w-full h-56 object-contain bg-amber-50" />
+                <span class="absolute top-3 right-3 text-xs font-bold px-3 py-1 rounded-full bg-orange-500 text-white shadow-md">SEASONAL</span>
               </div>
-              <h3 class="text-xl font-bold text-amber-900 mb-1">Student Cake Combo</h3>
-              <p class="text-sm font-semibold text-amber-700 mb-3">Mon – Fri | 11:00 AM – 5:00 PM</p>
-              <p class="text-gray-700 leading-7 mb-3">
-                1 Signature Banana Cake Slice + 1 Regular Drink
-              </p>
-              <p class="text-2xl font-bold text-orange-600">
-                S$11.90 <span class="text-sm font-semibold text-gray-500 line-through ml-1">S$15.40</span>
-              </p>
-              <p class="text-xs text-gray-500 mt-2">Valid with a student ID.</p>
+              <div class="p-5">
+                <h3 class="text-lg font-bold text-amber-900 mb-1">Summer Banana Mango Smoothie</h3>
+                <p class="text-gray-700 text-sm mb-3">A tropical smoothie made with fresh bananas and juicy mangoes.</p>
+                <p class="text-xl font-bold text-orange-600">S$7.90</p>
+              </div>
             </div>
+
+            <div class="shrink-0 snap-start w-[85%] sm:w-[60%] lg:w-[45%] rounded-xl overflow-hidden bg-[#FFFFFB] shadow-md transition-transform duration-300 hover:scale-105">
+              <div class="relative">
+                <img src="/assets/images/promos/seasonalcake.png" alt="Banana Biscoff Cake" class="w-full h-56 object-contain bg-amber-50" />
+                <span class="absolute top-3 right-3 text-xs font-bold px-3 py-1 rounded-full bg-orange-500 text-white shadow-md">SEASONAL</span>
+              </div>
+              <div class="p-5">
+                <h3 class="text-lg font-bold text-amber-900 mb-1">Banana Biscoff Cake</h3>
+                <p class="text-gray-700 text-sm mb-3">Freshly baked banana cake layered with creamy Biscoff spread and crunchy biscuit crumbs.</p>
+                <p class="text-xl font-bold text-orange-600">S$8.90 <span class="text-xs font-semibold text-gray-500">/ slice</span></p>
+              </div>
+            </div>
+
+            <div class="shrink-0 snap-start w-[85%] sm:w-[60%] lg:w-[45%] rounded-xl overflow-hidden bg-[#FFFFFB] shadow-md transition-transform duration-300 hover:scale-105">
+              <div class="relative">
+                <img src="/assets/images/promos/giftbox.png" alt="Festive Banana Gift Box" class="w-full h-56 object-contain bg-amber-50" />
+                <span class="absolute top-3 right-3 text-xs font-bold px-3 py-1 rounded-full bg-orange-500 text-white shadow-md">GIFT BOX</span>
+              </div>
+              <div class="p-5">
+                <h3 class="text-lg font-bold text-amber-900 mb-1">Festive Banana Gift Box</h3>
+                <p class="text-gray-700 text-sm mb-3">Mini banana cake, signature banana jam, and house blend coffee beans.</p>
+                <p class="text-xl font-bold text-orange-600">S$39.90</p>
+              </div>
+            </div>
+
           </div>
 
-          <div class="bg-[#FFFFFB] rounded-2xl shadow-md overflow-hidden">
-            <img src="/assets/images/promos/studentsmoothie.png" alt="Student Smoothie Deal" class="w-full h-64 object-contain bg-amber-50" />
-            <div class="p-6 md:p-7">
-              <div class="w-11 h-11 rounded-full flex items-center justify-center mb-4" style="background-color:#59571B;">
-                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#FDF6DC" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M8 2h8l4 6-10 13L2 8z"/><path d="M2 8h20M10 2l2 6-2 13M14 2l-2 6 2 13"/></svg>
+          <button type="button" id="limitedPrev" class="hidden md:flex absolute left-0 top-1/2 -translate-y-1/2 -translate-x-4 w-9 h-9 rounded-full bg-white shadow-md items-center justify-center">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#774D0C" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M15 18l-6-6 6-6"/></svg>
+          </button>
+          <button type="button" id="limitedNext" class="hidden md:flex absolute right-0 top-1/2 -translate-y-1/2 translate-x-4 w-9 h-9 rounded-full bg-white shadow-md items-center justify-center">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#774D0C" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M9 18l6-6-6-6"/></svg>
+          </button>
+        </div>
+      </section>
+
+      <!-- Student Specials -->
+      <section class="promo-section" data-section="students">
+        <h2 class="text-3xl md:text-5xl font-bold text-amber-900 mt-4 mb-6">
+          For Students
+        </h2>
+        
+        <div class="max-w-5xl mx-auto flex flex-col gap-5">
+        
+          <!-- Student Cake Combo -->
+          <div class="bg-[#FFFFFB] rounded-2xl shadow-md overflow-hidden grid md:grid-cols-2 transition-transform duration-300 hover:scale-[1.02]">
+
+            <div class="relative">
+              <img
+                src="/assets/images/promos/studentcombo.png"
+                alt="Student Cake Combo"
+                class="w-full h-44 md:h-72 object-contain bg-amber-50"
+              />
+
+              <span class="absolute top-3 left-3 text-xs font-bold px-3 py-1 rounded-full bg-orange-500 text-white shadow-md">
+                SAVE S$3.50
+              </span>
+            </div>
+
+            <div class="p-5 md:p-6 flex flex-col justify-center">
+
+              <div class="w-9 h-9 rounded-full flex items-center justify-center mb-3 bg-amber-400">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#4A2F08" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M22 10v6M2 10l10-5 10 5-10 5z"/>
+                  <path d="M6 12v5c0 1.66 2.69 3 6 3s6-1.34 6-3v-5"/>
+                </svg>
               </div>
-              <h3 class="text-xl font-bold text-amber-900 mb-1">Student Smoothie Deal</h3>
-              <p class="text-sm font-semibold text-amber-700 mb-3">Weekdays Only</p>
+
+              <h3 class="text-lg font-bold text-amber-900 mb-1">
+                Student Cake Combo
+              </h3>
+
+              <p class="text-sm font-semibold text-amber-700 mb-2">
+                Mon – Fri | 11:00 AM – 5:00 PM
+              </p>
+
+              <p class="text-gray-700 leading-7 mb-2">
+                1 Signature Banana Cake Slice + 1 Regular Drink
+              </p>
+
+              <p class="text-xl font-bold text-orange-600">
+                S$11.90
+                <span class="text-sm font-semibold text-gray-500 line-through ml-1">
+                  S$15.40
+                </span>
+              </p>
+
+              <p class="text-xs text-gray-500 mt-2">
+                Valid with a student ID.
+              </p>
+
+          </div>
+        </div>
+
+          <!-- Student Smoothie -->
+          <div class="bg-[#FFFFFB] rounded-2xl shadow-md overflow-hidden grid md:grid-cols-2 transition-transform duration-300 hover:scale-[1.02]">
+
+            <div class="relative order-2 md:order-1">
+              <img
+                src="/assets/images/promos/studentsmoothie.png"
+                alt="Student Smoothie Deal"
+                class="w-full h-44 md:h-72 object-contain bg-amber-50"
+              />
+
+              <span class="absolute top-3 left-3 text-xs font-bold px-3 py-1 rounded-full bg-orange-500 text-white shadow-md">
+                15% OFF
+              </span>
+            </div>
+
+            <div class="p-5 md:p-6 flex flex-col justify-center order-1 md:order-2">
+
+              <div class="w-9 h-9 rounded-full flex items-center justify-center mb-3" style="background-color:#59571B;">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#FDF6DC" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M8 2h8l4 6-10 13L2 8z"/>
+                  <path d="M2 8h20M10 2l2 6-2 13M14 2l-2 6 2 13"/>
+                </svg>
+              </div>
+
+              <h3 class="text-lg font-bold text-amber-900 mb-1">
+                Student Smoothie Deal
+              </h3>
+
+              <p class="text-sm font-semibold text-amber-700 mb-2">
+                Weekdays Only
+              </p>
+
               <p class="text-gray-700 leading-7">
                 Show your student pass and enjoy 15% OFF all Banana Smoothies every weekday.
               </p>
+
             </div>
+
           </div>
 
         </div>
       </section>
 
       <!-- Bundle Offers -->
-      <section>
+      <section class="promo-section" data-section="bundles">
         <h2 class="text-3xl md:text-5xl font-bold text-amber-900 mt-4 mb-6">Bundle & Save</h2>
 
         <div class="grid lg:grid-cols-2 gap-5 md:gap-6">
 
-          <div class="bg-[#FFFFFB] rounded-2xl shadow-md overflow-hidden">
-            <img src="/assets/images/promos/promo.jpeg" alt="Banana Bliss Dessert Set" class="w-full h-64 object-contain bg-amber-50" />
+          <div class="bg-[#FFFFFB] rounded-2xl shadow-md overflow-hidden transition-transform duration-300 hover:scale-105">
+            <div class="relative">
+              <img src="/assets/images/promos/promo.jpeg" alt="Banana Bliss Dessert Set" class="w-full h-56 object-contain bg-amber-50" />
+              <span class="absolute top-3 right-3 text-xs font-bold px-3 py-1 rounded-full bg-orange-500 text-white shadow-md">SAVE S$2.00</span>
+            </div>
             <div class="p-6 md:p-7">
               <div class="w-11 h-11 rounded-full flex items-center justify-center mb-4 bg-amber-400">
                 <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#4A2F08" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="7" width="18" height="13" rx="2"/><path d="M8 7V5a2 2 0 0 1 2-2h4a2 2 0 0 1 2 2v2"/></svg>
               </div>
               <h3 class="text-xl font-bold text-amber-900 mb-3">Banana Bliss Dessert Set</h3>
               <ul class="text-gray-700 leading-7 space-y-1 mb-4">
-                <li>• Original Banana Cake</li>
+                <li>• Naked Banana Cake</li>
                 <li>• Banana Smoothie</li>
               </ul>
               <p class="text-2xl font-bold text-orange-600">S$13.90</p>
-              <p class="text-xs text-gray-500 mt-1">Save S$2.00</p>
             </div>
           </div>
 
-          <div class="bg-[#FFFFFB] rounded-2xl shadow-md overflow-hidden">
-            <img src="/assets/images/promos/coffeecake.png" alt="Coffee & Cake Combo" class="w-full h-64 object-contain bg-amber-50" />
+          <div class="bg-[#FFFFFB] rounded-2xl shadow-md overflow-hidden transition-transform duration-300 hover:scale-105">
+            <img src="/assets/images/promos/coffeecake.png" alt="Coffee & Cake Combo" class="w-full h-56 object-contain bg-amber-50" />
             <div class="p-6 md:p-7">
               <div class="w-11 h-11 rounded-full flex items-center justify-center mb-4" style="background-color:#59571B;">
                 <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#FDF6DC" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 8h1a4 4 0 0 1 0 8h-1"/><path d="M2 8h16v9a4 4 0 0 1-4 4H6a4 4 0 0 1-4-4z"/></svg>
@@ -91,8 +217,8 @@ export default function PromotionsPage() {
             </div>
           </div>
 
-          <div class="bg-[#FFFFFB] rounded-2xl shadow-md overflow-hidden">
-            <img src="/assets/images/promos/family.png" alt="Family Sharing Bundle" class="w-full h-64 object-contain bg-amber-50" />
+          <div class="bg-[#FFFFFB] rounded-2xl shadow-md overflow-hidden transition-transform duration-300 hover:scale-105">
+            <img src="/assets/images/promos/family.png" alt="Family Sharing Bundle" class="w-full h-56 object-contain bg-amber-50" />
             <div class="p-6 md:p-7">
               <div class="w-11 h-11 rounded-full flex items-center justify-center mb-4 bg-amber-400">
                 <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#4A2F08" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg>
@@ -111,103 +237,26 @@ export default function PromotionsPage() {
         </div>
       </section>
 
-      <!-- Year-Round Promotions -->
-      <section>
-        <h2 class="text-3xl md:text-5xl font-bold text-amber-900 mt-4 mb-6">Year-Round Promotions</h2>
+      <!-- Year-Round Perks (compact list rows) -->
+      <section class="promo-section" data-section="birthday-rewards">
+        <h2 class="text-3xl md:text-5xl font-bold text-amber-900 mt-4 mb-6">Year-Round Perks</h2>
 
-        <div class="grid lg:grid-cols-3 gap-5 md:gap-6">
+        <div class="bg-[#FFFFFB] rounded-2xl shadow-md divide-y divide-amber-100 overflow-hidden">
 
-          <div class="bg-[#FFFFFB] rounded-2xl shadow-md overflow-hidden">
-            <img src="/assets/images/promos/freecoffee.png" alt="Free Coffee Refill" class="w-full h-64 object-contain bg-amber-50" />
-            <div class="p-6 md:p-7">
-              <div class="w-11 h-11 rounded-full flex items-center justify-center mb-4" style="background-color:#59571B;">
-                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#FDF6DC" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 8h1a4 4 0 0 1 0 8h-1"/><path d="M2 8h16v9a4 4 0 0 1-4 4H6a4 4 0 0 1-4-4z"/><path d="M6 1v3M10 1v3M14 1v3"/></svg>
-              </div>
-              <h3 class="text-xl font-bold text-amber-900 mb-2">Free Coffee Refill</h3>
-              <p class="text-gray-700 leading-7">
-                Purchase any breakfast set before 11 AM and enjoy one complimentary coffee refill.
-              </p>
+          <div class="flex items-center gap-4 p-5 md:p-6 transition-colors hover:bg-amber-50">
+            <img src="/assets/images/promos/birthday.png" alt="Birthday Treat" class="w-14 h-14 rounded-full object-cover shrink-0 bg-amber-100" />
+            <div class="flex-1">
+              <h3 class="font-bold text-amber-900">Birthday Treat</h3>
+              <p class="text-gray-700 text-sm">Celebrate your birthday month and receive a FREE slice of Signature Banana Cake with any purchase.</p>
             </div>
+            <span class="hidden sm:inline-block text-xs font-semibold text-amber-700 bg-amber-100 rounded-full px-3 py-1 shrink-0">Members Only</span>
           </div>
 
-          <div class="bg-[#FFFFFB] rounded-2xl shadow-md overflow-hidden">
-            <img src="/assets/images/promos/birthday.png" alt="Birthday Treat" class="w-full h-64 object-contain bg-amber-50" />
-            <div class="p-6 md:p-7">
-              <div class="w-11 h-11 rounded-full flex items-center justify-center mb-4 bg-amber-400">
-                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#4A2F08" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 12v10H4V12"/><path d="M2 7h20v5H2z"/><path d="M12 22V7"/><path d="M12 7H7.5a2.5 2.5 0 0 1 0-5C11 2 12 7 12 7z"/><path d="M12 7h4.5a2.5 2.5 0 0 0 0-5C13 2 12 7 12 7z"/></svg>
-              </div>
-              <h3 class="text-xl font-bold text-amber-900 mb-2">Birthday Treat</h3>
-              <p class="text-gray-700 leading-7">
-                Celebrate your birthday month and receive a FREE slice of Signature Banana Cake with any purchase.
-              </p>
-              <p class="text-xs text-gray-500 mt-2">Available for Banana Bliss members only.</p>
-            </div>
-          </div>
-
-          <div class="bg-[#FFFFFB] rounded-2xl shadow-md overflow-hidden">
-            <img src="/assets/images/promos/merchandise.png" alt="Merchandise Discount" class="w-full h-64 object-contain bg-amber-50" />
-            <div class="p-6 md:p-7">
-              <div class="w-11 h-11 rounded-full flex items-center justify-center mb-4" style="background-color:#59571B;">
-                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#FDF6DC" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M6 2 3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4z"/><path d="M3 6h18"/><path d="M16 10a4 4 0 0 1-8 0"/></svg>
-              </div>
-              <h3 class="text-xl font-bold text-amber-900 mb-2">Merchandise Discount</h3>
-              <p class="text-gray-700 leading-7">
-                Enjoy 10% OFF all Banana Bliss merchandise when you spend S$40 or more in a single receipt.
-              </p>
-            </div>
-          </div>
-
-        </div>
-      </section>
-
-      <!-- Seasonal Specials -->
-      <section>
-        <h2 class="text-3xl md:text-5xl font-bold text-amber-900 mt-4 mb-6">Limited-Time Only</h2>
-
-        <div class="grid lg:grid-cols-3 gap-5 md:gap-6">
-
-          <div class="bg-[#FFFFFB] rounded-2xl shadow-md overflow-hidden">
-            <img src="/assets/images/promos/seasonaldrink.png" alt="Summer Banana Mango Smoothie" class="w-full h-64 object-contain bg-amber-50" />
-            <div class="p-6 md:p-7">
-              <span class="inline-block text-xs font-semibold bg-amber-400 text-amber-950 rounded-full px-3 py-1 mb-3">
-                Limited Time
-              </span>
-              <h3 class="text-xl font-bold text-amber-900 mb-2">Summer Banana Mango Smoothie</h3>
-              <p class="text-gray-700 leading-7 mb-3">
-                A tropical smoothie made with fresh bananas and juicy mangoes.
-              </p>
-              <p class="text-2xl font-bold text-orange-600">S$7.90</p>
-            </div>
-          </div>
-
-          <div class="bg-[#FFFFFB] rounded-2xl shadow-md overflow-hidden">
-            <img src="/assets/images/promos/seasonalcake.png" alt="Banana Biscoff Cake" class="w-full h-64 object-contain bg-amber-50" />
-            <div class="p-6 md:p-7">
-              <span class="inline-block text-xs font-semibold bg-amber-400 text-amber-950 rounded-full px-3 py-1 mb-3">
-                Limited Time
-              </span>
-              <h3 class="text-xl font-bold text-amber-900 mb-2">Banana Biscoff Cake</h3>
-              <p class="text-gray-700 leading-7 mb-3">
-                Freshly baked banana cake layered with creamy Biscoff spread and topped with crunchy Lotus Biscoff biscuit crumbs.
-              </p>
-              <p class="text-2xl font-bold text-orange-600">S$8.90 <span class="text-sm font-semibold text-gray-500">per slice</span></p>
-            </div>
-          </div>
-
-          <div class="bg-[#FFFFFB] rounded-2xl shadow-md overflow-hidden">
-            <img src="/assets/images/promos/giftbox.png" alt="Festive Banana Gift Box" class="w-full h-64 object-contain bg-amber-50" />
-            <div class="p-6 md:p-7">
-              <span class="inline-block text-xs font-semibold bg-amber-400 text-amber-950 rounded-full px-3 py-1 mb-3">
-                Gift Box
-              </span>
-              <h3 class="text-xl font-bold text-amber-900 mb-2">Festive Banana Gift Box</h3>
-              <p class="text-sm text-gray-500 mb-2">Perfect for holiday gifting. Includes:</p>
-              <ul class="text-gray-700 leading-7 space-y-1 mb-3">
-                <li>• Mini Banana Cake</li>
-                <li>• Signature Banana Jam</li>
-                <li>• House Blend Coffee Beans</li>
-              </ul>
-              <p class="text-2xl font-bold text-orange-600">S$39.90</p>
+          <div class="flex items-center gap-4 p-5 md:p-6 transition-colors hover:bg-amber-50">
+            <img src="/assets/images/promos/merchandise.png" alt="Merchandise Discount" class="w-14 h-14 rounded-full object-cover shrink-0 bg-amber-100" />
+            <div class="flex-1">
+              <h3 class="font-bold text-amber-900">Merchandise Discount</h3>
+              <p class="text-gray-700 text-sm">Enjoy 10% OFF all Banana Bliss merchandise when you spend S$40 or more in a single receipt.</p>
             </div>
           </div>
 
@@ -215,22 +264,22 @@ export default function PromotionsPage() {
       </section>
 
       <!-- Banana Bliss Rewards -->
-      <section class="bg-[#FFFFFB] rounded-2xl shadow-md p-8 md:p-12">
+      <section class="promo-section bg-[#FFFFFB] rounded-2xl shadow-md p-8 md:p-12" data-section="birthday-rewards">
         <h2 class="text-3xl md:text-5xl font-bold text-amber-900 mt-4 mb-2 text-center">Banana Bliss Rewards</h2>
         <p class="text-gray-600 text-center max-w-2xl mx-auto mb-8">
           Members enjoy exclusive benefits throughout the year.
         </p>
 
-        <div class="grid lg:grid-cols-3 gap-5 md:gap-6">
+        <div class="grid md:grid-cols-3 gap-5 md:gap-6 mb-8">
 
-          <div class="rounded-2xl border-2 border-amber-200 p-6 md:p-7">
+          <div class="rounded-2xl border-2 border-amber-200 p-6 md:p-7 transition-transform duration-300 hover:scale-105">
             <h3 class="text-lg font-bold text-amber-900 mb-3">Banana Member</h3>
             <ul class="text-gray-700 leading-7 space-y-1">
               <li>• 5% off selected menu items</li>
             </ul>
           </div>
 
-          <div class="rounded-2xl border-2 border-amber-400 p-6 md:p-7 relative">
+          <div class="rounded-2xl border-2 border-amber-400 p-6 md:p-7 relative transition-transform duration-300 hover:scale-105">
             <span class="inline-block text-xs font-semibold bg-amber-400 text-amber-950 rounded-full px-3 py-1 mb-3">
               Most Popular
             </span>
@@ -241,7 +290,7 @@ export default function PromotionsPage() {
             </ul>
           </div>
 
-          <div class="rounded-2xl border-2 border-amber-200 p-6 md:p-7">
+          <div class="rounded-2xl border-2 border-amber-200 p-6 md:p-7 transition-transform duration-300 hover:scale-105">
             <h3 class="text-lg font-bold text-amber-900 mb-3">Banana Bliss VIP</h3>
             <ul class="text-gray-700 leading-7 space-y-1">
               <li>• 15% off selected menu items</li>
@@ -251,6 +300,12 @@ export default function PromotionsPage() {
           </div>
 
         </div>
+
+        <div class="text-center">
+          <a href="#/membership" class="inline-flex items-center justify-center rounded-full font-semibold px-8 py-3 bg-amber-400 text-amber-950 shadow-md hover:-translate-y-0.5 transition">
+            Explore Memberships
+          </a>
+        </div>
       </section>
 
       <!-- Promo Banners -->
@@ -259,8 +314,7 @@ export default function PromotionsPage() {
 
         <div class="grid md:grid-cols-2 grid-cols-1 gap-5 md:gap-6">
 
-          <div class="rounded-2xl p-6 flex items-center gap-4"
-          style="background-color: #604630;">
+          <div class="rounded-2xl p-6 flex items-center gap-4 transition-transform duration-300 hover:scale-105" style="background-color: #604630;">
             <div class="w-12 h-12 shrink-0 rounded-full bg-amber-100 flex items-center justify-center">
               <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#4A2F08" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 10v6M2 10l10-5 10 5-10 5z"/><path d="M6 12v5c0 1.66 2.69 3 6 3s6-1.34 6-3v-5"/></svg>
             </div>
@@ -270,8 +324,7 @@ export default function PromotionsPage() {
             </div>
           </div>
 
-          <div class="rounded-2xl p-6 flex items-center gap-4"
-          style="background-color: #604630;">
+          <div class="rounded-2xl p-6 flex items-center gap-4 transition-transform duration-300 hover:scale-105" style="background-color: #604630;">
             <div class="flex items-center gap-4">
               <div class="w-12 h-12 shrink-0 rounded-full flex items-center justify-center" style="background-color:#C99855;">
                 <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#F9EFBD" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2l2.9 6.26L21 9.27l-4.5 4.39L17.8 21 12 17.77 6.2 21l1.3-7.34L3 9.27l6.1-1.01L12 2z"/></svg>
@@ -283,8 +336,7 @@ export default function PromotionsPage() {
             </div>
           </div>
 
-          <div class="rounded-2xl p-6 flex items-center gap-4"
-          style="background-color: #604630;">
+          <div class="rounded-2xl p-6 flex items-center gap-4 transition-transform duration-300 hover:scale-105" style="background-color: #604630;">
             <div class="w-12 h-12 shrink-0 rounded-full bg-amber-100 flex items-center justify-center">
               <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#4A2F08" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="7" width="18" height="13" rx="2"/><path d="M8 7V5a2 2 0 0 1 2-2h4a2 2 0 0 1 2 2v2"/></svg>
             </div>
@@ -294,8 +346,7 @@ export default function PromotionsPage() {
             </div>
           </div>
 
-          <div class="rounded-2xl p-6 flex items-center gap-4"
-            style="background-color: #604630;">
+          <div class="rounded-2xl p-6 flex items-center gap-4 transition-transform duration-300 hover:scale-105" style="background-color: #604630;">
             <div class="flex items-center gap-4">
               <div class="w-12 h-12 shrink-0 rounded-full flex items-center justify-center" style="background-color:#C99855;">
                 <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#F9EFBD" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/></svg>
@@ -307,8 +358,7 @@ export default function PromotionsPage() {
             </div>
           </div>
 
-         <div class="rounded-2xl p-6 flex items-center gap-4 sm:col-span-2 justify-self-center w-full md:w-1/2"
-          style="background-color: #604630;">
+          <div class="rounded-2xl p-6 flex items-center gap-4 sm:col-span-2 justify-self-center w-full sm:w-1/2 transition-transform duration-300 hover:scale-105" style="background-color: #604630;">
             <div class="w-12 h-12 shrink-0 rounded-full bg-amber-100 flex items-center justify-center">
               <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#4A2F08" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M6 2 3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4z"/><path d="M3 6h18"/><path d="M16 10a4 4 0 0 1-8 0"/></svg>
             </div>
@@ -323,12 +373,10 @@ export default function PromotionsPage() {
 
       <!-- CTA -->
       <section class="flex flex-wrap gap-4 justify-center pb-6">
-
-      <a href="#/menu" class="inline-flex items-center justify-center rounded-full font-semibold px-8 py-3 bg-amber-400 text-amber-950 shadow-md hover:-translate-y-0.5 transition">
+        <a href="#/menu" class="inline-flex items-center justify-center rounded-full font-semibold px-8 py-3 bg-amber-400 text-amber-950 shadow-md hover:-translate-y-0.5 transition">
           Explore Menu
         </a>
-
-    </section>
+      </section>
 
       <footer class="pt-4 pb-10 border-t border-amber-200 text-center">
         <p class="font-semibold text-lg text-[#59571B]">Made fresh, one banana at a time.</p>
@@ -336,4 +384,47 @@ export default function PromotionsPage() {
 
     </main>
   `;
+}
+
+export function initPromotionsPage() {
+  // Filter pills — toggle whole sections
+  var filterButtons = document.querySelectorAll(".promo-filter-btn");
+  var sections = document.querySelectorAll(".promo-section");
+
+  filterButtons.forEach(function (btn) {
+    btn.addEventListener("click", function () {
+      var filter = btn.getAttribute("data-filter");
+
+      filterButtons.forEach(function (b) {
+        b.classList.remove("bg-amber-400", "text-amber-950");
+        b.classList.add("bg-white", "text-amber-900", "border", "border-amber-200");
+      });
+      btn.classList.remove("bg-white", "text-amber-900", "border", "border-amber-200");
+      btn.classList.add("bg-amber-400", "text-amber-950");
+
+      sections.forEach(function (section) {
+        var matches = filter === "all" || section.getAttribute("data-section") === filter;
+        section.style.display = matches ? "" : "none";
+      });
+    });
+  });
+
+  // Limited-time carousel arrows
+  var track = document.getElementById("limitedTrack");
+  var prevBtn = document.getElementById("limitedPrev");
+  var nextBtn = document.getElementById("limitedNext");
+
+  if (track && prevBtn && nextBtn) {
+    var scrollAmount = function () {
+      var card = track.querySelector(":scope > div");
+      return card ? card.offsetWidth + 16 : 300;
+    };
+
+    prevBtn.addEventListener("click", function () {
+      track.scrollBy({ left: -scrollAmount(), behavior: "smooth" });
+    });
+    nextBtn.addEventListener("click", function () {
+      track.scrollBy({ left: scrollAmount(), behavior: "smooth" });
+    });
+  }
 }

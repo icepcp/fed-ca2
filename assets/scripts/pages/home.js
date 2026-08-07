@@ -90,7 +90,7 @@ export default function HomePage() {
               <img src="/assets/images/promos/promo.jpeg" alt="Current Promotion" class="carousel-slide absolute inset-0 w-full h-full object-contain bg-amber-50 rounded-2xl shadow-md" draggable="false" />
               <img src="/assets/images/promos/studentcombo.png" alt="Student Combo Promo" class="carousel-slide absolute inset-0 w-full h-full object-contain bg-amber-50 rounded-2xl shadow-md" draggable="false" />
               <img src="/assets/images/promos/giftbox.png" alt="Gift Box Promo" class="carousel-slide absolute inset-0 w-full h-full object-contain bg-amber-50 rounded-2xl shadow-md" draggable="false" />
-              <img src="/assets/images/promos/borthday.png" alt="Birthday Promo" class="carousel-slide absolute inset-0 w-full h-full object-contain bg-amber-50 rounded-2xl shadow-md" draggable="false" />
+              <img src="/assets/images/promos/birthday.png" alt="Birthday Promo" class="carousel-slide absolute inset-0 w-full h-full object-contain bg-amber-50 rounded-2xl shadow-md" draggable="false" />
             </div>
           </div>
           <div>
