@@ -1,4 +1,4 @@
-import HomePage from "./pages/home.js";
+import HomePage, { initHomePage } from "./pages/home.js";
 import AboutPage from "./pages/about.js";
 import MenuPage, { initMenuPage } from "./pages/menu.js";
 import MerchandisePage, { initMerchPage } from "./pages/merchandise.js";
@@ -172,6 +172,7 @@ const routes = {
     component: HomePage,
     name: "Home",
     icon: "/assets/icons/home.svg",
+    init: initHomePage,
   },
   "/about": {
     component: AboutPage,
