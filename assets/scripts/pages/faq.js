@@ -61,7 +61,7 @@ export default function FaqPage() {
               onclick="this.nextElementSibling.classList.toggle('hidden'); this.querySelector('.faq-icon').classList.toggle('rotate-180')"
               class="w-full flex items-center justify-between gap-4 text-left px-6 py-5 md:px-7 transition-all duration-300 hover:bg-amber-50 hover:shadow-md hover:scale-[1.01]"
             >
-              <span class="font-bold text-amber-900">What ingredients do you use in your banana desserts?</span>
+              <span class="font-bold text-lg text-amber-900">What ingredients do you use in your banana desserts?</span>
               <svg class="faq-icon shrink-0 transition-transform duration-200" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#774D0C" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M6 9l6 6 6-6"/></svg>
             </button>
              <div class="hidden mx-6 mb-5 px-5 py-4 bg-amber-100 rounded-xl text-gray-700 leading-7">
@@ -76,7 +76,7 @@ export default function FaqPage() {
               onclick="this.nextElementSibling.classList.toggle('hidden'); this.querySelector('.faq-icon').classList.toggle('rotate-180')"
               class="w-full flex items-center justify-between gap-4 text-left px-6 py-5 md:px-7 transition-all duration-300 hover:bg-amber-50 hover:shadow-md hover:scale-[1.01]"
             >
-              <span class="font-bold text-amber-900">Do your products contain common allergens?</span>
+              <span class="font-bold text-lg text-amber-900">Do your products contain common allergens?</span>
               <svg class="faq-icon shrink-0 transition-transform duration-200" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#774D0C" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M6 9l6 6 6-6"/></svg>
             </button>
              <div class="hidden mx-6 mb-5 px-5 py-4 bg-amber-100 rounded-xl text-gray-700 leading-7">
@@ -98,7 +98,7 @@ export default function FaqPage() {
               onclick="this.nextElementSibling.classList.toggle('hidden'); this.querySelector('.faq-icon').classList.toggle('rotate-180')"
               class="w-full flex items-center justify-between gap-4 text-left px-6 py-5 md:px-7 transition-all duration-300 hover:bg-amber-50 hover:shadow-md hover:scale-[1.01]"
             >
-              <span class="font-bold text-amber-900">Do you offer vegetarian options?</span>
+              <span class="font-bold text-lg text-amber-900">Do you offer vegetarian options?</span>
               <svg class="faq-icon shrink-0 transition-transform duration-200" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#774D0C" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M6 9l6 6 6-6"/></svg>
             </button>
              <div class="hidden mx-6 mb-5 px-5 py-4 bg-amber-100 rounded-xl text-gray-700 leading-7">
@@ -122,7 +122,7 @@ export default function FaqPage() {
               onclick="this.nextElementSibling.classList.toggle('hidden'); this.querySelector('.faq-icon').classList.toggle('rotate-180')"
               class="w-full flex items-center justify-between gap-4 text-left px-6 py-5 md:px-7 transition-all duration-300 hover:bg-amber-50 hover:shadow-md hover:scale-[1.01]"
             >
-              <span class="font-bold text-amber-900">Can I customise a whole banana cake?</span>
+              <span class="font-bold text-lg text-amber-900">Can I customise a whole banana cake?</span>
               <svg class="faq-icon shrink-0 transition-transform duration-200" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#774D0C" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M6 9l6 6 6-6"/></svg>
             </button>
              <div class="hidden mx-6 mb-5 px-5 py-4 bg-amber-100 rounded-xl text-gray-700 leading-7">
@@ -137,7 +137,7 @@ export default function FaqPage() {
               onclick="this.nextElementSibling.classList.toggle('hidden'); this.querySelector('.faq-icon').classList.toggle('rotate-180')"
               class="w-full flex items-center justify-between gap-4 text-left px-6 py-5 md:px-7 transition-all duration-300 hover:bg-amber-50 hover:shadow-md hover:scale-[1.01]"
             >
-              <span class="font-bold text-amber-900">Can I reserve a table?</span>
+              <span class="font-bold text-lg text-amber-900">Can I reserve a table?</span>
               <svg class="faq-icon shrink-0 transition-transform duration-200" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#774D0C" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M6 9l6 6 6-6"/></svg>
             </button>
              <div class="hidden mx-6 mb-5 px-5 py-4 bg-amber-100 rounded-xl text-gray-700 leading-7">
@@ -152,7 +152,7 @@ export default function FaqPage() {
               onclick="this.nextElementSibling.classList.toggle('hidden'); this.querySelector('.faq-icon').classList.toggle('rotate-180')"
               class="w-full flex items-center justify-between gap-4 text-left px-6 py-5 md:px-7 transition-all duration-300 hover:bg-amber-50 hover:shadow-md hover:scale-[1.01]"
             >
-              <span class="font-bold text-amber-900">Do you provide takeaway and gift packaging?</span>
+              <span class="font-bold text-lg text-amber-900">Do you provide takeaway and gift packaging?</span>
               <svg class="faq-icon shrink-0 transition-transform duration-200" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#774D0C" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M6 9l6 6 6-6"/></svg>
             </button>
              <div class="hidden mx-6 mb-5 px-5 py-4 bg-amber-100 rounded-xl text-gray-700 leading-7">
@@ -179,13 +179,15 @@ export default function FaqPage() {
 
 
   <!-- FAQ Card -->
-  <div class="bg-[#FFFFFB] rounded-3xl shadow-lg overflow-hidden border border-amber-100">
+  
+  <div class="bg-[#FFFFFB] rounded-2xl shadow-md divide-y divide-amber-100 overflow-hidden">
+
 
     <div class="hover:bg-amber-50 transition">
       <button
         type="button"
         onclick="this.nextElementSibling.classList.toggle('hidden'); this.querySelector('.faq-icon').classList.toggle('rotate-180')"
-        class="w-full flex items-center justify-between gap-4 text-left px-7 py-6"
+        class="w-full flex items-center justify-between gap-4 text-left px-6 py-5 md:px-7 transition-all duration-300 hover:bg-amber-50 hover:shadow-md hover:scale-[1.01]"
       >
         <span class="font-bold text-lg text-amber-900">
           Can I use more than one promotion at the same time?
@@ -209,7 +211,7 @@ export default function FaqPage() {
       <button
         type="button"
         onclick="this.nextElementSibling.classList.toggle('hidden'); this.querySelector('.faq-icon').classList.toggle('rotate-180')"
-        class="w-full flex items-center justify-between gap-4 text-left px-7 py-6"
+        class="w-full flex items-center justify-between gap-4 text-left px-6 py-5 md:px-7 transition-all duration-300 hover:bg-amber-50 hover:shadow-md hover:scale-[1.01]"
       >
         <span class="font-bold text-lg text-amber-900">
           How do I become a Banana Bliss member?
@@ -233,7 +235,7 @@ export default function FaqPage() {
       <button
         type="button"
         onclick="this.nextElementSibling.classList.toggle('hidden'); this.querySelector('.faq-icon').classList.toggle('rotate-180')"
-        class="w-full flex items-center justify-between gap-4 text-left px-7 py-6"
+        class="w-full flex items-center justify-between gap-4 text-left px-6 py-5 md:px-7 transition-all duration-300 hover:bg-amber-50 hover:shadow-md hover:scale-[1.01]"
       >
         <span class="font-bold text-lg text-amber-900">
           Do promotions change regularly?
