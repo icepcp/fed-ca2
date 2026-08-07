@@ -64,7 +64,7 @@ export default function FaqPage() {
               <span class="font-bold text-amber-900">What ingredients do you use in your banana desserts?</span>
               <svg class="faq-icon shrink-0 transition-transform duration-200" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#774D0C" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M6 9l6 6 6-6"/></svg>
             </button>
-            <div class="hidden px-6 md:px-7 pb-5 text-gray-700 leading-7">
+             <div class="hidden mx-6 mb-5 px-5 py-4 bg-amber-100 rounded-xl text-gray-700 leading-7">
               We use fresh ripe bananas, premium dairy products, fresh eggs, quality flour and carefully
               selected ingredients to ensure every dessert is fresh and delicious.
             </div>
@@ -79,7 +79,7 @@ export default function FaqPage() {
               <span class="font-bold text-amber-900">Do your products contain common allergens?</span>
               <svg class="faq-icon shrink-0 transition-transform duration-200" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#774D0C" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M6 9l6 6 6-6"/></svg>
             </button>
-            <div class="hidden px-6 md:px-7 pb-5 text-gray-700 leading-7">
+             <div class="hidden mx-6 mb-5 px-5 py-4 bg-amber-100 rounded-xl text-gray-700 leading-7">
               Yes. Some of our products may contain:
               <ul class="mt-2 space-y-1">
                 <li>• Gluten (wheat)</li>
@@ -101,7 +101,7 @@ export default function FaqPage() {
               <span class="font-bold text-amber-900">Do you offer vegetarian options?</span>
               <svg class="faq-icon shrink-0 transition-transform duration-200" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#774D0C" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M6 9l6 6 6-6"/></svg>
             </button>
-            <div class="hidden px-6 md:px-7 pb-5 text-gray-700 leading-7">
+             <div class="hidden mx-6 mb-5 px-5 py-4 bg-amber-100 rounded-xl text-gray-700 leading-7">
               Yes! Many of our cakes, pastries and beverages are suitable for vegetarians. Feel free to ask
               our staff for recommendations.
             </div>
@@ -125,7 +125,7 @@ export default function FaqPage() {
               <span class="font-bold text-amber-900">Can I customise a whole banana cake?</span>
               <svg class="faq-icon shrink-0 transition-transform duration-200" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#774D0C" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M6 9l6 6 6-6"/></svg>
             </button>
-            <div class="hidden px-6 md:px-7 pb-5 text-gray-700 leading-7">
+             <div class="hidden mx-6 mb-5 px-5 py-4 bg-amber-100 rounded-xl text-gray-700 leading-7">
               Yes! We offer custom whole cakes where you can choose your preferred size, flavour and a
               personalised message. Please place your order at least 3 days in advance.
             </div>
@@ -140,7 +140,7 @@ export default function FaqPage() {
               <span class="font-bold text-amber-900">Can I reserve a table?</span>
               <svg class="faq-icon shrink-0 transition-transform duration-200" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#774D0C" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M6 9l6 6 6-6"/></svg>
             </button>
-            <div class="hidden px-6 md:px-7 pb-5 text-gray-700 leading-7">
+             <div class="hidden mx-6 mb-5 px-5 py-4 bg-amber-100 rounded-xl text-gray-700 leading-7">
               Yes. Table reservations are available for groups of 4 or more. We recommend booking early,
               especially on weekends and public holidays.
             </div>
@@ -155,7 +155,7 @@ export default function FaqPage() {
               <span class="font-bold text-amber-900">Do you provide takeaway and gift packaging?</span>
               <svg class="faq-icon shrink-0 transition-transform duration-200" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#774D0C" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M6 9l6 6 6-6"/></svg>
             </button>
-            <div class="hidden px-6 md:px-7 pb-5 text-gray-700 leading-7">
+             <div class="hidden mx-6 mb-5 px-5 py-4 bg-amber-100 rounded-xl text-gray-700 leading-7">
               Yes! All cakes and pastries can be packed for takeaway, and we also offer gift boxes for
               selected products.
             </div>
@@ -199,7 +199,7 @@ export default function FaqPage() {
         </svg>
       </button>
 
-      <div class="hidden px-7 pb-6 text-gray-700 leading-7">
+       <div class="hidden mx-6 mb-5 px-5 py-4 bg-amber-100 rounded-xl text-gray-700 leading-7">
         Unless otherwise stated, promotions cannot be combined. The best available promotion will be applied to your purchase.
       </div>
     </div>
@@ -223,8 +223,8 @@ export default function FaqPage() {
         </svg>
       </button>
 
-      <div class="hidden px-7 pb-6 text-gray-700 leading-7">
-        Membership registration is available in person at any Banana Bliss outlet. Simply speak to one of our staff members to sign up and start enjoying exclusive rewards.
+      <div class="hidden mx-6 mb-5 px-5 py-4 bg-amber-100 rounded-xl text-gray-700 leading-7">
+        Unless otherwise stated, promotions cannot be combined. The best available promotion will be applied to your purchase.
       </div>
     </div>
 
@@ -247,7 +247,7 @@ export default function FaqPage() {
         </svg>
       </button>
 
-      <div class="hidden px-7 pb-6 text-gray-700 leading-7">
+      <div class="hidden mx-6 mb-5 px-5 py-4 bg-amber-100 rounded-xl text-gray-700 leading-7">
         Yes! We introduce new seasonal offers, student deals and member-exclusive promotions throughout the year. Follow our social media pages or visit our cafés to stay updated.
       </div>
     </div>
