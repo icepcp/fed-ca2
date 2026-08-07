@@ -22,7 +22,7 @@ export default function EventsPage() {
         <span class="text-[#CBB799] text-2xl">❦</span>
         <div class="flex-1 border-t border-[#CBB799]"></div>
       </div>
-
+      <h2 class="text-3xl md:text-5xl font-bold text-amber-900 mt-4 mb-6">Workshops</h2>
       <!-- Featured Event Banner -->
       <section class="relative rounded-2xl overflow-hidden h-[500px]">
 
@@ -82,7 +82,6 @@ export default function EventsPage() {
 
       <!-- Upcoming Events -->
       <section>
-        <h2 class="text-3xl md:text-5xl font-bold text-amber-900 mt-4 mb-6">Workshops</h2>
 
         <div class="grid md:grid-cols-2 gap-5 md:gap-6 ">
 
