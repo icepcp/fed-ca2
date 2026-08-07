@@ -4,8 +4,8 @@ import MenuPage, { initMenuPage } from "./pages/menu.js";
 import MerchandisePage from "./pages/merchandise.js";
 import MembershipPage from "./pages/membership.js";
 import SustainabilityPage, { initSustainabilityPage } from "./pages/sustainability.js";
-import PromotionsPage from "./pages/promotions.js";
-import ReviewsPage from "./pages/reviews.js";
+import PromotionsPage, { initPromotionsPage } from "./pages/promotions.js";
+import ReviewsPage, { initCustomerReviews } from "./pages/reviews.js";
 import LocationsPage, { initLocationsPage } from "./pages/locations.js";
 import EventsPage from "./pages/events.js";
 import FaqPage from "./pages/faq.js";
@@ -159,6 +159,10 @@ function Footer() {
           Singapore | +65 6123 4567 | hello@bananabliss.com
         </p>
 
+        <p class="text-stone-500 text-sm pt-2 border-t border-stone-400/40">
+          © 2026 Banana Bliss Café. All rights reserved.
+        </p>
+
       </div>
     </footer>
   `;
@@ -201,15 +205,17 @@ const routes = {
     icon: "/assets/icons/globe-location.svg",
     init: initLocationsPage
   },
-  "/reviews": {
-    component: ReviewsPage,
-    name: "Reviews",
-    icon: "/assets/icons/reviews.svg",
+ "/reviews": {
+  component: ReviewsPage,
+  name: "Reviews",
+  icon: "/assets/icons/reviews.svg",
+  init: initCustomerReviews,
   },
   "/promotions": {
     component: PromotionsPage,
     name: "Promotions",
     icon: "/assets/icons/percent.svg",
+    init: initPromotionsPage
   },
   "/sustainability": {
     component: SustainabilityPage,
