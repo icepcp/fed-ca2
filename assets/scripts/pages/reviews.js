@@ -26,7 +26,7 @@ export default function CustomerReviews() {
       <section>
         <h2 class="text-3xl md:text-5xl font-bold text-amber-900 mt-4 mb-6">What Our Guests Say</h2>
 
-        <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-5 md:gap-6">
+        <div class="grid lg:grid-cols-3 gap-5 md:gap-6">
 
           <div class="bg-[#FFFFFB] rounded-2xl shadow-md p-6 md:p-7">
             <div class="w-11 h-11 rounded-full flex items-center justify-center mb-4 bg-amber-400 font-bold text-amber-950">
@@ -149,7 +149,7 @@ export default function CustomerReviews() {
       <section>
         <h2 class="text-3xl md:text-5xl font-bold text-amber-900 mt-4 mb-6">Customer Favourites</h2>
 
-        <div class="grid sm:grid-cols-2 lg:grid-cols-4 gap-5 md:gap-6">
+        <div class="grid lg:grid-cols-2 gap-5 md:gap-6">
 
           <div class="bg-[#FFFFFB] rounded-2xl shadow-md p-6 md:p-7 text-center">
             <h3 class="text-lg font-bold text-amber-900">Original Banana Cake</h3>
@@ -202,7 +202,7 @@ export default function CustomerReviews() {
       <section class="bg-[#FFFFFB] rounded-2xl shadow-md p-8 md:p-12 text-center">
         <h2 class="text-3xl md:text-5xl font-bold text-amber-900 mt-4 mb-6">Why Customers Love Banana Bliss</h2>
 
-        <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-5 md:gap-6 text-left">
+        <div class="grid lg:grid-cols-3 gap-5 md:gap-6 text-left">
 
           <div class="flex gap-3 items-center">
             <div class="w-10 h-10 shrink-0 rounded-full flex items-center justify-center bg-amber-400">
@@ -277,7 +277,7 @@ export default function CustomerReviews() {
           class="max-w-2xl mx-auto space-y-6"
         >
 
-          <div class="grid sm:grid-cols-2 gap-6">
+          <div class="grid md:grid-cols-2 gap-6">
             <div>
               <label for="reviewName" class="block text-sm font-semibold text-amber-900 mb-1">
                 Your Name

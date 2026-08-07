@@ -1,7 +1,7 @@
 import HomePage from "./pages/home.js";
 import AboutPage from "./pages/about.js";
 import MenuPage, { initMenuPage } from "./pages/menu.js";
-import MerchandisePage from "./pages/merchandise.js";
+import MerchandisePage, { initMerchPage } from "./pages/merchandise.js";
 import MembershipPage from "./pages/membership.js";
 import SustainabilityPage, { initSustainabilityPage } from "./pages/sustainability.js";
 import PromotionsPage from "./pages/promotions.js";
@@ -188,6 +188,7 @@ const routes = {
     component: MerchandisePage,
     name: "Merchandise",
     icon: "/assets/icons/apparel.svg",
+    init: initMerchPage,
   },
   "/membership": {
     component: MembershipPage,
@@ -223,7 +224,7 @@ const routes = {
   },
   "/faq": {
     component: FaqPage,
-    name: "Faq",
+    name: "Frequently Asked Questions",
     icon: "/assets/icons/contact_support.svg",
   },
   "/contactus": {

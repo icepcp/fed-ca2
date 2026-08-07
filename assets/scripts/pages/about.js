@@ -43,7 +43,7 @@ export default function AboutPage() {
       <!-- Values grid -->
       <section>
         <h3 class="text-2xl md:text-3xl font-bold text-amber-900 mb-6">Our Values</h3>
-        <div class="grid sm:grid-cols-2 gap-5 md:gap-6">
+        <div class="grid md:grid-cols-2 gap-5 md:gap-6">
 
           <div class="bg-[#FFFFFB] rounded-2xl shadow-md p-6 md:p-7">
             <div class="w-11 h-11 rounded-full flex items-center justify-center mb-4 bg-amber-400">

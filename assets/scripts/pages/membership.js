@@ -19,7 +19,7 @@ export default function MembershipPage() {
       <section>
         <h2 class="text-3xl md:text-5xl font-bold text-amber-900 mt-4 mb-6">Member Benefits</h2>
 
-        <div class="grid sm:grid-cols-2 gap-5 md:gap-6">
+        <div class="grid lg:grid-cols-2 gap-5 md:gap-6">
 
           <div class="bg-[#FFFFFB] rounded-2xl shadow-md p-6 md:p-7">
             <div class="w-11 h-11 rounded-full flex items-center justify-center mb-4 bg-amber-400">
@@ -70,7 +70,7 @@ export default function MembershipPage() {
       <section>
         <h2 class="text-3xl md:text-5xl font-bold text-amber-900 mt-4 mb-8">Membership Tiers</h2>
 
-        <div class="grid md:grid-cols-3 gap-5 md:gap-6">
+        <div class="grid lg:grid-cols-3 gap-5 md:gap-6">
 
           <div class="bg-[#FFFFFB] rounded-2xl shadow-md p-6 md:p-7">
             <h3 class="text-xl font-bold text-amber-900 mb-1">Banana Member</h3>

@@ -119,7 +119,7 @@ function renderMenuResults() {
         <section class="mb-10">
           <h2 class="text-2xl font-bold text-amber-900">${category.name}</h2>
           <p class="text-sm text-gray-500 mb-4">${category.description}</p>
-          <div class="${isLocation ? "grid grid-cols-1 md:grid-cols-2 gap-4" : "grid grid-cols-1 md:grid-cols-3 gap-4"}">
+          <div class="${isLocation ? "grid grid-cols-1 lg:grid-cols-2 gap-4" : "grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-4"}">
             ${categoryProducts.map(renderProductCard).join("")}
           </div>
         </section>

@@ -49,8 +49,15 @@ p {
 
 .hero-buttons {
     display: flex;
-    gap: 20px;
-    margin-top: 50px;
+    flex-direction: column;
+    gap: 10px;
+    margin-top: 10px;
+}
+
+@media (min-width: 1024px) {
+    .hero-buttons {
+        display: flex;
+    }
 }
 
 .hero-btn,
@@ -79,8 +86,7 @@ p {
 
 .hero {
     height: 70vh;
-    align-content: center;
-    padding-left: 1rem;
+    align-content: end;
     min-height: 20rem;
     position: relative;
     isolation: isolate;
@@ -93,34 +99,60 @@ p {
     content: "";
     position: absolute;
     inset: 0;
-    background-image: url("/assets/images/index/hero.jpeg");
     background-size: cover;
-    opacity: 0.7;
     z-index: -1;
     border: 1px;
-    border-style: solid;
-    border-color: rgba(0, 0, 0, 0.5);
+    background-color: rgba(255, 251, 235);
+
 }
 
 .hero-content {
     max-width: 30rem;
     background-color: rgba(255, 255, 255, 0.7);
-    padding: 2rem;
+    padding: 1rem;
     border-radius: 1rem;
     backdrop-filter: blur(5px);
+}
+
+@media (min-width: 768px) {
+    .hero {
+        padding-left: 1rem;
+        align-content: center;
+    }
+
+    .hero::after {
+        background-image: url("/assets/images/index/hero.jpeg");
+        opacity: 0.7;
+        border-style: solid;
+        border-color: rgba(0, 0, 0, 0.5);
+    }
+
+    .hero-content {
+        padding: 2rem;
+    }
 }
 
 .welcome {
     margin-top: 2rem;
 }
 
+/* Default / Mobile (grid-cols-1) */
 .category-card {
     display: grid;
-    grid-template-columns: 50% 50%;
-    column-gap: 0.5rem;
-    max-width: 80%;
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+    max-width: 100%;
     align-items: center;
     margin: 2rem auto 0;
+}
+
+/* Large screens: 1024px and above (lg:grid-cols-2) */
+@media (min-width: 1024px) {
+    .category-card {
+        grid-template-columns: 1fr 1fr;
+        column-gap: 0.5rem;
+        max-width: 80%;
+    }
 }
 
 .category-card section {
@@ -134,7 +166,13 @@ p {
     width: 80%;
     height: auto;
     border-radius: 1rem;
-    transform: translateX(30px);
+    transform: translateX(0);
+}
+
+@media (min-width: 1024px) {
+    .category-card img {
+        transform: translateX(30px);
+    }
 }
 
 .category-card div {

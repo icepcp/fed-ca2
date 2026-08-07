@@ -16,7 +16,7 @@ export default function PromotionsPage() {
       <section>
         <h2 class="text-3xl md:text-5xl font-bold text-amber-900 mt-4 mb-6">For Students</h2>
 
-        <div class="grid sm:grid-cols-2 gap-5 md:gap-6">
+        <div class="grid lg:grid-cols-2 gap-5 md:gap-6">
 
           <div class="bg-[#FFFFFB] rounded-2xl shadow-md overflow-hidden">
             <img src="/assets/images/promos/studentcombo.png" alt="Student Cake Combo" class="w-full h-64 object-contain bg-amber-50" />
@@ -57,7 +57,7 @@ export default function PromotionsPage() {
       <section>
         <h2 class="text-3xl md:text-5xl font-bold text-amber-900 mt-4 mb-6">Bundle & Save</h2>
 
-        <div class="grid md:grid-cols-3 gap-5 md:gap-6">
+        <div class="grid lg:grid-cols-2 gap-5 md:gap-6">
 
           <div class="bg-[#FFFFFB] rounded-2xl shadow-md overflow-hidden">
             <img src="/assets/images/promos/promo.jpeg" alt="Banana Bliss Dessert Set" class="w-full h-64 object-contain bg-amber-50" />
@@ -115,7 +115,7 @@ export default function PromotionsPage() {
       <section>
         <h2 class="text-3xl md:text-5xl font-bold text-amber-900 mt-4 mb-6">Year-Round Promotions</h2>
 
-        <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-5 md:gap-6">
+        <div class="grid lg:grid-cols-3 gap-5 md:gap-6">
 
           <div class="bg-[#FFFFFB] rounded-2xl shadow-md overflow-hidden">
             <img src="/assets/images/promos/freecoffee.png" alt="Free Coffee Refill" class="w-full h-64 object-contain bg-amber-50" />
@@ -164,7 +164,7 @@ export default function PromotionsPage() {
       <section>
         <h2 class="text-3xl md:text-5xl font-bold text-amber-900 mt-4 mb-6">Limited-Time Only</h2>
 
-        <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-5 md:gap-6">
+        <div class="grid lg:grid-cols-3 gap-5 md:gap-6">
 
           <div class="bg-[#FFFFFB] rounded-2xl shadow-md overflow-hidden">
             <img src="/assets/images/promos/seasonaldrink.png" alt="Summer Banana Mango Smoothie" class="w-full h-64 object-contain bg-amber-50" />
@@ -221,7 +221,7 @@ export default function PromotionsPage() {
           Members enjoy exclusive benefits throughout the year.
         </p>
 
-        <div class="grid md:grid-cols-3 gap-5 md:gap-6">
+        <div class="grid lg:grid-cols-3 gap-5 md:gap-6">
 
           <div class="rounded-2xl border-2 border-amber-200 p-6 md:p-7">
             <h3 class="text-lg font-bold text-amber-900 mb-3">Banana Member</h3>
@@ -257,7 +257,7 @@ export default function PromotionsPage() {
       <section>
         <h2 class="text-3xl md:text-5xl font-bold text-amber-900 mt-4 mb-6">At a Glance</h2>
 
-        <div class="grid sm:grid-cols-2 gap-5 md:gap-6">
+        <div class="grid md:grid-cols-2 grid-cols-1 gap-5 md:gap-6">
 
           <div class="rounded-2xl p-6 flex items-center gap-4"
           style="background-color: #604630;">
@@ -307,7 +307,7 @@ export default function PromotionsPage() {
             </div>
           </div>
 
-         <div class="rounded-2xl p-6 flex items-center gap-4 sm:col-span-2 justify-self-center w-full sm:w-1/2"
+         <div class="rounded-2xl p-6 flex items-center gap-4 sm:col-span-2 justify-self-center w-full md:w-1/2"
           style="background-color: #604630;">
             <div class="w-12 h-12 shrink-0 rounded-full bg-amber-100 flex items-center justify-center">
               <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#4A2F08" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M6 2 3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4z"/><path d="M3 6h18"/><path d="M16 10a4 4 0 0 1-8 0"/></svg>

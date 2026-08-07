@@ -70,7 +70,7 @@ export default function HomePage() {
           <img src="/assets/images/menu/drinks/milkshakes/banana.jpeg" alt="Drinks">
         </div>
 
-        <div class="category-card">
+        <div class="category-card grid-cols-1! lg:grid-cols-2!">
           <img src="/assets/images/promos/promo.jpeg" alt="Promotions">
           <div>
             <h3>Promotions</h3>
@@ -93,7 +93,7 @@ export default function HomePage() {
           Featured Bestsellers
         </h2>
 
-        <div class="grid md:grid-cols-3 gap-5 md:gap-6">
+        <div class="grid lg:grid-cols-3 gap-5 md:gap-6">
           <div class="bg-[#FFFFFB] rounded-2xl shadow-md overflow-hidden">
             <img 
               src="/assets/images/menu/cakes/naked-banana.jpeg" 

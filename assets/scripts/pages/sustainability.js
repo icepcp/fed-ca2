@@ -136,7 +136,7 @@ export default function SustainabilityPage() {
           biodegradable materials, helping reduce unnecessary waste.
         </p>
 
-        <div class="grid sm:grid-cols-2 gap-5 md:gap-6">
+        <div class="grid md:grid-cols-2 gap-5 md:gap-6">
 
           <div class="bg-[#FFFFFB] rounded-2xl shadow-md p-6 md:p-7 flex gap-4 items-start">
             <div class="w-11 h-11 shrink-0 rounded-full flex items-center justify-center bg-amber-400">
@@ -206,7 +206,7 @@ export default function SustainabilityPage() {
       <section class="bg-[#FFFFFB] rounded-2xl shadow-md p-8 md:p-12 text-center">
         <h2 class="text-3xl md:text-5xl font-bold text-amber-900 mt-4 mb-6">By Supporting Banana Bliss, You're Helping Us</h2>
 
-        <div class="grid sm:grid-cols-2 lg:grid-cols-5 gap-5 md:gap-6 text-left">
+        <div class="grid md:grid-cols-2 lg:grid-cols-5 gap-5 md:gap-6 text-left">
 
           <div class="flex flex-col items-start gap-3">
             <div class="w-11 h-11 rounded-full flex items-center justify-center bg-amber-400">
