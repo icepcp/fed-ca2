@@ -82,6 +82,7 @@ export default function EventsPage() {
 
       <!-- Upcoming Events -->
       <section>
+      
 
         <div class="grid md:grid-cols-2 gap-5 md:gap-6 ">
 
@@ -131,7 +132,18 @@ export default function EventsPage() {
         <div class="flex-1 border-t border-[#CBB799]"></div>
         </div>
 
-   <section>
+   <section class="mt-0">
+
+     <!-- Section Title -->
+       <div class="mb-4">
+        <h2 class="text-3xl md:text-4xl font-extrabold text-amber-900">
+        Upcoming Events
+       </h2>
+
+    <p class="text-amber-700 mt-2 text-lg">
+      Join our upcoming workshops and create sweet memories with Banana Bliss!
+    </p>
+  </div>
 
   <div class="grid md:grid-cols-3 gap-6 items-start">
 
